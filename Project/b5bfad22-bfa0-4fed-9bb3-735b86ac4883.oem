@@ -11934,10 +11934,6 @@
           </Entity>
         </ChildEntities>
       </Entity>
-      <Entity type="SafetyProject" subtype="" id="bc02f145-5e97-4794-bb3d-7d452d1e36de" name="SafetyProject0" version="0" dateCreated="01/04/2022 08:39:16" dateLastModified="01/27/2022 16:34:19" trackingId="2635b230-0f58-4bdd-aa88-f7222aa40576" hash="479d98c0effaf9aa14eb71f858cb28fe">
-        <AccessInfos />
-        <ChildEntities />
-      </Entity>
       <Entity type="Device" subtype="NA" id="b126f642-a7ae-4bff-b28e-448a9ff27e7a" name="HMI_NA5_Case" version="0" dateCreated="01/04/2022 08:48:52" dateLastModified="01/06/2022 09:24:52" trackingId="e86680f0-54c4-45cd-bdfe-7012911833eb" DN="HMI_NA5_Case" hash="e8f0f51bfb3ba8c70d7680f3f92a6ed8" DHS="cb722659ec0166ee5b6b82892b82a819" TH="c4add691d8e040317fbeb5aea68cb944">
         <AccessInfos />
         <ChildEntities>
