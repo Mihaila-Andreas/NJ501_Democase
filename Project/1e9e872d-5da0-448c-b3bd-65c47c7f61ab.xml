@@ -1,0 +1,490 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=MC_CombineAxes	N=CombineAxes_Enable	G=VAR
+++D=MC_MoveVelocity	N=CombineVelocity_Enable	G=VAR
+++D=LREAL	N=Combine_Velocity	G=VAR
+++D=_eMC_COMBINE_MODE	N=CombineM	G=VAR
+++D=_eMC_REFERENCE_TYPE	N=ReferTypeAux	G=VAR
+++D=_eMC_REFERENCE_TYPE	N=ReferTypeMaster	G=VAR
+++D=MC_Stop	N=Axis_disable	G=VAR
+++D=MC_Stop	N=Combine_Disable	G=VAR
+++D=MC_GearIn	N=GearIn_Enable	G=VAR
+++D=DINT	N=Ratio_Num	G=VAR
+++D=UINT	N=Ratio_Den	G=VAR
+++D=LREAL	N=Master_Velocity	G=VAR
+++D=MC_GearOut	N=GearOut_Enable	G=VAR
+++D=MC_MoveVelocity	N=MoveVelocity_Enable	G=VAR
+++D=LREAL	N=Move_Velocity	G=VAR
+++D=BOOL	N=Execute_GearIn1	G=VAR
+++D=LREAL	N=OldVelocity2	G=VAR
+++D=DINT	N=Old_Ratio_Num	G=VAR
+++D=UINT	N=Old_Ratio_Den	G=VAR
+++D=BOOL	N=Execute_GearIn2	G=VAR
+++D=BOOL	N=Execute_GearIn3	G=VAR
+++D=MC_MoveVelocity	N=Master_VelocityRK	G=VAR
+++D=MC_MoveVelocity	N=Master_Enable	G=VAR
+++D=MC_GearIn	N=Gear_Enable	G=VAR
+++D=UINT	N=Ratio	G=VAR
+++D=_eMC_REFERENCE_TYPE	N=ReferenceType	G=VAR
+++D=MC_Phasing	N=Phasing_Enable	G=VAR
+++D=LREAL	N=Phase_Shift	G=VAR
+++D=INT	N=Phase_Velocity	G=VAR
+++D=BOOL	N=Execute_Phasing1	G=VAR
+++D=LREAL	N=OldVelocity3	G=VAR
+++D=TON	N=Just_Delay	G=VAR
+++D=MC_MoveVelocity	N=Velocity_Enable	G=VAR
+++D=MC_CamIn	N=CamIn_Enable	G=VAR
+++D=_sAXIS_REF	N=Cam_Master_Axis	G=VAR
+++D=_sAXIS_REF	N=Cam_Slave_Axis	G=VAR
+++D=MC_CamOut	N=CamIn_Disable	G=VAR
+++D=LREAL	N=Master_Scaling	G=VAR
+++D=LREAL	N=Slave_Scaling	G=VAR
+++D=_eMC_REFERENCE_TYPE	N=Reference_Type	G=VAR
+++D=LREAL	N=OldVelocity5	G=VAR
+++D=BOOL	N=CamModeEnabled	G=VAR
+++D=REAL	N=old_Velocity	G=VAR
+++D=MC_ZoneSwitch	N=Compare	G=VAR
+++D=BOOL	N=InZone	G=VAR
+++D=BOOL	N=Mode2	G=VAR
+++D=MC_TouchProbe	N=TP_latch1	G=VAR
+++D=_sTRIGGER_REF	N=tgr_1	IV=(Mode := _mcDrive, LatchID := _mcLatch1, InputDrive := _mcEXT)	G=VAR
+++D=BOOL	N=AlwaysFalse	IV=False	G=VAR
+++D=TON	N=time1reverse	G=VAR
+++D=MC_MoveRelative	N=move1forward	G=VAR
+++D=TON	N=time1forward	G=VAR
+++D=MC_MoveRelative	N=move1reverse	G=VAR
+++D=LREAL	N=mydist1	IV=350	G=VAR
+++D=LREAL	N=myvel1	IV=2000	G=VAR
+++D=LREAL	N=myaccel1	IV=80000	G=VAR
+++D=LREAL	N=mydecel1	IV=80000	G=VAR
+++D=LREAL	N=myjerk1	IV=0.0	G=VAR
+++D=TIME	N=mytime1	IV=100ms	G=VAR
+++D=LREAL	N=mydist1r	IV=-350	G=VAR
+++D=Rand	N=DefectiveProduct	G=VAR
+++D=LREAL	N=ProductQualityLevel	G=VAR
+++D=BOOL	N=Lot_Finished	G=VAR
+++D=TON	N=Execute_End_Delay	G=VAR
+++D=BOOL	N=Lot_FinishedBelt	G=VAR
+++D=TON	N=time1reverseBelt	G=VAR
+++D=MC_MoveRelative	N=move1reverseBelt	G=VAR
+++D=TON	N=time1forwardBelt	G=VAR
+++D=MC_MoveRelative	N=move1forwardBelt	G=VAR
+++D=TON	N=Execute_End_DelayBelt	G=VAR
+++D=MC_MoveRelative	N=move1forwardDisk	G=VAR
+++D=MC_MoveRelative	N=move1reverseDisk	G=VAR
+++D=TON	N=time1forwardDisk	G=VAR
+++D=TON	N=time1reverseDisk	G=VAR
+++D=BOOL	N=Gear_Error	G=VAR
+++D=WORD	N=Gear_ErrorID	G=VAR
+++D=BOOL	N=GearAborted	G=VAR
+++D=BOOL	N=GearActive	G=VAR
+++D=BOOL	N=GearBusy	G=VAR
+++D=RK\RK_SyncRotary	N=RK_1	G=VAR
+++D=MC_MoveVelocity	N=Master_Reference	G=VAR
+++D=FS\FS_SyncLinear	N=Test_FS_FB	G=VAR
+++D=BOOL	N=bTriggerVariable	G=VAR
+++D=LREAL	N=timeprod	G=VAR
+++D=LREAL	N=timecyc	G=VAR
+++D=ULINT	N=uscount	G=VAR
+++D=LREAL	N=QualityLevel	G=VAR
+++D=UINT	N=uscountInt	G=VAR
+++D=BOOL	N=exmove1	G=VAR
+++D=BOOL	N=exmove2	G=VAR
+++D=TON	N=time2reverse	G=VAR
+++D=MC_MoveRelative	N=move2forward	G=VAR
+++D=TON	N=time2forward	G=VAR
+++D=MC_MoveRelative	N=move2reverse	G=VAR
+++D=LREAL	N=mydist2	IV=3600	G=VAR
+++D=LREAL	N=myvel2	IV=15000	G=VAR
+++D=LREAL	N=myaccel2	IV=300000	G=VAR
+++D=LREAL	N=mydecel2	IV=300000	G=VAR
+++D=LREAL	N=myjerk2	IV=0.0	G=VAR
+++D=TIME	N=mytime2	IV=100ms	G=VAR
+++D=LREAL	N=mydist2r	IV=-3600	G=VAR
+++D=MC_ChangeAxisUse	N=ChangeUsedState	G=VAR
+++D=MC_WriteAxisParameter	N=WriteAxisParameter	G=VAR
+++D=_sAXIS_PARAM	N=Axis_Parameter_Rotary	G=VAR
+++D=MC_ChangeAxisUse	N=ChangeUsedState_UseAgain	G=VAR
+++D=MC_ChangeAxisUse	N=ChangeUsedState_Return	G=VAR
+++D=MC_ChangeAxisUse	N=ChangeUsedState_UseAgain_Return	G=VAR
+++D=MC_WriteAxisParameter	N=WriteAxisParameter_Return	G=VAR
+++D=BOOL	N=Param_ChangedToLinear	G=VAR
+++D=BOOL	N=Param_ChangedToRotary	G=VAR
+++D=BOOL	N=Axis_to_Linear	G=VAR
+++D=BOOL	N=Axis_to_Rotary	G=VAR
+++D=MC_ReadAxisParameter	N=Read_Belt	G=VAR
+++D=BOOL	N=Changed_Param	G=VAR
+++D=BOOL	N=Changed_Param_Return	G=VAR
+++D=BOOL	N=Extra_Power	G=VAR
+++D=_sDEVICE_PORT	N=IOL_DevicePort	G=VAR
+++D=_sDEVICE_PORT	N=IOL_DevicePort1	G=VAR
+++D=_sDEVICE_PORT	N=IOL_DevicePort3	G=VAR
+++D=_sDEVICE_PORT	N=IOL_DevicePort4	G=VAR
+++D=_sDEVICE_PORT	N=IOL_DevicePort5	G=VAR
+++D=_sDEVICE_PORT	N=IOL_DevicePort6	G=VAR
+++D=_sDEVICE_PORT	N=IOL_DevicePort7	G=VAR
+++D=_sDEVICE_PORT	N=IOL_DevicePort8	G=VAR
+++D=WORD	N=IOL_Data_Default	G=VAR
+++D=WORD	N=IOL_Data	G=VAR
+++D=_sIOLOBJ_ACCESS	N=IOL_DeviceObj	G=VAR
+++D=_sIOL_RETRY_CFG	N=IOL_Ret	G=VAR
+++D=UINT	N=IOL_Size	G=VAR
+++D=_sIOLOBJ_ACCESS	N=IOL_DeviceObj2	G=VAR
+++D=SINT	N=IOL_Obj2Size	G=VAR
+++D=_sIOLOBJ_ACCESS	N=IOL_DeviceObj3	G=VAR
+++D=SINT	N=IOL_Obj3Size	G=VAR
+++D=DWORD	N=IOL_DWORD_Read	G=VAR
+++D=IOL_ReadObj	N=IOL_R2	G=VAR
+++D=IOL_ReadObj	N=IOL_R	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=IOL_Byte_64	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=IOL_Byte_64_2	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=IOL_Byte_64_3	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=IOL_Byte_64_4	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=IOL_Byte_64_5	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=IOL_Byte_64_6	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=IOL_Byte_64_7	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=IOL_Byte_64_8	G=VAR
+++D=TON	N=Sensor_Query_TRG	G=VAR
+++D=BOOL	N=OneSecondPulse	G=VAR
+++D=BOOL	N=ReadCondition1	G=VAR
+++D=BOOL	N=err	G=VAR
+++D=WORD	N=errID	G=VAR
+++D=WORD	N=ErrType	G=VAR
+++D=IOL_ReadObj	N=IOL_R3	G=VAR
+++D=BOOL	N=ReadCondition2	G=VAR
+++D=IOL_WriteObj	N=IOL_W_Reconfig	G=VAR
+++D=IOL_WriteObj	N=IOL_W_Light	G=VAR
+++D=BOOL	N=err2	G=VAR
+++D=WORD	N=errID2	G=VAR
+++D=WORD	N=ErrType2	G=VAR
+++D=BOOL	N=Enable_Proximity_Sensor	G=VAR
+++D=DWORD	N=Proximity_Sensor_Vendor	G=VAR
+++D=DWORD	N=Proximity_Sensor_Data	G=VAR
+++D=DWORD	N=Photocell_Vendor	G=VAR
+++D=DWORD	N=Photocell_Data	G=VAR
+++D=BOOL	N=Photocell_Read_Active	G=VAR
+++D=BOOL	N=Photocell_Read_Error	G=VAR
+++D=WORD	N=Photocell_Read_ErrorID	G=VAR
+++D=DWORD	N=Photocell_Read_Abort	G=VAR
+++D=BOOL	N=Proximity_Read_Active	G=VAR
+++D=BOOL	N=Proximity_Read_Error	G=VAR
+++D=WORD	N=Proximity_Read_ErrorID	G=VAR
+++D=DWORD	N=Proximity_Read_Abort	G=VAR
+++D=TON	N=Read_Wait_Inductive	G=VAR
+++D=TON	N=Read_Wait_Photocell	G=VAR
+++D=MC_Home	N=Home_Extra_FS	G=VAR
+++D=BOOL	N=Extra_Homing	G=VAR
+++D=BOOL	N=Test_2	G=VAR
+++D=BOOL	N=Test_1	G=VAR
+++D=BOOL	N=Busy_IOL1	G=VAR
+++D=BOOL	N=Busy_IOL2	G=VAR
+++D=INT	N=Step_Link	IV=0	G=VAR
+++D=IOL_WriteObj	N=IOL_W_Specs	G=VAR
+++D=IOL_WriteObj	N=IOL_W_Specs_2	G=VAR
+++D=IOL_WriteObj	N=IOL_W_Specs_3	G=VAR
+++D=IOL_WriteObj	N=IOL_W_Specs_4	G=VAR
+++D=IOL_WriteObj	N=IOL_W_Specs_5	G=VAR
+++D=IOL_WriteObj	N=IOL_W_Specs_6	G=VAR
+++D=IOL_WriteObj	N=IOL_W_Specs_7	G=VAR
+++D=IOL_WriteObj	N=IOL_W_Specs_8	G=VAR
+++D=BOOL	N=Error_Read_Port3	G=VAR
+++D=BOOL	N=Error_Read_Port4	G=VAR
+++D=BOOL	N=Error_Read_Port5	G=VAR
+++D=BOOL	N=Error_Read_Port6	G=VAR
+++D=BOOL	N=Error_Read_Port7	G=VAR
+++D=BOOL	N=Error_Read_Port8	G=VAR
+++D=LREAL	N=myvelbelt	G=VAR
+++D=LREAL	N=myaccelbelt	G=VAR
+++D=LREAL	N=myveldisk	G=VAR
+++D=LREAL	N=myacceldisk	G=VAR
+++D=LREAL	N=BeltDistanceNeg	G=VAR
+++D=LREAL	N=DiskDistanceNeg	G=VAR
+++D=BOOL	N=DUMMY01	G=VAR
+++D=BOOL	N=ProductPresent	G=VAR
+++D=BOOL	N=ExecuteTrigger	G=VAR
+++D=ULINT	N=Timenow	G=VAR
+++D=ULINT	N=Timeold	G=VAR
+++D=GetTimeSpan	N=GetSettlingTimeBelt	G=VAR
+++D=LINT	N=SettlingTimeBelt	G=VAR
+++D=GetTimeSpan	N=GetSettlingTimeDisk	G=VAR
+++D=LINT	N=SettlingTimeDisk	G=VAR
+++D=BOOL	N=ProductWrongDetect	G=VAR
+++D=TP	N=TPAllProducts	G=VAR
+++D=TP	N=TPBadProducts	G=VAR
+++D=TP	N=TPGoodProducts	G=VAR
+++D=BOOL	N=Trigger	G=VAR
+++D=MC_Home	N=Home_Disk	G=VAR
+++D=MC_MoveAbsolute	N=MoveAbs_Init	G=VAR
+++D=MC_GearOut	N=Temp_GearOut	G=VAR
+++D=BOOL	N=TempGear	G=VAR
+++D=MC_GearIn	N=TempGear_FS	G=VAR
+++D=BOOL	N=Test_3	G=VAR
+++D=BOOL	N=Test_5	G=VAR
+++D=TON	N=ton1	G=VAR
+++D=BOOL	N=bReadHours	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=IOL_Byte_64_1	G=VAR
+++D=_sDEVICE_PORT	N=IOL_DevicePort2	G=VAR
+++D=BOOL	N=Try	G=VAR
+++D=BOOL	N=OnePulse	G=VAR
+++D=INT	N=MaxStep_link	G=VAR
+++D=IOL_ReadObj	N=IOL_R1	G=VAR
+++D=IOL_WriteObj	N=IOL_W_DefaultConfig	G=VAR
+++D=BOOL	N=SetDefaultSetting	G=VAR
+++D=_sIOLOBJ_ACCESS	N=IOL_DeviceObj4	G=VAR
+++D=SINT	N=IOL_Obj4Size	G=VAR
+++D=BOOL	N=bIDDelay	G=VAR
+++D=BOOL	N=bReadIOLObj	G=VAR
+++D=TON	N=DelayScan	G=VAR
+++D=ARRAY[0..63] OF Byte	N=IOL_Byte_64Info	G=VAR
+++D=IOL_ReadObj	N=IOL_SensorInfo	G=VAR
+++D=BOOL	N=IOLBusy	G=VAR
+++D=_sIOLOBJ_ACCESS	N=sDeviceObj	G=VAR
+++D=_sDEVICE_PORT	N=sDevicePort	G=VAR
+++D=TON	N=tIOLDelay	G=VAR
+++D=UINT	N=uiReadID	G=VAR
+++D=BOOL	N=bChangedConfig	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=_sAXIS_REF	N=MC_Axis002_Virtual	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=CombineMode	G=VAR_EXTERNAL
+++D=BOOL	N=ExecuteCombine	G=VAR_EXTERNAL
+++D=INT	N=Velocity	G=VAR_EXTERNAL
+++D=REAL	N=AuxiliarAxisVelocity	G=VAR_EXTERNAL
+++D=REAL	N=SlaveAxisVelocity	G=VAR_EXTERNAL
+++D=REAL	N=CombineAxisVelocity	G=VAR_EXTERNAL
+++D=LREAL	N=Combine_Axis_Velocity	G=VAR_EXTERNAL
+++D=LREAL	N=Auxiliar_Axis_Velocity	G=VAR_EXTERNAL
+++D=LREAL	N=Slave_Axis_Velocity	G=VAR_EXTERNAL
+++D=BOOL	N=Master_Axis_Disabled	G=VAR_EXTERNAL
+++D=BOOL	N=CombineMode_Enabled	G=VAR_EXTERNAL
+++D=BOOL	N=MasterManualControl	G=VAR_EXTERNAL
+++D=BOOL	N=Execute_GearIn	G=VAR_EXTERNAL
+++D=BOOL	N=Execute_GearOut	G=VAR_EXTERNAL
+++D=UINT	N=RatioNum	G=VAR_EXTERNAL
+++D=UINT	N=RatioDen	G=VAR_EXTERNAL
+++D=BOOL	N=InGear	G=VAR_EXTERNAL
+++D=BOOL	N=Execute_Phasing	G=VAR_EXTERNAL
+++D=BOOL	N=Execute_Phasing_2	G=VAR_EXTERNAL
+++D=INT	N=PhaseShift	G=VAR_EXTERNAL
+++D=INT	N=PhaseVelocity	G=VAR_EXTERNAL
+++D=BOOL	N=Phasing_Actived	G=VAR_EXTERNAL
+++D=BOOL	N=PhaseDirection	G=VAR_EXTERNAL
+++D=BOOL	N=Execute_CamIn	G=VAR_EXTERNAL
+++D=BOOL	N=Periodic_Mode	G=VAR_EXTERNAL
+++D=INT	N=MasterScaling	G=VAR_EXTERNAL
+++D=INT	N=SlaveScaling	G=VAR_EXTERNAL
+++D=ARRAY[0..10000] OF _sMC_CAM_REF	N=CamProfile_0	G=VAR_EXTERNAL
+++D=ARRAY[0..10000] OF _sMC_CAM_REF	N=CamProfile_1	G=VAR_EXTERNAL
+++D=ARRAY[0..10000] OF _sMC_CAM_REF	N=CamProfile_2	G=VAR_EXTERNAL
+++D=ARRAY[0..10000] OF _sMC_CAM_REF	N=CamProfile_3	G=VAR_EXTERNAL
+++D=INT	N=CamProfile	G=VAR_EXTERNAL
+++D=RK\sMASTER_CNFG	N=MasterConfig	G=VAR_EXTERNAL
+++D=RK\sSLAVE_CNFG	N=SlaveConfig	G=VAR_EXTERNAL
+++D=RK\sCUTTING_CNFG	N=CuttingConfig	G=VAR_EXTERNAL
+++D=BOOL	N=RK_Enable	G=VAR_EXTERNAL
+++D=BOOL	N=RK_CoupleON	G=VAR_EXTERNAL
+++D=LREAL	N=CapturedPosition	G=VAR_EXTERNAL
+++D=BOOL	N=RK_Enabled	G=VAR_EXTERNAL
+++D=BOOL	N=RK_Done	G=VAR_EXTERNAL
+++D=BOOL	N=RK_Insync	G=VAR_EXTERNAL
+++D=BOOL	N=RK_Cutting	G=VAR_EXTERNAL
+++D=LREAL	N=RK_Cutlength	G=VAR_EXTERNAL
+++D=BOOL	N=RK_Skip	G=VAR_EXTERNAL
+++D=BOOL	N=RK_BufferEmpty	G=VAR_EXTERNAL
+++D=BOOL	N=RK_notAccepted	G=VAR_EXTERNAL
+++D=BOOL	N=RK_Busy	G=VAR_EXTERNAL
+++D=BOOL	N=RK_CommandAborted	G=VAR_EXTERNAL
+++D=BOOL	N=RK_Error	G=VAR_EXTERNAL
+++D=WORD	N=RK_ErrorID	G=VAR_EXTERNAL
+++D=DWORD	N=RK_ErrorIDEx	G=VAR_EXTERNAL
+++D=REAL	N=HMI_AX0_Pos	G=VAR_EXTERNAL
+++D=REAL	N=HMI_AX1_Pos	G=VAR_EXTERNAL
+++D=REAL	N=HMI_AX0_Speed	G=VAR_EXTERNAL
+++D=REAL	N=HMI_AX1_Speed	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Ax0_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_AX1_Fault	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_CombineAxes	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_Gear	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_Phasing	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_CAM	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_RotaryKnife	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=EM1ReqTransition	G=VAR_EXTERNAL
+++D=INT	N=EM1_ProductsDone	G=VAR_EXTERNAL
+++D=sPACKMLV30_UNIT	N=myMachine	G=VAR_EXTERNAL
+++D=DINT	N=LotNumOfProducts	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_PackML	G=VAR_EXTERNAL
+++D=INT	N=EM0_ProductsDone	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=EM0ReqTransition	G=VAR_EXTERNAL
+++D=STRING[20]	N=HMI_Screen_Name	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_IOcheck	G=VAR_EXTERNAL
+++D=ARRAY[1..192] OF BOOL	N=_EC_PDSlavTbl	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[1..192] OF BOOL	N=_EC_MBXSlavTbl	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=I1	G=VAR_EXTERNAL
+++D=BOOL	N=I2	G=VAR_EXTERNAL
+++D=BOOL	N=I3	G=VAR_EXTERNAL
+++D=BOOL	N=I4	G=VAR_EXTERNAL
+++D=BOOL	N=Q1	G=VAR_EXTERNAL
+++D=BOOL	N=Q2	G=VAR_EXTERNAL
+++D=BOOL	N=Q3	G=VAR_EXTERNAL
+++D=BOOL	N=Q4	G=VAR_EXTERNAL
+++D=BOOL	N=hmi_wiring_runbutton	G=VAR_EXTERNAL
+++D=BOOL	N=SI1_RUN	G=VAR_EXTERNAL
+++D=BOOL	N=hmi_wiring_stopbutton	G=VAR_EXTERNAL
+++D=BOOL	N=SI2_STOP	G=VAR_EXTERNAL
+++D=BOOL	N=hmi_wiring_resetbutton	G=VAR_EXTERNAL
+++D=BOOL	N=SI3_RESET	G=VAR_EXTERNAL
+++D=BOOL	N=hmi_wiring_estopbutton	G=VAR_EXTERNAL
+++D=BOOL	N=hmi_check_conveyorsensor	G=VAR_EXTERNAL
+++D=BOOL	N=hmi_check_rotarysensor	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Disk	Const=1	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Belt	Const=1	G=VAR_EXTERNAL
+++D=LREAL	N=Master_Axis_Position	G=VAR_EXTERNAL
+++D=LREAL	N=Slave_Axis_Position	G=VAR_EXTERNAL
+++D=LREAL	N=Aux_Axis_Position	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_FlyingShear	G=VAR_EXTERNAL
+++D=LREAL	N=FS_MasterVelocity	G=VAR_EXTERNAL
+++D=FS\sSLAVE_CNFG_FS	N=SlaveCNFG	G=VAR_EXTERNAL
+++D=FS\sCUTTING_CNFG_FS	N=CuttingCNFG	G=VAR_EXTERNAL
+++D=_sTRIGGER_REF	N=TriggerInput	G=VAR_EXTERNAL
+++D=BOOL	N=AbortJob	G=VAR_EXTERNAL
+++D=LREAL	N=RecordedPosition	G=VAR_EXTERNAL
+++D=BOOL	N=Waiting	G=VAR_EXTERNAL
+++D=BOOL	N=InSync	G=VAR_EXTERNAL
+++D=BOOL	N=Cutting	G=VAR_EXTERNAL
+++D=LREAL	N=CutLength	G=VAR_EXTERNAL
+++D=BOOL	N=coupleOn	G=VAR_EXTERNAL
+++D=BOOL	N=Skip	G=VAR_EXTERNAL
+++D=BOOL	N=BufferEmpty	G=VAR_EXTERNAL
+++D=BOOL	N=MarkNotAccepted	G=VAR_EXTERNAL
+++D=BOOL	N=Busy	G=VAR_EXTERNAL
+++D=BOOL	N=CommandAborted	G=VAR_EXTERNAL
+++D=BOOL	N=FS_Error	G=VAR_EXTERNAL
+++D=WORD	N=FS_ErrorID	G=VAR_EXTERNAL
+++D=DWORD	N=FS_ErrorIDEx	G=VAR_EXTERNAL
+++D=BOOL	N=FS_Enable	G=VAR_EXTERNAL
+++D=BOOL	N=ModeSelection	G=VAR_EXTERNAL
+++D=BOOL	N=FS_ModeSelection	G=VAR_EXTERNAL
+++D=ARRAY[1..17] OF time	N=TransitionDelay	G=VAR_EXTERNAL
+++D=USINT	N=PercentageDefectiveProduct	G=VAR_EXTERNAL
+++D=BOOL	N=SO_RUN_LAMP	G=VAR_EXTERNAL
+++D=BOOL	N=SO_STOP_LAMP	G=VAR_EXTERNAL
+++D=BOOL	N=SO_RESET_LAMP	G=VAR_EXTERNAL
+++D=BOOL	N=SO_ESTOP_LAMP	G=VAR_EXTERNAL
+++D=BOOL	N=powercheckdone_Belt	G=VAR_EXTERNAL
+++D=BOOL	N=powercheckdone_Disk	G=VAR_EXTERNAL
+++D=BOOL	N=Belt_ON	G=VAR_EXTERNAL
+++D=BOOL	N=Disk_ON	G=VAR_EXTERNAL
+++D=BOOL	N=Enabled	G=VAR_EXTERNAL
+++D=REAL	N=RK_Speed	G=VAR_EXTERNAL
+++D=BOOL	N=Axis_Enable_Used	G=VAR_EXTERNAL
+++D=ARRAY[1..192] OF BOOL	N=_EC_EntrySlavTbl	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=ILM400_Present	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_IOLink_Apply_Format_A	G=VAR_EXTERNAL
+++D=SINT	N=HMI_Photo_Sensibility_A	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_IOLink_Apply_Format_B	G=VAR_EXTERNAL
+++D=SINT	N=HMI_Photo_Sensibility_B	G=VAR_EXTERNAL
+++D=DINT	N=HMI_Sensor_2_Hours	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Port1Status	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOL_STRING_64	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOL_STRING_64_Port2	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOL_STRING_64_Port3	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Port2Status	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Port1_Device_Match	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Port2_Device_Match	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Induct_ON	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Port1_Input_Data01	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Induct_UnStable	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Induct_TooClose	G=VAR_EXTERNAL
+++D=SINT	N=HMI_Induct_Value	G=VAR_EXTERNAL
+++D=LREAL	N=Photocell_Sensivity	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Port2_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Port3_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Port4_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Port5_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Port6_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Port7_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=Port8_Input_Data01	G=VAR_EXTERNAL
+++D=BOOL	N=PhotoCell_State	G=VAR_EXTERNAL
+++D=BOOL	N=Is_Homed	G=VAR_EXTERNAL
+++D=BOOL	N=PackML_AlarmSignal	G=VAR_EXTERNAL
+++D=INT	N=IOLink_Specs_Node	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Speck_Name	G=VAR_EXTERNAL
+++D=BOOL	N=IOLink_Specs_Power	G=VAR_EXTERNAL
+++D=BOOL	N=E002_IO_Power_On_Off_Status	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Prox	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Photo	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Product_Prox	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Product_Photo	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Specs_Detection_Prox	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Specs_Detection_Photo	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Specs_Verification_Prox	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Specs_Verification_Photo	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Specs_Disconnect_Prox	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Specs_Disconnect_Photo	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Port3Status	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Port4Status	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Port5Status	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOL_STRING_64_Port4	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOL_STRING_64_Port5	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Port6Status	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOL_STRING_64_Port6	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Port7Status	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOL_STRING_64_Port7	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Port8Status	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOL_STRING_64_Port8	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port3	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port4	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port5	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port6	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port7	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port8	G=VAR_EXTERNAL
+++D=LREAL	N=Details_Sens_01	G=VAR_EXTERNAL
+++D=LREAL	N=Details_Sens_02	G=VAR_EXTERNAL
+++D=LREAL	N=Details_Sens_03	G=VAR_EXTERNAL
+++D=LREAL	N=Details_Sens_04	G=VAR_EXTERNAL
+++D=LREAL	N=Details_Sens_05	G=VAR_EXTERNAL
+++D=LREAL	N=Details_Sens_06	G=VAR_EXTERNAL
+++D=LREAL	N=Details_Sens_07	G=VAR_EXTERNAL
+++D=LREAL	N=Details_Sens_08	G=VAR_EXTERNAL
+++D=TIME	N=DwellTime	G=VAR_EXTERNAL
+++D=LREAL	N=DwellReal	G=VAR_EXTERNAL
+++D=LREAL	N=BeltDistance	G=VAR_EXTERNAL
+++D=LREAL	N=DiskDistance	G=VAR_EXTERNAL
+++D=DINT	N=BatchNumber	G=VAR_EXTERNAL
+++D=DINT	N=BatchNumberHMI	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port1_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..9,0..4] OF DINT	N=BatchTable	G=VAR_EXTERNAL
+++D=INT	N=IOLSensorLevel	G=VAR_EXTERNAL
+++D=LREAL	N=ActualMachineSpeed	G=VAR_EXTERNAL
+++D=sHopper	N=Hopper	G=VAR_EXTERNAL
+++D=LINT	N=SettlingTime	G=VAR_EXTERNAL
+++D=ARRAY[0..2,0..9] OF BOOL	N=AlarmActivation	G=VAR_EXTERNAL
+++D=BOOL	N=ForceDefects	G=VAR_EXTERNAL
+++D=DINT	N=ConsecutiveDefectCount	G=VAR_EXTERNAL
+++D=BOOL	N=SensorOutput	G=VAR_EXTERNAL
+++D=INT	N=HMI_IOLSensorLevel	G=VAR_EXTERNAL
+++D=BOOL	N=SetDirtyPhotocell	G=VAR_EXTERNAL
+++D=BOOL	N=DirtyPhotocellWarning	G=VAR_EXTERNAL
+++D=BOOL	N=IgnoreSensorLevel	G=VAR_EXTERNAL
+++D=BOOL	N=NewProductAll	G=VAR_EXTERNAL
+++D=BOOL	N=NewProductBad	G=VAR_EXTERNAL
+++D=BOOL	N=NewProductGood	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=FS_Virtual	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=FS_Is_Homed	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Photocell_UnStable	G=VAR_EXTERNAL
+++D=BOOL	N=HMI_Photocell_TooClose	G=VAR_EXTERNAL
+++D=_sNXUNIT_ID	N=IOL_ID	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..125] OF BOOL	N=NXUnitActiveStatus	G=VAR_EXTERNAL
+++D=ARRAY[0..125] OF BOOL	N=NXUnitRegistration	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOL_STRING_64_Port1	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port2_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port3_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port4_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port5_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port6_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port7_Input_Data01	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port8_Input_Data01	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Specs_Detection_Port3	G=VAR_EXTERNAL
+++D=BOOL	N=IOL_Specs_Detection_Port4	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port1	G=VAR_EXTERNAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port2	G=VAR_EXTERNAL

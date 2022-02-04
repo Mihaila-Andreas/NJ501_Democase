@@ -1,0 +1,22 @@
+<CodeEditorModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.DeviceHmi.CodeEditor.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><CodingLanguageName>VBNET</CodingLanguageName><HiddenFooter>&#xD;
+End Module</HiddenFooter><HiddenHeader>Public Module MC&#xD;
+</HiddenHeader><SerialData i:nil="true"/><SerialDeviceHmiId i:nil="true"/><SerialScaleData i:nil="true"/><Text>'Add global subroutines&#xD;
+Sub DisableAxis&#xD;
+	NJ_CPU_Enable_Ax0=False&#xD;
+	NJ_CPU_Enable_Ax1=False&#xD;
+	NJ_CPU_Enable_Ax2=False&#xD;
+End  Sub&#xD;
+&#xD;
+Sub EnableAxis&#xD;
+	NJ_CPU_Enable_Ax0=True&#xD;
+	NJ_CPU_Enable_Ax1=True&#xD;
+	NJ_CPU_Enable_Ax2=True&#xD;
+End  Sub&#xD;
+&#xD;
+Sub EnableAxis_for_Combine&#xD;
+	NJ_CPU_Enable_Ax0=False&#xD;
+	NJ_CPU_Enable_Ax1=True&#xD;
+	NJ_CPU_Enable_Ax2=True&#xD;
+End  Sub&#xD;
+		&#xD;
+	</Text></CodeEditorModel>

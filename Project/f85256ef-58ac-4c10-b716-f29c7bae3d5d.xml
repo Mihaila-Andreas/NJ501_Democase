@@ -1,0 +1,43 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ARRAY[0..1] OF RK\sSLAVE_CNFG	N=wSlaveCnfg	G=VAR
+++D=ARRAY[0..1] OF LREAL	N=wCutLength	G=VAR
+++D=ARRAY[0..1] OF LREAL	N=wMasterVel	G=VAR
+++D=UDINT	N=WorkNo	G=VAR
+++D=UDINT	N=TmpNo	G=VAR
+++D=R_TRIG	N=R_TRIG_Enable	G=VAR
+++D=BOOL	N=R_TRIG_Enable_Q	G=VAR
+++D=DINT	N=CaseNo	G=VAR
+++D=BOOL	N=wInSync	G=VAR
+++D=BOOL	N=wSkip	G=VAR
+++D=LREAL	N=wDistance	G=VAR
+++D=ARRAY[1..2] OF LREAL	N=wMaxDistance	G=VAR
+++D=BOOL	N=wBusy	G=VAR
+++D=BOOL	N=wError	G=VAR
+++D=WORD	N=wErrorID	G=VAR
+++D=DWORD	N=wErrorIDEx	G=VAR
+++D=LREAL	N=wShiftPhase	G=VAR
+++D=RK\PrivateParts\sCALC_PHASE_SHIFT	N=ShiftWk	IV=(State := 0, ShiftValue := 0.0, MaxCnt := (Pre := 0.0, Current := 0.0), PreCutLength := 0.0, PrePhase := 0.0)	G=VAR
+++D=BOOL	N=wOneShot	G=VAR
+++D=BOOL	N=wChgShiftPhase	G=VAR
+++D=ARRAY[1..2] OF LREAL	N=InSyncTemp	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=RK\sSLAVE_CNFG	N=SlaveCnfg	Ord=0	G=VAR_IN_OUT
+++D=BOOL	N=Enable	Ord=1	G=VAR_INPUT
+++D=BOOL	N=ChangeCutLength	Ord=2	G=VAR_INPUT
+++D=BOOL	N=ReverseFlg	Ord=3	G=VAR_INPUT
+++D=LREAL	N=Phase	Ord=4	G=VAR_INPUT
+++D=LREAL	N=CutLength	Ord=5	G=VAR_INPUT
+++D=LREAL	N=MasterVel	Ord=6	G=VAR_INPUT
+++D=LREAL	N=Distance	Ord=7	G=VAR_OUTPUT
+++D=LREAL	N=MaxDistance	Ord=8	G=VAR_OUTPUT
+++D=BOOL	N=InSync	Ord=9	G=VAR_OUTPUT
+++D=BOOL	N=Cutting	Ord=10	G=VAR_OUTPUT
+++D=BOOL	N=Skip	Ord=11	G=VAR_OUTPUT
+++D=BOOL	N=ChgShiftPhase	Ord=12	G=VAR_OUTPUT
+++D=BOOL	N=Busy	Ord=13	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=14	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=15	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=16	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

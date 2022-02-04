@@ -1,0 +1,125 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=DelayStarting_SC	G=VAR
+++D=LREAL	N=myvel1	IV=2000	G=VAR
+++D=LREAL	N=myaccel1	IV=8000	G=VAR
+++D=LREAL	N=mydecel1	IV=8000	G=VAR
+++D=BOOL	N=EM_DummyStopped	G=VAR
+++D=BOOL	N=EM_DummyAborted	G=VAR
+++D=MC_MoveRelative	N=Movecompleting	G=VAR
+++D=BOOL	N=Dummy_Complete	G=VAR
+++D=TON	N=delayStopping	G=VAR
+++D=BOOL	N=EM1_Clearing	G=VAR
+++D=MC_Reset	N=DiskReset	G=VAR
+++D=BOOL	N=EM1_Stopped	G=VAR
+++D=BOOL	N=EM1_Starting	G=VAR
+++D=BOOL	N=EM1_Idle	G=VAR
+++D=BOOL	N=EM1_Dummy_Idle	G=VAR
+++D=BOOL	N=EM1_Suspended	G=VAR
+++D=MC_MoveRelative	N=DiskMoveTic	G=VAR
+++D=MC_MoveRelative	N=DiskMoveTac	G=VAR
+++D=BOOL	N=EM1_Execute	G=VAR
+++D=BOOL	N=EM1_Stopping	G=VAR
+++D=MC_Stop	N=DiskStop	G=VAR
+++D=BOOL	N=EM1_PowerCommand	G=VAR
+++D=BOOL	N=EM1_Aborting	G=VAR
+++D=BOOL	N=EM1_Aborted	G=VAR
+++D=BOOL	N=EM1_Holding	G=VAR
+++D=MC_MoveAbsolute	N=EM1_HoldingMovezero	G=VAR
+++D=BOOL	N=EM1_Held	G=VAR
+++D=BOOL	N=EM1_Dummy_Held	G=VAR
+++D=BOOL	N=EM1_Unholding	G=VAR
+++D=MC_MoveAbsolute	N=EM1_UnholdingMove	G=VAR
+++D=LREAL	N=DiskOriginalPosition	G=VAR
+++D=BOOL	N=EM1_Suspending	G=VAR
+++D=MC_MoveAbsolute	N=EM1_SuspendingMovezero	G=VAR
+++D=BOOL	N=EM1_Unsuspending	G=VAR
+++D=MC_MoveAbsolute	N=EM1_UnsuspendingMove	G=VAR
+++D=BOOL	N=EM1_Resetting	G=VAR
+++D=MC_Power	N=EM1_Power	G=VAR
+++D=BOOL	N=EM1_Completing	G=VAR
+++D=BOOL	N=EM1_Complete	G=VAR
+++D=OmronLib\PackML30\Alarm	N=EM1_Alarm0	G=VAR
+++D=OmronLib\PackML30\Alarm	N=EM1_Alarm1	G=VAR
+++D=OmronLib\PackML30\Alarm	N=EM1_Alarm2	G=VAR
+++D=TON	N=EM1_Clearing_Timeout	G=VAR
+++D=OmronLib\PackML30\Alarm	N=EM1_Alarm3	G=VAR
+++D=OmronLib\PackML30\Alarm	N=EM1_Alarm4	G=VAR
+++D=ResetECError	N=Disk_ECError	G=VAR
+++D=MC_Home	N=Homing_Disk	G=VAR
+++D=BOOL	N=EM_DummySuspended	G=VAR
+++D=TON	N=DelayStopping2	G=VAR
+++D=TON	N=DelayAborting	G=VAR
+++D=TON	N=DelayHolding	G=VAR
+++D=TON	N=DelayUnholding	G=VAR
+++D=TON	N=DelaySuspending	G=VAR
+++D=TON	N=Delayunsuspending	G=VAR
+++D=TON	N=Delaycompleting	G=VAR
+++D=IOL_WriteObj	N=WritePhotoSensivity	G=VAR
+++D=_sDEVICE_PORT	N=IOLDevicePort	IV=(DeviceType := _DeviceECATSlave, NxUnit := (NodeAdr := 0, IPAdr := [5(16#0)], UnitNo := 0, Path := [64(16#0)], PathLength := 0), EcatSlave := (NodeAdr := 4), OptBoard := (SlotNo := 0, IPAdr := [5(16#0)]), Reserved := [88(16#0)], PortNo := 2)	G=VAR
+++D=_sIOLOBJ_ACCESS	N=IOLDeviceObj	IV=(Index := 67, Subindex := 0)	G=VAR
+++D=_sIOL_RETRY_CFG	N=myRetryCfg	IV=(TimeOut := T#5.0S, RetryNum := 5)	G=VAR
+++D=WORD	N=IOLData	IV=180	G=VAR
+++D=UINT	N=IOLSize	IV=2	G=VAR
+++D=EC_CoESDOWrite	N=instance01_AutotunningOff	G=VAR
+++D=EC_CoESDOWrite	N=instance02_ChangeInertia	G=VAR
+++D=EC_CoESDOWrite	N=instance04_ChangeFilter	G=VAR
+++D=_sSDO_ACCESS	N=autoTunning	IV=(Index := 15232, Subindex := 1, IsCompleteAccess := False)	G=VAR
+++D=DINT	N=myautot_disabled	IV=0	G=VAR
+++D=UINT	N=mywritesize	IV=4	G=VAR
+++D=_sSDO_ACCESS	N=changeInertia	IV=(Index := 12289, Subindex := 1, IsCompleteAccess := False)	G=VAR
+++D=DINT	N=myinertiazero	IV=0	G=VAR
+++D=_sSDO_ACCESS	N=changefilter	IV=(Index := 12305, Subindex := 2, IsCompleteAccess := False)	G=VAR
+++D=DINT	N=mylongfilter	IV=1000	G=VAR
+++D=EC_CoESDOWrite	N=instance03_AutotunningON	G=VAR
+++D=EC_CoESDOWrite	N=instance05_ChangeFilter	G=VAR
+++D=DINT	N=myautot_enabled	IV=1	G=VAR
+++D=DINT	N=myshortfilter	IV=1	G=VAR
+++D=BOOL	N=Dummy1	G=VAR
+++D=BOOL	N=dummy2	G=VAR
+++D=MC_MoveRelative	N=StartingMoveDisk	G=VAR
+++D=MC_MoveRelative	N=HoldingMoveDisk	G=VAR
+++D=MC_MoveRelative	N=DiskMoveTicHeld	G=VAR
+++D=MC_MoveRelative	N=DiskMoveTacHeld	G=VAR
+++D=MC_MoveRelative	N=EM1_UnholdingDisk	G=VAR
+++D=MC_MoveRelative	N=EM1_SuspendingDisk	G=VAR
+++D=MC_MoveRelative	N=EM1_UnsuspendingDisk	G=VAR
+++D=MC_Home	N=EM1_Home	G=VAR
+++D=BOOL	N=Test_1	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=sPACKMLV30_UNIT	N=myMachine	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=EM0ReqTransition	G=VAR_EXTERNAL
+++D=BOOL	N=Q1	G=VAR_EXTERNAL
+++D=DINT	N=LotNumOfProducts	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sALARM_STATUS	N=EM0_AlarmStatus	G=VAR_EXTERNAL
+++D=ARRAY[0..9] OF OmronLib\PackML30\sEVENT_CFG	N=EM0_EventList	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=EM1ReqTransition	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sALARM_STATUS	N=EM1_AlarmStatus	G=VAR_EXTERNAL
+++D=ARRAY[0..9] OF OmronLib\PackML30\sEVENT_CFG	N=EM1_EventList	G=VAR_EXTERNAL
+++D=INT	N=EM1_ProductsDone	G=VAR_EXTERNAL
+++D=INT	N=EM0_ProductsDone	G=VAR_EXTERNAL
+++D=STRING[20]	N=HMI_Screen_Name	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_CombineAxes	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_Gear	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_Phasing	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_CAM	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_RotaryKnife	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_PackML	G=VAR_EXTERNAL
+++D=BOOL	N=MasterManualControl	G=VAR_EXTERNAL
+++D=BOOL	N=Master_Axis_Disabled	G=VAR_EXTERNAL
+++D=BOOL	N=SI3_RESET	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Disk	Const=1	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Belt	Const=1	G=VAR_EXTERNAL
+++D=BOOL	N=Buttons_Enable	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_FlyingShear	G=VAR_EXTERNAL
+++D=ARRAY[1..17] OF time	N=TransitionDelay	G=VAR_EXTERNAL
+++D=ARRAY[0..2,0..9] OF BOOL	N=AlarmActivation	G=VAR_EXTERNAL
+++D=BOOL	N=ClearAlarmList	G=VAR_EXTERNAL
+++D=BOOL	N=ClearFirstAlarm	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_IOcheck	G=VAR_EXTERNAL
+++D=DINT	N=BatchNumberHMI	G=VAR_EXTERNAL
+++D=INT	N=IOLSensorLevel	G=VAR_EXTERNAL
+++D=sHopper	N=Hopper	G=VAR_EXTERNAL
+++D=BOOL	N=SetWrongTuning	G=VAR_EXTERNAL
+++D=DINT	N=ConsecutiveDefectCount	G=VAR_EXTERNAL

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="OneSData" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="14" OffsetType="NJ" Id="c7ab9169-497d-4bd1-8a4c-8e98bc58eec3">
+      <DataType Name="Drive" BaseType="new_Controller_0\oneS\Maintenance\Drive" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="b46df309-5220-4d79-8f2a-748f8df56716" />
+      <DataType Name="Motor" BaseType="new_Controller_0\oneS\Maintenance\Motor" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="cf32ef23-3941-4367-bc57-0f0c95b3a5e2" />
+      <DataType Name="DiagnoseCounters" BaseType="new_Controller_0\oneS\Maintenance\Counters" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="e6beda00-6196-4472-9166-7e186418b95b" />
+    </DataType>
+    <DataType Name="Drive" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="9" OffsetType="NJ" Id="719cda47-fea2-4a29-a649-167cc6c686b3">
+      <DataType Name="AlarmCode" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="8ac3aee2-2728-4016-8054-b1aba8da4326" />
+      <DataType Name="Temperature" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="dc0ca3cc-382b-44a4-961c-45ba5f6b9b79" />
+      <DataType Name="DCbus" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="fbee2df0-06eb-40f9-8f35-db5d810aec53" />
+      <DataType Name="LoadRatio" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="afbe217f-d689-4047-8e5f-e83612a90af7" />
+      <DataType Name="InertiaRatio" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="24509335-5c27-4051-95e4-886e3cc77730" />
+      <DataType Name="RegenerationRatio" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="c90789d2-7cfd-4a6c-94fe-76e7431d89b0" />
+      <DataType Name="CapacitorRatio" BaseType="Single" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="af2a9877-da41-4ac4-8561-42f8fa004d46" />
+      <DataType Name="TimeInOperation" BaseType="Single" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="3847e73f-d257-4d95-a1e6-d73320c0c6e9" />
+    </DataType>
+    <DataType Name="Motor" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="8" OffsetType="NJ" Id="cb440e55-dba4-47f0-9a4b-dc783ec27506">
+      <DataType Name="EncoderTemperature" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="4ca45c35-eabf-4304-873b-51b9af4f27af" />
+      <DataType Name="LoadRatio" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="549dd1ff-ea6b-458f-925e-62b39600656d" />
+      <DataType Name="TimeInOperation" BaseType="Single" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="8b61cf71-0e9b-4e24-b8ac-047fdc989872" />
+    </DataType>
+    <DataType Name="Counters" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="7" OffsetType="NJ" Id="9e0c9442-b7f7-4e93-87aa-cd7d5bfee45c">
+      <DataType Name="EtherCATErrors" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="36b4d8a3-831d-4c9b-aec7-5a397efe1c8c" />
+      <DataType Name="EncoderErrors" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="347f5036-45c0-46bb-83b0-eb2c81142897" />
+      <DataType Name="BrakeInterlock" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="2577b356-8633-4b48-8a6d-64eafa8e5475" />
+      <DataType Name="DynamicBrake" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="a539efcd-7092-406e-8e9b-c7c8545e08f6" />
+      <DataType Name="InrushProtectionRelay" BaseType="Integer" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="f66b3f92-8336-4b17-8243-1d8455ab84d0" />
+    </DataType>
+  </DataType>
+</data>

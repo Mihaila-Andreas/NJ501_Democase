@@ -1,0 +1,25 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=State	IV=0	G=VAR
+++D=_sREQUEST_PATH	N=ReqPath	G=VAR
+++D=BOOL	N=CIPUCMMSend1_done	G=VAR
+++D=BOOL	N=CIPUCMMSend1_error	G=VAR
+++D=WORD	N=CIPUCMMSend1_errid	G=VAR
+++D=DWORD	N=CIPUCMMSend1_erridhex	G=VAR
+++D=UINT	N=CIPUCMMSend1_rspsize	G=VAR
+++D=CIPUCMMSend	N=CIPUCMMSend1	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=CIPCmd	G=VAR
+++D=ARRAY[0..63] OF BYTE	N=CIPData	G=VAR
+++D=UINT	N=index	G=VAR
+++D=INT	N=item	G=VAR
+++D=STRING[3]	N=hexitem	G=VAR
+++D=BOOL	N=c	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Run	Ord=1	G=VAR_INPUT
+++D=STRING[32]	N=Path	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=3	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=4	G=VAR_OUTPUT
+++D=STRING[16]	N=Mac	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

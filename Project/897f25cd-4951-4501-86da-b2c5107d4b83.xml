@@ -1,0 +1,11 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=wRet	IV=False	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=RK\sSLAVE_CNFG	N=SlaveCnfg	Ord=0	G=VAR_IN_OUT
+++D=ARRAY[1..4,1..4] OF LREAL	N=BladeOffset	Ord=1	G=VAR_IN_OUT
+++D=RK\PrivateParts\sMNG_CTRL_SLAVE_AXIS	N=Mng	Ord=2	G=VAR_IN_OUT
+++D=UINT	N=SlaveAxisNo	IV=0	Ord=3	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..63] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL

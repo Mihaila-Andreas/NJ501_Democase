@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <GeneralSettingsData TaskExecutionCondition="2000" ExecutionPriority="4" CycleTimeOverDetection="Warning" TimeOutValue="10000" VariableAccessTimeRatio="3">
+    <ExecutionConditionVariable VariableName="" Condition="" Constant="" />
+    <ExecutionConditionCJUnit ExternalInputUnit="">
+      <ExecutionConditionInterruptionUnit UnitNumber="" InputContact="" EdgeDetection="" />
+      <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
+    </ExecutionConditionCJUnit>
+  </GeneralSettingsData>
+  <Programs>
+    <AssociatedProgramData ProgramName="UnitModule" InstanceName="UnitModule" IniFileTrackingId="44e88d8263d544e6a5cdfa95a1e0a57d" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="EM0_Belt" InstanceName="EM0_Belt" IniFileTrackingId="881c449ccee341019ac707ac3fe0a3be" StartupSetting="TRUE" SequenceNumber="3" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="EM1_Disk" InstanceName="EM1_Disk" IniFileTrackingId="fcf021c3352f422e99d0cac2bac31414" StartupSetting="TRUE" SequenceNumber="4" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="EM3_Demos" InstanceName="EM3_Demos" IniFileTrackingId="338c6d46a6724ca9914c3e4390499383" StartupSetting="TRUE" SequenceNumber="5" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="EM2_Application" InstanceName="EM2_Application" IniFileTrackingId="18656291225c4e938344c7280a849d7e" StartupSetting="TRUE" SequenceNumber="2" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="DataPrimaryTask" InstanceName="DataPrimaryTask" IniFileTrackingId="79035651dc1f40eb8cb397570bb3f87f" StartupSetting="TRUE" SequenceNumber="6" IsDebugProgram="false" />
+  </Programs>
+  <RefreshUnitIds>
+    <RefreshUnitId RefreshUnitId="97322beb-84f0-477e-b0ef-ef7c86b14423" />
+    <RefreshUnitId RefreshUnitId="bccf4cf2-2fe4-4854-833f-891afdba913f" />
+    <RefreshUnitId RefreshUnitId="00b5965c-b5d9-41d7-92b3-293e315e833f" />
+  </RefreshUnitIds>
+  <TaskInterfaceVariables version="1" />
+</data>

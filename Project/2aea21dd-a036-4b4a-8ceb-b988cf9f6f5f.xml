@@ -1,0 +1,83 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=RK\RK_CalcCutLength	N=Inst_RK_CalcCutLength	G=VAR
+++D=RK\RK_CalcCamProfile000	N=Inst_RK_CalcCamProfile000	G=VAR
+++D=RK\RK_CalcCamProfile005	N=Inst_RK_CalcCamProfile005	G=VAR
+++D=RK\RK_CtrlSlaveAxis	N=Inst_RK_CtrlSlaveAxis	G=VAR
+++D=MC_TouchProbe	N=Inst_MC_TouchProbe	G=VAR
+++D=MC_AbortTrigger	N=Inst_MC_AbortTrigger	G=VAR
+++D=R_TRIG	N=Inst_R_TRIG1	G=VAR
+++D=R_TRIG	N=Inst_R_TRIG2	G=VAR
+++D=F_TRIG	N=Inst_F_TRIG1	G=VAR
+++D=BOOL	N=wR_TRIG_Enable	IV=False	G=VAR
+++D=BOOL	N=wR_TRIG_CoupleOn	IV=False	G=VAR
+++D=BOOL	N=wF_TRIG_InSync	IV=False	G=VAR
+++D=BOOL	N=wKeepF_TRIG_InSync	IV=False	G=VAR
+++D=BOOL	N=wDuringExe	IV=False	G=VAR
+++D=BOOL	N=wStateEntry	IV=False	G=VAR
+++D=UDINT	N=wStateNo	IV=0	G=VAR
+++D=UDINT	N=wSkipCounter	IV=0	G=VAR
+++D=UDINT	N=i	IV=0	G=VAR
+++D=ARRAY[0..3] OF RK\PrivateParts\sINST_IN_OUT	N=wInstInOut	IV=[4((Enable := False, Busy := False, CommandAborted := False, Error := False, ErrorID := 16#0, ErrorIDEx := 16#0))]	G=VAR
+++D=ARRAY[0..2] OF BOOL	N=wTriggerVariable	IV=[3(False)]	G=VAR
+++D=ARRAY[0..2] OF LREAL	N=wRecordedPosition	IV=[3(0.0)]	G=VAR
+++D=UINT	N=wMasterAxisNo	IV=0	G=VAR
+++D=UINT	N=wSlaveAxisNo	IV=0	G=VAR
+++D=RK\sMASTER_CNFG	N=wMasterCnfg	IV=(CountCnfg := (ModuloMaxPos := 0.0, ModuloMinPos := 0.0), TriggerInput := (Mode := _mcDrive, LatchID := _mcLatch1, InputDrive := _mcEncoderMark))	G=VAR
+++D=RK\sSLAVE_CNFG	N=wSlaveCnfg	IV=(SyncPos := 0.0, EndPos := 0.0, WaitPos := 0.0, MaxVelocity := 0.0, Acceleration := 0.0, Deceleration := 0.0, BladeNum := 0, ProfileType := 0, CountCnfg := (ModuloMaxPos := 0.0, ModuloMinPos := 0.0), VelocityToWaitPos := 0.0, VelFactor := 0)	G=VAR
+++D=RK\sCUTTING_CNFG	N=wCuttingCnfg	IV=(Mode := 0, CutLength := 0.0, Tolerance := 0.0, MasterSyncPos := 0.0, DistanceToSensor := 0.0, OffsetFromMark := 0.0, SkipCountLimit := 0)	G=VAR
+++D=BOOL	N=wInSync	IV=False	G=VAR
+++D=BOOL	N=wCutting	IV=False	G=VAR
+++D=LREAL	N=wCutLength	IV=0.0	G=VAR
+++D=ARRAY[0..1] OF LREAL	N=wBuffedCutLength	IV=[2(0.0)]	G=VAR
+++D=BOOL	N=wSkip	IV=False	G=VAR
+++D=BOOL	N=wBufferEmpty	IV=False	G=VAR
+++D=BOOL	N=wCommandAborted	IV=False	G=VAR
+++D=BOOL	N=wError	IV=False	G=VAR
+++D=WORD	N=wErrorID	IV=WORD#0	G=VAR
+++D=DWORD	N=wErrorIDEx	IV=DWORD#0	G=VAR
+++D=BOOL	N=wCoupleOn	IV=False	G=VAR
+++D=BOOL	N=wErrStop	IV=False	G=VAR
+++D=BOOL	N=wInWaitPos	IV=False	G=VAR
+++D=BOOL	N=wChgCutLength	IV=False	G=VAR
+++D=BOOL	N=wReverseFlg	IV=False	G=VAR
+++D=BOOL	N=wChgMaxDistance	IV=False	G=VAR
+++D=BOOL	N=wTmpBusy	IV=False	G=VAR
+++D=BOOL	N=wTmpSkip	IV=False	G=VAR
+++D=BOOL	N=wTmpBufferEmpty	IV=False	G=VAR
+++D=ARRAY[0..1] OF BOOL	N=wMarkNotAccepted	G=VAR
+++D=BOOL	N=wWaitChgCutLength	IV=False	G=VAR
+++D=BOOL	N=wInitCheckPass	IV=False	G=VAR
+++D=UDINT	N=wMode	IV=0	G=VAR
+++D=LREAL	N=wPhase	IV=0.0	G=VAR
+++D=LREAL	N=wVelocity	IV=0.0	G=VAR
+++D=LREAL	N=wDistance	IV=0.0	G=VAR
+++D=LREAL	N=wMaxDistance	IV=0.0	G=VAR
+++D=UDINT	N=wMaxSkipCounter	IV=0	G=VAR
+++D=R_TRIG	N=TrigEmpty	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=_sAXIS_REF	N=Master	Ord=0	Const=1	G=VAR_IN_OUT
+++D=_sAXIS_REF	N=Slave	Ord=1	Const=1	G=VAR_IN_OUT
+++D=BOOL	N=Enable	IV=False	Ord=2	G=VAR_INPUT
+++D=BOOL	N=CoupleOn	IV=False	Ord=3	G=VAR_INPUT
+++D=BOOL	N=TriggerVariable	IV=False	Ord=4	G=VAR_INPUT
+++D=LREAL	N=RecordedPosition	IV=0.0	Ord=5	G=VAR_INPUT
+++D=RK\sMASTER_CNFG	N=MasterCnfg	IV=(CountCnfg := (ModuloMaxPos := 0.0, ModuloMinPos := 0.0), TriggerInput := (Mode := _mcDrive, LatchID := _mcLatch1, InputDrive := _mcEncoderMark))	Ord=6	G=VAR_INPUT
+++D=RK\sSLAVE_CNFG	N=SlaveCnfg	IV=(SyncPos := 0.0, EndPos := 0.0, WaitPos := 0.0, MaxVelocity := 0.0, Acceleration := 0.0, Deceleration := 0.0, BladeNum := 1, ProfileType := 0, CountCnfg := (ModuloMaxPos := 0.0, ModuloMinPos := 0.0), VelocityToWaitPos := 0.0, VelFactor := 100)	Ord=7	G=VAR_INPUT
+++D=RK\sCUTTING_CNFG	N=CuttingCnfg	IV=(Mode := 0, CutLength := 0.0, Tolerance := 25.0, MasterSyncPos := 0.0, DistanceToSensor := 0.0, OffsetFromMark := 0.0, SkipCountLimit := 0)	Ord=8	G=VAR_INPUT
+++D=BOOL	N=Enabled	Ord=9	G=VAR_OUTPUT
+++D=BOOL	N=Done	Ord=10	G=VAR_OUTPUT
+++D=BOOL	N=InSync	Ord=11	G=VAR_OUTPUT
+++D=BOOL	N=Cutting	Ord=12	G=VAR_OUTPUT
+++D=LREAL	N=CutLength	Ord=13	G=VAR_OUTPUT
+++D=BOOL	N=Skip	Ord=14	G=VAR_OUTPUT
+++D=BOOL	N=BufferEmpty	Ord=15	G=VAR_OUTPUT
+++D=BOOL	N=MarkNotAccepted	Ord=16	G=VAR_OUTPUT
+++D=BOOL	N=Busy	Ord=17	G=VAR_OUTPUT
+++D=BOOL	N=CommandAborted	Ord=18	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=19	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=20	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=21	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..63] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL

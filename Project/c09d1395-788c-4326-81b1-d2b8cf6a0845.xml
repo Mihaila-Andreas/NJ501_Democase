@@ -1,0 +1,166 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=bInit	G=VAR
+++D=UINT	N=uiStage	G=VAR
+++D=_eMC_AXIS_TYPE	N=cdc	G=VAR
+++D=MC_MoveAbsolute	N=fb_MoveAbsolute	G=VAR
+++D=ARRAY[0..5] OF LREAL	N=lrCoefficients_Acc	G=VAR
+++D=ARRAY[0..5] OF LREAL	N=lrCoefficients_flyback	G=VAR
+++D=FS\PrivateParts\sXYVA_DATA	N=stProfileData	G=VAR
+++D=_sAXIS_PARAM	N=stMasterAxisParam	G=VAR
+++D=_sAXIS_PARAM	N=stSlaveAxisParam	G=VAR
+++D=MC_ReadAxisParameter	N=fbReadAxisMaster	G=VAR
+++D=MC_ReadAxisParameter	N=fbReadAxisSlave	G=VAR
+++D=LREAL	N=lrSlvMaxPosition	G=VAR
+++D=LREAL	N=lrSlvMinPosition	G=VAR
+++D=UINT	N=uiCuttingMode	G=VAR
+++D=LREAL	N=lrMasterStartPos	G=VAR
+++D=LREAL	N=lrMasterEndPos	G=VAR
+++D=BOOL	N=bEnablePoly5	G=VAR
+++D=BOOL	N=bEnableLinear	G=VAR
+++D=LREAL	N=lrSlavePosition	G=VAR
+++D=BOOL	N=bExecSyncAbs	G=VAR
+++D=MC_SyncMoveAbsolute	N=fb_SyncMoveAbsolute	G=VAR
+++D=FS\PrivateParts\FS_VAObserver	N=fb_VAObserver	G=VAR
+++D=BOOL	N=bExecMoveAbs	G=VAR
+++D=BOOL	N=bPresetVAxis	G=VAR
+++D=BOOL	N=bEnableVAxis	G=VAR
+++D=BOOL	N=bReadAxis	G=VAR
+++D=BOOL	N=bCut	G=VAR
+++D=MC_TouchProbe	N=fb_TouchProbe	G=VAR
+++D=_sTRIGGER_REF	N=sTrigger	G=VAR
+++D=BOOL	N=bEnableTP	G=VAR
+++D=BOOL	N=bFirstTrigger	G=VAR
+++D=BOOL	N=bDwell	G=VAR
+++D=LREAL	N=lrRecordedPosition	G=VAR
+++D=BOOL	N=bTriggerVariable	G=VAR
+++D=LREAL	N=lrDistanceM2M	G=VAR
+++D=FS\PrivateParts\FS_LatchFIFO	N=fb_LatchBuffer	G=VAR
+++D=FS\PrivateParts\FS_Profiler	N=fb_FSProfile	G=VAR
+++D=ARRAY[0..255] OF LREAL	N=lrLatchBuffer	G=VAR
+++D=BOOL	N=bEnableFIFO	G=VAR
+++D=BOOL	N=bStackCapture	G=VAR
+++D=BOOL	N=bGetCapture	G=VAR
+++D=BOOL	N=bEnableProfiler	G=VAR
+++D=LREAL	N=lrStartDistance	G=VAR
+++D=LREAL	N=lrSlaveWaitPos	G=VAR
+++D=LREAL	N=lrSlaveSyncPos	G=VAR
+++D=LREAL	N=lrLengthToCut	G=VAR
+++D=LREAL	N=lrMasterPos	G=VAR
+++D=LREAL	N=lrSlaveEndPos	G=VAR
+++D=LREAL	N=lrLastPosition	G=VAR
+++D=BOOL	N=bWaitFlyBack	G=VAR
+++D=UINT	N=uiCaptStage	IV=1000	G=VAR
+++D=BOOL	N=bFirstCutDone	G=VAR
+++D=LREAL	N=lrMasterConverted	G=VAR
+++D=BOOL	N=bOverrun	G=VAR
+++D=UDINT	N=udiOverrunCount	G=VAR
+++D=LREAL	N=lrMasterModuloMax	G=VAR
+++D=UDINT	N=udiLastOverrunCount	G=VAR
+++D=ARRAY[0..255] OF LREAL	N=lrLatchOverrun	G=VAR
+++D=FS\PrivateParts\FS_LatchFIFO	N=fb_LatchModulo	G=VAR
+++D=MC_Stop	N=fb_stop	G=VAR
+++D=BOOL	N=bStop	G=VAR
+++D=BOOL	N=bAbortTP	G=VAR
+++D=MC_AbortTrigger	N=FB_AbortTP	G=VAR
+++D=BOOL	N=bEnableExtTP	G=VAR
+++D=BOOL	N=bExtTrigger	G=VAR
+++D=LREAL	N=lrRecordData	G=VAR
+++D=BOOL	N=bFirstCut	G=VAR
+++D=R_TRIG	N=fb_xSync	G=VAR
+++D=BOOL	N=bCutDone	G=VAR
+++D=UINT	N=lrSkipCount	G=VAR
+++D=LREAL	N=lrLastCut	G=VAR
+++D=BOOL	N=bMarkNotAccepted	G=VAR
+++D=BOOL	N=bMarkIgnored	G=VAR
+++D=BOOL	N=bWindowOnly	G=VAR
+++D=LREAL	N=lrFirstPosition	G=VAR
+++D=BOOL	N=bInWindow	G=VAR
+++D=LREAL	N=lrLastRecordedPosition	G=VAR
+++D=BOOL	N=bPutCapture	G=VAR
+++D=BOOL	N=bCheckWindow	G=VAR
+++D=UINT	N=uiLatchState	G=VAR
+++D=R_TRIG	N=fb_ExtTrigg	G=VAR
+++D=LREAL	N=lrOverrunCount	G=VAR
+++D=LREAL	N=lrLatchBufferOut	G=VAR
+++D=LREAL	N=lrLatchModuloOut	G=VAR
+++D=USINT	N=uiLatchBufferOut_index	G=VAR
+++D=USINT	N=uiLatchModuloOut_index	G=VAR
+++D=LREAL	N=lrDummyCapture	G=VAR
+++D=BOOL	N=bDummyCapture	G=VAR
+++D=MC_MoveRelative	N=fb_MoveRelative	G=VAR
+++D=UDINT	N=aaa	G=VAR
+++D=LREAL	N=lrVelocityFactor	IV=1.0	G=VAR
+++D=UINT	N=uiSyncMode	G=VAR
+++D=LREAL	N=lrTest	G=VAR
+++D=LREAL	N=lrShift	G=VAR
+++D=BOOL	N=bShiftSyncpoints	G=VAR
+++D=R_TRIG	N=fb_OverrunCnt	G=VAR
+++D=LREAL	N=lrShiftCutting	G=VAR
+++D=LREAL	N=lrtemp	G=VAR
+++D=LREAL	N=lrCurSlaveDist	G=VAR
+++D=LREAL	N=lrCurMasterDist	G=VAR
+++D=LREAL	N=lrFlybackVelocityMax	G=VAR
+++D=LREAL	N=lrMaxAccDecCut	G=VAR
+++D=DINT	N=iii	G=VAR
+++D=LREAL	N=lrNewLengthTocut	G=VAR
+++D=LREAL	N=lrLastShift	G=VAR
+++D=LREAL	N=lrTempShift	G=VAR
+++D=BOOL	N=bFlyBack	G=VAR
+++D=R_TRIG	N=fb_xFlyBack	G=VAR
+++D=FS\PrivateParts\FS_CalcStopTime	N=FB_StopTime	G=VAR
+++D=BOOL	N=bCalcStopTime	G=VAR
+++D=LREAL	N=lrStopDistance	G=VAR
+++D=LREAL	N=lrMaster_atWaitPos	G=VAR
+++D=BOOL	N=bGoWait	G=VAR
+++D=LREAL	N=lrMasterCnvSyncPos	G=VAR
+++D=BOOL	N=bCoupled	G=VAR
+++D=LREAL	N=lrMaster_atCut	G=VAR
+++D=LREAL	N=lrOvrCnt_atWait	G=VAR
+++D=LREAL	N=lrOvrCnt_atCut	G=VAR
+++D=LREAL	N=lrOvrCnt_b	G=VAR
+++D=LREAL	N=lrMasterOverrun	G=VAR
+++D=LREAL	N=lrLastMasterPosition	G=VAR
+++D=BOOL	N=bMasterOverrun	G=VAR
+++D=LREAL	N=lrMasterOverrunCnt	G=VAR
+++D=LREAL	N=lrStopRatio	G=VAR
+++D=BOOL	N=bTPDone	G=VAR
+++D=LREAL	N=lrPartialShift	G=VAR
+++D=LREAL	N=lrCounter	G=VAR
+++D=INT	N=ccc	G=VAR
+++D=BOOL	N=qq	G=VAR
+++D=LREAL	N=TEST_lengthToCut	G=VAR
+++D=BOOL	N=bTest	G=VAR
+++D=UINT	N=CodeTrack	G=VAR
+++D=R_TRIG	N=fb_xCapture	G=VAR
+++D=LREAL	N=lrFlybackAccMax	G=VAR
+++D=FS\PrivateParts\sPoly5Data	N=stPoly5Data	G=VAR
+++D=LREAL	N=lrCurrSlaveAcc	G=VAR
+++D=LREAL	N=lrMasterVelocity	G=VAR
+++D=LREAL	N=lrCurrMasterVelocity	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=_sAXIS_REF	N=Master	Ord=0	Const=1	G=VAR_IN_OUT
+++D=_sAXIS_REF	N=Slave	Ord=0	Const=1	G=VAR_IN_OUT
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=BOOL	N=CoupleOn	Ord=10	G=VAR_INPUT
+++D=BOOL	N=AbortCut	Ord=22	G=VAR_INPUT
+++D=_sTRIGGER_REF	N=TriggerInput	IV=(Mode := _mcController, LatchID := _mcLatch1, InputDrive := _mcEXT)	Ord=0	G=VAR_INPUT
+++D=BOOL	N=TriggerVariable	IV=False	Ord=1	G=VAR_INPUT
+++D=LREAL	N=RecordedPosition	Ord=2	G=VAR_INPUT
+++D=FS\sSLAVE_CNFG_FS	N=SlaveCnfg	IV=(SyncPos := 0.0, EndPos := 0.0, WaitPos := 0.0, VelocityToWaitPos := 0.0, StopRatio := 0.0, MaxVelocity := 0.0, MaxAcceleration := 0.0, Acceleration := 0.0, Deceleration := 0.0, ProfileType := 0, VelocityFactor := 0.0, SyncMode := 0, MaxPosition := 0.0, MinPosition := 0.0)	Ord=0	G=VAR_INPUT
+++D=FS\sCUTTING_CNFG_FS	N=CuttingCnfg	IV=(Mode := 0, CutLength := 0.0, Tolerance := 0.0, MasterStartDistance := 0.0, DistanceToSensor := 0.0, OffsetFromMark := 0.0, SkipCountLimit := 0, CuttingDistance := 0.0, MasterCompensation := 2)	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Enabled	Ord=9	G=VAR_OUTPUT
+++D=BOOL	N=Done	Ord=7	G=VAR_OUTPUT
+++D=BOOL	N=InSync	Ord=17	G=VAR_OUTPUT
+++D=BOOL	N=Cutting	Ord=16	G=VAR_OUTPUT
+++D=LREAL	N=CutLength	Ord=21	G=VAR_OUTPUT
+++D=BOOL	N=Skip	Ord=3	G=VAR_OUTPUT
+++D=BOOL	N=BufferEmpty	Ord=20	G=VAR_OUTPUT
+++D=BOOL	N=MarkNotAccepted	Ord=19	G=VAR_OUTPUT
+++D=BOOL	N=Busy	Ord=8	G=VAR_OUTPUT
+++D=BOOL	N=CommandAborted	Ord=18	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=5	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=6	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=7	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,2 @@
+﻿{"CLs":[{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"StateNumber","Ix":1,"Type":"DINT","Var":"myMachine.Status.StateCurrent"}],"Ix":2,"Name":"\\\\OmronLib\\PackML30\\PMLState_IsStopped","Out":[{"__type":"PF","Arg":""}],"UD":true},{"__type":"ST","Var":"EM0_Stopped","X":1}],"CMT":"CODE FOR STATE STOPPED","LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"EM0_Stopped"},{"__type":"ST","Ix":1,"Var":"EM_DummyStopped","X":1}],"CMT":"No action during Stopped","LRI":2,"RRI":3,"VLs":[]}

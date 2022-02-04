@@ -1,0 +1,15 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>FOR index:=0 TO 49 DO&#xD;
+	Alarm_To_String(myAlarmHistoryArray[index],myAlarmHistoryStringArray[index]);&#xD;
+END_FOR;&#xD;
+&#xD;
+FOR index:=0 TO UNNumberOfAlarms DO&#xD;
+	Alarm_To_String(UNAllAlarmsArray[index],myAllAlarmStringArray[index]);&#xD;
+END_FOR;&#xD;
+&#xD;
+LastEventString:='';&#xD;
+LastEventString:=concat(myAlarmHistoryArray[0].EventType.Message,'  ');&#xD;
+IF myAlarmHistoryArray[0].Active=TRUE THEN&#xD;
+	LastEventString:=CONCAT(LastEventString,'    Active');&#xD;
+ELSE&#xD;
+	LastEventString:=CONCAT(LastEventString,'NOT Active');&#xD;
+END_IF;</Text></StructuredTextModel>

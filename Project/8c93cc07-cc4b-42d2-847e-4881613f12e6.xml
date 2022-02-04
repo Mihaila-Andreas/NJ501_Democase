@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>FS_SyncLinear_0.0.22R12</Name>
+      <NameSpace></NameSpace>
+      <Version>0.0.22</Version>
+      <Revision>1</Revision>
+      <LibraryId>916f27ab-3439-4dca-ada2-2ac7d024280a</LibraryId>
+      <Author>SGG</Author>
+      <Company></Company>
+      <DateCreated>2013-09-16T11:41:12.7057197+03:00</DateCreated>
+      <DateModified>2016-03-17T18:35:36.2766291+02:00</DateModified>
+      <Comment>BETA </Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>FS\FS_SyncLinear</PublicName>
+        <PublicName>FS\sSLAVE_CNFG_FS</PublicName>
+        <PublicName>FS\sCUTTING_CNFG_FS</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames>
+        <InternalName>FS\PrivateParts\FS_FixStartPos</InternalName>
+        <InternalName>FS\PrivateParts\FS_taskTime</InternalName>
+        <InternalName>FS\PrivateParts\FS_Roots2nd</InternalName>
+        <InternalName>FS\PrivateParts\FS_Poly5Coefficients</InternalName>
+        <InternalName>FS\PrivateParts\FS_Poly5</InternalName>
+        <InternalName>FS\PrivateParts\FS_Linear</InternalName>
+        <InternalName>PulseGen</InternalName>
+        <InternalName>FS\PrivateParts\FS_RotaryToLinear</InternalName>
+        <InternalName>FS\PrivateParts\FS_Filter</InternalName>
+        <InternalName>FS\PrivateParts\FS_Profiler</InternalName>
+        <InternalName>FS\PrivateParts\FS_CalcStopTime</InternalName>
+        <InternalName>FS\PrivateParts\FS_LatchFIFO</InternalName>
+        <InternalName>FS_Derivative</InternalName>
+        <InternalName>FS\PrivateParts\FS_VAObserver</InternalName>
+        <InternalName>FS\PrivateParts\sXYVA_DATA</InternalName>
+        <InternalName>FS\PrivateParts\sPoly5Data</InternalName>
+      </InternalPartsNames>
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NJ501-1500</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>10</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.10</DisplayVersion>
+        <Packages>
+          <Package Name="Motion" Version="1.10" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>23e2d6d7-06b5-47e5-9b33-7ed2c6846a69</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\OMRON\Data\Lib\FS_SyncLinear_0.0.22R12.slr</LibraryFilePath>
+      <LibraryFileRelativePath></LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>false</AsOldVer>
+      <SchemaVersion>3</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

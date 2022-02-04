@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UDINT	N=i	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=wDuringExe	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=wCoupleOn	Ord=2	G=VAR_IN_OUT
+++D=BOOL	N=wErrStop	Ord=3	G=VAR_IN_OUT
+++D=UDINT	N=wStateNo	Ord=4	G=VAR_IN_OUT
+++D=BOOL	N=wStateEntry	Ord=5	G=VAR_IN_OUT
+++D=BOOL	N=wWaitChgCutLength	Ord=6	G=VAR_IN_OUT
+++D=BOOL	N=wError	Ord=7	G=VAR_IN_OUT
+++D=WORD	N=wErrorID	Ord=8	G=VAR_IN_OUT
+++D=DWORD	N=wErrorIDEx	Ord=9	G=VAR_IN_OUT
+++D=BOOL	N=wCommandAborted	Ord=10	G=VAR_IN_OUT
+++D=BOOL	N=wInitCheckPass	Ord=11	G=VAR_IN_OUT
+++D=ARRAY[0..3] OF RK\PrivateParts\sINST_IN_OUT	N=wInstInOut	Ord=12	G=VAR_IN_OUT
+++D=BOOL	N=Enable	Ord=13	G=VAR_INPUT
+++D=BOOL	N=CoupleOn	Ord=14	G=VAR_INPUT
+++D=BOOL	N=wInWaitPos	Ord=15	G=VAR_INPUT
+++D=BOOL	N=wBufferEmpty	Ord=16	G=VAR_INPUT
+++D=BOOL	N=wKeepF_TRIG_InSync	Ord=17	G=VAR_INPUT
+++D=BOOL	N=wChgCutLength	Ord=18	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=RK_SyncRotaryState	G=RETURN

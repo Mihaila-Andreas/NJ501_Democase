@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="10498816" Revision="16777216" IONodeID="7f7b446a-b6e2-4622-927a-eb903675c483" DeviceName="N3" SerialNo="0" IsEnabled="1">
+  <Feature Values="None" />
+  <PdoM PMIndex="6656" PMN="TxSlaves" PMIOD="I">
+    <Pdo PID="88cefc78-e7fe-4fcc-85c3-7339766313a7" Index="24576" SIndex="1" Name="NexECAT0" DSC="" PBit="56" PD="I" PV="H" PBO="0" BTBL="56" LEMI="9" SPId="294ad277-3dc5-49a5-ba56-551a5c44a14b" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="5d4f549a-f6cb-4003-951b-4a829f877ad6" Index="24576" SIndex="2" Name="NexECAT1" DSC="" PBit="56" PD="I" PV="H" PBO="56" BTBL="56" LEMI="10" SPId="b2b51b04-1245-4c8e-9580-909a18e3c8b9" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="0295366c-f7e2-4e24-a1c5-5a094fc78f40" Index="24576" SIndex="3" Name="NXUnit0" DSC="" PBit="56" PD="I" PV="H" PBO="112" BTBL="56" LEMI="1" SPId="0cbf6eef-aac7-44a7-a071-5530ecaaa0dc" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="70105cb5-35a4-4c3e-89d2-ca1bd4a72ea9" Index="24576" SIndex="4" Name="NXUnit2" DSC="" PBit="48" PD="I" PV="H" PBO="168" BTBL="48" LEMI="3" SPId="0e60a398-8623-484a-ad8f-84af3da1d931" PDT="ARRAY [0..5] OF BYTE" CipType="None" />
+    <Pdo PID="5bc3d4d4-ccfc-4492-957e-43b512c4917a" Index="24576" SIndex="5" Name="Padding" DSC="" PBit="8" PD="I" PV="H" PBO="216" BTBL="8" LEMI="0" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..0] OF BYTE" CipType="None" />
+  </PdoM>
+  <PdoM PMIndex="5632" PMN="RxSlaves" PMIOD="O">
+    <Pdo PID="bed098df-dbaa-43f7-80e3-8e9efae79036" Index="28672" SIndex="1" Name="NexECAT0" DSC="" PBit="56" PD="O" PV="H" PBO="0" BTBL="56" LEMI="9" SPId="766e9119-3432-4174-9a9c-22abe9423d88" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="420f2b35-55fa-4ed5-877e-ce78777f722d" Index="28672" SIndex="2" Name="NexECAT1" DSC="" PBit="56" PD="O" PV="H" PBO="56" BTBL="56" LEMI="10" SPId="e6ccb62f-a253-43cb-a4a6-7bbb38ed238b" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="deb5780d-92ec-4ed7-9052-3721bcfc40b3" Index="28672" SIndex="3" Name="NXUnit0" DSC="" PBit="56" PD="O" PV="H" PBO="112" BTBL="56" LEMI="1" SPId="e288952f-9100-4230-b985-ccdb4b310691" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="11ae72e4-920d-4c7b-92e5-487b5c79d34b" Index="28672" SIndex="4" Name="NXUnit2" DSC="" PBit="48" PD="O" PV="H" PBO="168" BTBL="48" LEMI="3" SPId="56441d20-2786-46e8-b40f-98764d1dedd8" PDT="ARRAY [0..5] OF BYTE" CipType="None" />
+    <Pdo PID="705fba76-e5b6-4ff4-aee6-cfdfc537dd68" Index="28672" SIndex="5" Name="Padding" DSC="" PBit="8" PD="O" PV="H" PBO="216" BTBL="8" LEMI="0" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..0] OF BYTE" CipType="None" />
+  </PdoM>
+  <PdoM PMIndex="6657" PMN="TxVariables" PMIOD="I">
+    <Pdo PID="3e5bdbbd-af96-49d2-8486-a6ffbd32798e" Index="24580" SIndex="1" Name="Safety CPU Status" DSC="Status of Safety CPU Unit for monitoring" PBit="16" PD="I" PV="V" PBO="224" BTBL="16" LEMI="2147483648" SPId="00000000-0000-0000-0000-000000000000" PDT="UINT" CipType="None">
+      <SubPort PID="2a73e32d-0e41-4a2e-bda2-1901336eeb90" Name="Normal Operating" DSC="Safety program is running without any fault and all safety master connections are established" Offset="0" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="fad81a6f-fe17-4e94-b1d1-72ec3316ed2a" Name="Program Operating" DSC="Safety program is running" Offset="1" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="34ae226c-44a8-4902-b685-2479a1657459" Name="Program No Fault" DSC="No system event more than minor fault occurs" Offset="2" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="5179f354-7e36-40e7-af14-92b1a34e0195" Name="Safety Master Connection Status" DSC="All safety master connections are established" Offset="3" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="46131435-911d-4fcb-9841-28cf43c11229" Name="Reserved" DSC="" Offset="4" PD="I" BTBL="12" PDT="BOOL" PV="H" />
+    </Pdo>
+    <Pdo PID="956df8f6-a34c-4083-a990-dc0068fcf05e" Index="24577" SIndex="2" Name="M_EnableStartsOK" DSC="M_EnableStartOK" PBit="8" PD="I" PV="V" PBO="240" BTBL="1" LEMI="5" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="5597cb8c-813b-4d61-9240-45fa197dfdc1" Index="24577" SIndex="3" Name="Padding" DSC="" PBit="8" PD="I" PV="H" PBO="248" BTBL="8" LEMI="0" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..0] OF BYTE" CipType="None" />
+  </PdoM>
+  <PdoM PMIndex="5633" PMN="RxVariables" PMIOD="O">
+    <Pdo PID="a75539d4-e94e-4a74-b3cf-5988e6d52077" Index="28673" SIndex="1" Name="SO_ESTOP_LAMP" DSC="" PBit="8" PD="O" PV="V" PBO="224" BTBL="1" LEMI="2" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="ec23dd5f-5261-453f-a80c-101a2c778de2" Index="28673" SIndex="2" Name="SO_RESET_LAMP" DSC="" PBit="8" PD="O" PV="V" PBO="232" BTBL="1" LEMI="4" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="f2772913-c6b7-434b-a396-e2910cbc3624" Index="28673" SIndex="3" Name="SO_RUN_LAMP" DSC="" PBit="8" PD="O" PV="V" PBO="240" BTBL="1" LEMI="6" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+    <Pdo PID="963f7f4d-d2bf-4884-b6a1-f01ed6969df2" Index="28673" SIndex="4" Name="SO_STOP_LAMP" DSC="" PBit="8" PD="O" PV="V" PBO="248" BTBL="1" LEMI="7" SPId="00000000-0000-0000-0000-000000000000" PDT="BOOL" CipType="None" />
+  </PdoM>
+</Module>

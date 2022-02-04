@@ -1,0 +1,414 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=_sAXIS_REF	N=Disk	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Belt	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=SI2_STOP	AT=ECAT://node#[3,2]/Standard Input 1st Word/Si01 Logical Value	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SI3_RESET	AT=ECAT://node#[3,2]/Standard Input 1st Word/Si02 Logical Value	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SI1_RUN	AT=ECAT://node#[3,2]/Standard Input 1st Word/Si00 Logical Value	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=SI4_EMERGENCY1	AT=ECAT://node#[3,2]/Standard Input 1st Word/Si04 Logical Value	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Sq1	AT=ECAT://node#[3,3]/Standard Input 1st Byte/So00 Monitor Value	G=VAR_GLOBAL
+++D=BOOL	N=Sq2	AT=ECAT://node#[3,3]/Standard Input 1st Byte/So01 Monitor Value	G=VAR_GLOBAL
+++D=BOOL	N=Sq3	AT=ECAT://node#[3,3]/Standard Input 1st Byte/So02 Monitor Value	G=VAR_GLOBAL
+++D=BOOL	N=Sq4	AT=ECAT://node#[3,3]/Standard Input 1st Byte/So03 Monitor Value	G=VAR_GLOBAL
+++D=BOOL	N=I1	AT=ECAT://node#[3,4]/Input Bit 8 bits/Input Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=I2	AT=ECAT://node#[3,4]/Input Bit 8 bits/Input Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=I3	AT=ECAT://node#[3,4]/Input Bit 8 bits/Input Bit 02	G=VAR_GLOBAL
+++D=BOOL	N=I4	AT=ECAT://node#[3,4]/Input Bit 8 bits/Input Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=Q1	AT=ECAT://node#[3,5]/Output Bit 8 bits/Output Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=Q2	AT=ECAT://node#[3,5]/Output Bit 8 bits/Output Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=Q3	AT=ECAT://node#[3,5]/Output Bit 8 bits/Output Bit 02	G=VAR_GLOBAL
+++D=BOOL	N=Q4	AT=ECAT://node#[3,5]/Output Bit 8 bits/Output Bit 03	G=VAR_GLOBAL
+++D=BOOL	N=SI4_EMERGENCY2	AT=ECAT://node#[3,2]/Standard Input 1st Word/Si05 Logical Value	G=VAR_GLOBAL
+++D=BOOL	N=SO_STOP_LAMP	AT=ECAT://node#[3,1]/SO_STOP_LAMP	G=VAR_GLOBAL
+++D=BOOL	N=SO_RUN_LAMP	AT=ECAT://node#[3,1]/SO_RUN_LAMP	G=VAR_GLOBAL
+++D=BOOL	N=M_StartStop	AT=ECAT://node#[3,1]/M_EnableStartsOK	G=VAR_GLOBAL
+++D=DINT	N=LotNumOfProducts	G=VAR_GLOBAL
+++D=BOOL	N=SO_RESET_LAMP	AT=ECAT://node#[3,1]/SO_RESET_LAMP	G=VAR_GLOBAL
+++D=BOOL	N=SO_ESTOP_LAMP	AT=ECAT://node#[3,1]/SO_ESTOP_LAMP	G=VAR_GLOBAL
+++D=Array[0..12] of bool	N=HMI_DisableState	G=VAR_GLOBAL
+++D=BOOL	N=ResetAllTimes	G=VAR_GLOBAL
+++D=TIME	N=PresentModeTime	G=VAR_GLOBAL
+++D=TIME	N=PreModePreStateTime	G=VAR_GLOBAL
+++D=INT	N=EM0_ProductsDone	G=VAR_GLOBAL
+++D=INT	N=EM1_ProductsDone	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=MC_Axis002_Virtual	AT=MC://_MC_AX[2]	RO=1	Const=1	G=VAR_GLOBAL
+++D=INT	N=Velocity	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=CombineMode	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=ExecuteCombine	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Execute_GearIn	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Execute_GearOut	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=UINT	N=RatioNum	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=UINT	N=RatioDen	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Master_Axis_Disabled	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=MasterManualControl	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=REAL	N=AuxiliarAxisVelocity	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=Auxiliar_Axis_Velocity	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=REAL	N=SlaveAxisVelocity	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=Slave_Axis_Velocity	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=Master_Axis_Position	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=Aux_Axis_Position	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=REAL	N=CombineAxisVelocity	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=Combine_Axis_Velocity	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=Slave_Axis_Position	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Execute_Phasing	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Execute_Phasing_2	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=INT	N=PhaseShift	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=INT	N=PhaseVelocity	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Phasing_Actived	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=PhaseDirection	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Execute_CamIn	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Periodic_Mode	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=INT	N=MasterScaling	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=INT	N=SlaveScaling	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=INT	N=CamProfile	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=ARRAY[0..10000] OF _sMC_CAM_REF	N=CamProfile_0	IV=None	RO=1	G=VAR_GLOBAL
+++D=ARRAY[0..10000] OF _sMC_CAM_REF	N=CamProfile_1	IV=None	RO=1	G=VAR_GLOBAL
+++D=ARRAY[0..10000] OF _sMC_CAM_REF	N=CamProfile_2	IV=None	RO=1	G=VAR_GLOBAL
+++D=ARRAY[0..10000] OF _sMC_CAM_REF	N=CamProfile_3	IV=None	RO=1	G=VAR_GLOBAL
+++D=BOOL	N=HMI_Ax0_Fault	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=HMI_AX1_Fault	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=REAL	N=HMI_AX0_Pos	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=REAL	N=HMI_AX1_Pos	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=REAL	N=HMI_AX0_Speed	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=REAL	N=HMI_AX1_Speed	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=RK\sMASTER_CNFG	N=MasterConfig	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=RK\sSLAVE_CNFG	N=SlaveConfig	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=RK\sCUTTING_CNFG	N=CuttingConfig	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=RK_Enabled	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=RK_Done	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=RK_Insync	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=RK_Cutting	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=RK_Cutlength	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=RK_Skip	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=RK_BufferEmpty	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=Exceeded	G=VAR_GLOBAL
+++D=TIME	N=LastExecTime	G=VAR_GLOBAL
+++D=BOOL	N=RK_Busy	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=RK_CommandAborted	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=RK_Error	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=WORD	N=RK_ErrorID	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=DWORD	N=RK_ErrorIDEx	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=RK_CoupleON	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=RK_notAccepted	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=LREAL	N=CapturedPosition	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=RK_Enable	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=CombineMode_Enabled	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=InGear	NTP=PublicationOnly	Ord=4	G=VAR_GLOBAL
+++D=BOOL	N=hmi_check_rotarysensor	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=hmi_check_conveyorsensor	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=hmi_wiring_runbutton	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=hmi_wiring_stopbutton	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=hmi_wiring_resetbutton	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=hmi_wiring_estopbutton	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=INT	N=Actual_Torque	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=STRING[20]	N=HMI_Screen_Name	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=EM1ReqTransition	G=VAR_GLOBAL
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=EM0ReqTransition	G=VAR_GLOBAL
+++D=OmronLib\PackML30\sALARM_STATUS	N=EM2_AlarmStatus	G=VAR_GLOBAL
+++D=ARRAY[0..9] OF OmronLib\PackML30\sEVENT_CFG	N=EM2_EventList	G=VAR_GLOBAL
+++D=OmronLib\PackML30\sALARM_STATUS	N=EM0_AlarmStatus	G=VAR_GLOBAL
+++D=OmronLib\PackML30\sALARM_SUMMATION	N=UN_AlarmSummation	G=VAR_GLOBAL
+++D=OmronLib\PackML30\sALARM_STATUS	N=EM1_AlarmStatus	G=VAR_GLOBAL
+++D=ARRAY[0..9] OF OmronLib\PackML30\sEVENT_CFG	N=EM0_EventList	G=VAR_GLOBAL
+++D=ARRAY[0..9] OF OmronLib\PackML30\sEVENT_CFG	N=EM1_EventList	G=VAR_GLOBAL
+++D=sPACKMLV30_UNIT	N=myMachine	G=VAR_GLOBAL
+++D=BOOL	N=EM3_CombineAxes	G=VAR_GLOBAL
+++D=BOOL	N=EM3_Gear	G=VAR_GLOBAL
+++D=BOOL	N=EM3_Phasing	G=VAR_GLOBAL
+++D=BOOL	N=EM3_CAM	G=VAR_GLOBAL
+++D=BOOL	N=EM3_RotaryKnife	G=VAR_GLOBAL
+++D=BOOL	N=EM3_PackML	G=VAR_GLOBAL
+++D=BOOL	N=EM3_IOcheck	G=VAR_GLOBAL
+++D=BOOL	N=Buttons_Enable	G=VAR_GLOBAL
+++D=BOOL	N=EM3_FlyingShear	G=VAR_GLOBAL
+++D=LREAL	N=FS_MasterVelocity	G=VAR_GLOBAL
+++D=FS\sSLAVE_CNFG_FS	N=SlaveCNFG	G=VAR_GLOBAL
+++D=FS\sCUTTING_CNFG_FS	N=CuttingCNFG	G=VAR_GLOBAL
+++D=_sTRIGGER_REF	N=TriggerInput	IV=(Mode := _mcController, LatchID := _mcLatch1, InputDrive := _mcEXT)	G=VAR_GLOBAL
+++D=BOOL	N=AbortJob	G=VAR_GLOBAL
+++D=BOOL	N=BufferEmpty	G=VAR_GLOBAL
+++D=BOOL	N=Busy	G=VAR_GLOBAL
+++D=BOOL	N=CommandAborted	G=VAR_GLOBAL
+++D=BOOL	N=coupleOn	G=VAR_GLOBAL
+++D=LREAL	N=CutLength	G=VAR_GLOBAL
+++D=BOOL	N=Cutting	G=VAR_GLOBAL
+++D=BOOL	N=Enabled	G=VAR_GLOBAL
+++D=BOOL	N=InSync	G=VAR_GLOBAL
+++D=BOOL	N=MarkNotAccepted	G=VAR_GLOBAL
+++D=LREAL	N=RecordedPosition	G=VAR_GLOBAL
+++D=BOOL	N=Skip	G=VAR_GLOBAL
+++D=BOOL	N=Waiting	G=VAR_GLOBAL
+++D=BOOL	N=FS_Error	G=VAR_GLOBAL
+++D=WORD	N=FS_ErrorID	G=VAR_GLOBAL
+++D=DWORD	N=FS_ErrorIDEx	G=VAR_GLOBAL
+++D=BOOL	N=FS_Enable	G=VAR_GLOBAL
+++D=BOOL	N=ModeSelection	G=VAR_GLOBAL
+++D=BOOL	N=FS_ModeSelection	G=VAR_GLOBAL
+++D=ARRAY[1..17] OF time	N=TransitionDelay	G=VAR_GLOBAL
+++D=USINT	N=PercentageDefectiveProduct	IV=5	G=VAR_GLOBAL
+++D=BOOL	N=ClearAlarmList	G=VAR_GLOBAL
+++D=BOOL	N=ClearFirstAlarm	G=VAR_GLOBAL
+++D=ARRAY[0..2,0..9] OF BOOL	N=AlarmActivation	G=VAR_GLOBAL
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=LocalReqTransition	G=VAR_GLOBAL
+++D=sOEELosses	N=myMachineLosses	G=VAR_GLOBAL
+++D=REAL	N=MaxSpeed	IV=110	G=VAR_GLOBAL
+++D=DemocaseData\Deployment	N=HMI_DeployStatus	G=VAR_GLOBAL
+++D=sOEE	N=myMachineOEE	G=VAR_GLOBAL
+++D=BOOL	N=powercheckdone_Belt	G=VAR_GLOBAL
+++D=BOOL	N=powercheckdone_Disk	G=VAR_GLOBAL
+++D=BOOL	N=Belt_ON	G=VAR_GLOBAL
+++D=BOOL	N=Disk_ON	G=VAR_GLOBAL
+++D=REAL	N=RK_Speed	G=VAR_GLOBAL
+++D=BOOL	N=Axis_Enable_Used	G=VAR_GLOBAL
+++D=BOOL	N=ILM400_Present	G=VAR_GLOBAL
+++D=BOOL	N=HMI_IOLink_Apply_Format_A	G=VAR_GLOBAL
+++D=SINT	N=HMI_Photo_Sensibility_A	G=VAR_GLOBAL
+++D=BOOL	N=HMI_IOLink_Apply_Format_B	G=VAR_GLOBAL
+++D=SINT	N=HMI_Photo_Sensibility_B	G=VAR_GLOBAL
+++D=DINT	N=HMI_Sensor_2_Hours	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Port1Status	AT=ECAT://node#[3,6]/I/O Port Status/Port1 IN Data Enable	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Port2Status	AT=ECAT://node#[3,6]/I/O Port Status/Port2 IN Data Enable	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Port3Status	AT=ECAT://node#[3,6]/I/O Port Status/Port3 IN Data Enable	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Port4Status	AT=ECAT://node#[3,6]/I/O Port Status/Port4 IN Data Enable	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Port5Status	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Port6Status	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Port7Status	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Port8Status	G=VAR_GLOBAL
+++D=STRING[64]	N=IOL_STRING_64	G=VAR_GLOBAL
+++D=STRING[64]	N=IOL_STRING_64_Port2	G=VAR_GLOBAL
+++D=STRING[64]	N=IOL_STRING_64_Port3	G=VAR_GLOBAL
+++D=STRING[64]	N=IOL_STRING_64_Port4	G=VAR_GLOBAL
+++D=STRING[64]	N=IOL_STRING_64_Port5	G=VAR_GLOBAL
+++D=STRING[64]	N=IOL_STRING_64_Port6	G=VAR_GLOBAL
+++D=STRING[64]	N=IOL_STRING_64_Port7	G=VAR_GLOBAL
+++D=STRING[64]	N=IOL_STRING_64_Port8	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Port1_Device_Match	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Port2_Device_Match	G=VAR_GLOBAL
+++D=BOOL	N=HMI_Induct_ON	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Port1_Input_Data01	G=VAR_GLOBAL
+++D=BOOL	N=HMI_Induct_UnStable	G=VAR_GLOBAL
+++D=BOOL	N=HMI_Induct_TooClose	G=VAR_GLOBAL
+++D=SINT	N=HMI_Induct_Value	G=VAR_GLOBAL
+++D=LREAL	N=Photocell_Sensivity	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Port2_Input_Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Port3_Input_Data01	G=VAR_GLOBAL
+++D=BOOL	N=PhotoCell_State	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port1_Input_Data01	AT=ECAT://node#[3,6]/Port1 Input Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port3_Input_Data01	AT=ECAT://node#[3,6]/Port3 Input Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port4_Input_Data01	AT=ECAT://node#[3,6]/Port4 Input Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port5_Input_Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port6_Input_Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port7_Input_Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port8_Input_Data01	G=VAR_GLOBAL
+++D=BOOL	N=E002_IO_Power_On_Off_Status	AT=ECAT://node#[3,6]/I/O Port Status/IO Pwr On	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port1_Communication_Error	AT=ECAT://node#[3,6]/Port1_2 I/O Port Error Status/Port1 Communication Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port1_Compare_Error	AT=ECAT://node#[3,6]/Port1_2 I/O Port Error Status/Port1 Compare Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port1_Short_Error	AT=ECAT://node#[3,6]/Port1_2 I/O Port Error Status/Port1 Short Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port3_Communication_Error	AT=ECAT://node#[3,6]/Port3_4 I/O Port Error Status/Port3 Communication Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port3_Compare_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port3_Short_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port4_Communication_Error	AT=ECAT://node#[3,6]/Port3_4 I/O Port Error Status/Port4 Communication Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port4_Compare_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port4_Short_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port5_Communication_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port5_Compare_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port5_Short_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port6_Communication_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port6_Compare_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port6_Short_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port7_Communication_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port7_Compare_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port7_Short_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port8_Communication_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port8_Compare_Error	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port8_Short_Error	G=VAR_GLOBAL
+++D=BOOL	N=Is_Homed	G=VAR_GLOBAL
+++D=BOOL	N=PackML_AlarmSignal	G=VAR_GLOBAL
+++D=INT	N=IOLink_Specs_Node	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Speck_Name	G=VAR_GLOBAL
+++D=BOOL	N=IOLink_Specs_Power	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Prox	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Photo	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port3	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port4	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port5	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port6	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port7	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port8	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Product_Prox	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Product_Photo	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Specs_Detection_Prox	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Specs_Detection_Photo	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Specs_Verification_Prox	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Specs_Verification_Photo	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Specs_Disconnect_Prox	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Specs_Disconnect_Photo	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Port4_Input_Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Port5_Input_Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Port6_Input_Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Port7_Input_Data01	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=Port8_Input_Data01	G=VAR_GLOBAL
+++D=LREAL	N=Details_Sens_01	G=VAR_GLOBAL
+++D=LREAL	N=Details_Sens_02	G=VAR_GLOBAL
+++D=LREAL	N=Details_Sens_03	G=VAR_GLOBAL
+++D=LREAL	N=Details_Sens_04	G=VAR_GLOBAL
+++D=LREAL	N=Details_Sens_05	G=VAR_GLOBAL
+++D=LREAL	N=Details_Sens_06	G=VAR_GLOBAL
+++D=LREAL	N=Details_Sens_07	G=VAR_GLOBAL
+++D=LREAL	N=Details_Sens_08	G=VAR_GLOBAL
+++D=BOOL	N=NJ_HMI_STOP	G=VAR_GLOBAL
+++D=STRING[16]	N=ClientID	G=VAR_GLOBAL
+++D=DemocaseData\ID	N=DemoCaseID	R=1	G=VAR_GLOBAL
+++D=DemocaseData\Owner	N=DemoOwner	R=1	G=VAR_GLOBAL
+++D=BOOL	N=MQTT_Connected	G=VAR_GLOBAL
+++D=DemocaseData\TaskTimeData	N=primaryTaskData	G=VAR_GLOBAL
+++D=STRING[1986]	N=strJSONDriveData	G=VAR_GLOBAL
+++D=STRING[1986]	N=strJSONControllerData	G=VAR_GLOBAL
+++D=DemocaseData\TaskTimeData	N=periodic16TaskData	G=VAR_GLOBAL
+++D=STRING[1986]	N=strJSONTask	G=VAR_GLOBAL
+++D=BOOL	N=Connect	G=VAR_GLOBAL
+++D=STRING[256]	N=Hostname	IV='167.86.120.133'	G=VAR_GLOBAL
+++D=MQTT\ClientBuffer	N=MQTTBuffer	G=VAR_GLOBAL
+++D=MQTT\WillCnfg	N=LWTdata	G=VAR_GLOBAL
+++D=ARRAY[0..9,0..4] OF DINT	N=BatchTable	IV=[1, 100, 110, 2(0), 2, 100, 90, 2(0), 1, 50, 100, 2(0), 2, 20, 80, 2(0), 1, 100, 110, 2(0), 2, 200, 95, 2(0), 1, 60, 100, 2(0), 2, 50, 105, 2(0), 1, 20, 95, 2(0), 2, 150, 90, 2(0)]	G=VAR_GLOBAL	IVAL=[0..9,0..4]
+++D=ARRAY[0..5,0..5] OF DINT	N=ProductDefinition	IV=[350, 365, 0, 200, 2(0), 700, 1440, 1, 50, 2(0), 350, 720, 2, 250, 2(0), 350, 720, 3, 50, 2(0), 175, 180, 4, 100, 2(0), 175, 365, 5, 200, 2(0)]	G=VAR_GLOBAL	IVAL=[0..5,0..5]
+++D=TIME	N=DwellTime	G=VAR_GLOBAL
+++D=DINT	N=BatchNumber	G=VAR_GLOBAL
+++D=LREAL	N=BeltDistance	G=VAR_GLOBAL
+++D=LREAL	N=DiskDistance	G=VAR_GLOBAL
+++D=LREAL	N=DwellReal	G=VAR_GLOBAL
+++D=BOOL	N=CyclicOperation	G=VAR_GLOBAL
+++D=BOOL	N=bQ1	G=VAR_GLOBAL
+++D=BOOL	N=bQ2	G=VAR_GLOBAL
+++D=BOOL	N=bQ3	G=VAR_GLOBAL
+++D=BOOL	N=bQ4	G=VAR_GLOBAL
+++D=ARRAY[0..125] OF BOOL	N=NXUnitActiveStatus	AT=ECAT://node#3/NX Unit I/O Data Active Status 125	G=VAR_GLOBAL
+++D=ARRAY[0..125] OF BOOL	N=NXUnitRegistration	AT=ECAT://node#3/NX Unit Registration Status 125	G=VAR_GLOBAL
+++D=STRING[128]	N=RcvTopic	G=VAR_GLOBAL
+++D=oneS\Maintenance\OneSData	N=sDataBelt	G=VAR_GLOBAL
+++D=oneS\Maintenance\OneSData	N=sDataWheel	G=VAR_GLOBAL
+++D=STRING[1986]	N=strCommandData	G=VAR_GLOBAL
+++D=STRING[1986]	N=strECC203Status	G=VAR_GLOBAL
+++D=STRING[1986]	N=strEthStatus	G=VAR_GLOBAL
+++D=STRING[1986]	N=strIOStatus	G=VAR_GLOBAL
+++D=STRING[1986]	N=strJSONIOL	G=VAR_GLOBAL
+++D=STRING[1986]	N=strJSONOEE	G=VAR_GLOBAL
+++D=STRING[1986]	N=strMachineStatus	G=VAR_GLOBAL
+++D=STRING[1986]	N=strProduction	G=VAR_GLOBAL
+++D=STRING[1986]	N=strStateCumulative	G=VAR_GLOBAL
+++D=DINT	N=BatchNumberHMI	G=VAR_GLOBAL
+++D=ARRAY[0..100] OF OmronLib\PackML30\sALARM	N=myAlarmHistoryArray	G=VAR_GLOBAL
+++D=ARRAY[0..49] OF string[130]	N=myAlarmHistoryStringArray	G=VAR_GLOBAL
+++D=INT	N=IOLSensorLevel	G=VAR_GLOBAL
+++D=DINT	N=MaxNumberProducts	G=VAR_GLOBAL
+++D=LREAL	N=ActualMachineSpeed	G=VAR_GLOBAL
+++D=ARRAY[0..9999] OF BYTE	N=bArrAlarmsHistory	G=VAR_GLOBAL
+++D=BOOL	N=mqttUpdateActiveAlm	G=VAR_GLOBAL
+++D=BOOL	N=mqttUpdateAlm	G=VAR_GLOBAL
+++D=BOOL	N=myAlarmHistoryFilter_Done	G=VAR_GLOBAL
+++D=string[1986]	N=strAdminActiveAlarms	G=VAR_GLOBAL
+++D=UINT	N=uiAlarmHistorySize	G=VAR_GLOBAL
+++D=BOOL	N=UNActiveAlarms_Done	G=VAR_GLOBAL
+++D=ARRAY[0..100] OF OmronLib\PackML30\sALARM	N=UNActiveAlarmsArray	G=VAR_GLOBAL
+++D=INT	N=UNNumberOfActiveAlarms	G=VAR_GLOBAL
+++D=sHopper	N=Hopper	G=VAR_GLOBAL
+++D=LINT	N=SettlingTime	G=VAR_GLOBAL
+++D=BOOL	N=SetWrongTuning	G=VAR_GLOBAL
+++D=BOOL	N=HMI_Enable_AX0	G=VAR_GLOBAL
+++D=BOOL	N=HMI_Enable_AX1	G=VAR_GLOBAL
+++D=BOOL	N=HMI_Enable_AX2	G=VAR_GLOBAL
+++D=BOOL	N=UNAllAlarms_Done	G=VAR_GLOBAL
+++D=BOOL	N=bIO_publish	G=VAR_GLOBAL
+++D=BOOL	N=bRegister	G=VAR_GLOBAL
+++D=STRING[32]	N=strClientID	G=VAR_GLOBAL
+++D=STRING[64]	N=strCommStatus	G=VAR_GLOBAL
+++D=STRING[1986]	N=strJSONPackML	G=VAR_GLOBAL
+++D=BOOL	N=ForceDefects	G=VAR_GLOBAL
+++D=DINT	N=ConsecutiveDefectCount	G=VAR_GLOBAL
+++D=BOOL	N=SensorOutput	G=VAR_GLOBAL
+++D=BOOL	N=SetDirtyPhotocell	G=VAR_GLOBAL
+++D=BOOL	N=DirtyPhotocellWarning	G=VAR_GLOBAL
+++D=INT	N=HMI_IOLSensorLevel	G=VAR_GLOBAL
+++D=ARRAY[0..100] OF OmronLib\PackML30\sALARM	N=UNAllAlarmsArray	G=VAR_GLOBAL
+++D=INT	N=UNNumberOfAlarms	G=VAR_GLOBAL
+++D=ARRAY[0..49] OF string[130]	N=myAllAlarmStringArray	G=VAR_GLOBAL
+++D=BOOL	N=IgnoreSensorLevel	IV=True	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port1_Device_Error	AT=ECAT://node#[3,6]/Port1_2 I/O Port Error Status/Port1 Device Error	G=VAR_GLOBAL
+++D=STRING[128]	N=strOnlineMessage	G=VAR_GLOBAL
+++D=STRING[128]	N=LastEventString	G=VAR_GLOBAL
+++D=BOOL	N=bUpdateStatus	G=VAR_GLOBAL
+++D=BOOL	N=SelfTest_HighTemperature	G=VAR_GLOBAL
+++D=BOOL	N=SelfTest_LowBattery	G=VAR_GLOBAL
+++D=BOOL	N=qrUpdated	G=VAR_GLOBAL
+++D=LREAL	N=kpiOEE	G=VAR_GLOBAL
+++D=LREAL	N=kpiAvailability	G=VAR_GLOBAL
+++D=LREAL	N=kpiPerformance	G=VAR_GLOBAL
+++D=LREAL	N=kpiQuality	G=VAR_GLOBAL
+++D=BOOL	N=NewProductAll	AT=ECAT://node#[3,5]/Output Bit 8 bits/Output Bit 07	G=VAR_GLOBAL
+++D=BOOL	N=L_RUN	AT=ECAT://node#[3,5]/Output Bit 8 bits/Output Bit 04	G=VAR_GLOBAL
+++D=BOOL	N=NewProductBad	G=VAR_GLOBAL
+++D=BOOL	N=NewProductGood	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=FS_Virtual	AT=MC://_MC_AX[3]	RO=1	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=FS_Is_Homed	G=VAR_GLOBAL
+++D=BOOL	N=HMI_Photocell_UnStable	Ord=3	G=VAR_GLOBAL
+++D=BOOL	N=HMI_Photocell_TooClose	Ord=4	G=VAR_GLOBAL
+++D=_sNXUNIT_ID	N=IOL_ID	IV=(NodeAdr := 3, IPAdr := [5(16#FF)], UnitNo := 6, Path := [16#11, 16#0, 16#2, 16#0, 16#3, 16#0, 16#1, 16#0, 16#2, 16#0, 16#6, 53(16#0)], PathLength := 12)	RO=1	Const=1	G=VAR_GLOBAL
+++D=STRING[64]	N=IOL_STRING_64_Port1	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=E002_Port2_Input_Data01	AT=ECAT://node#[3,6]/Port2 Input Data01	G=VAR_GLOBAL
+++D=BOOL	N=E002_Port2_Communication_Error	AT=ECAT://node#[3,6]/Port1_2 I/O Port Error Status/Port2 Communication Error	G=VAR_GLOBAL
+++D=BOOL	N=Error	G=VAR_GLOBAL
+++D=BOOL	N=L_STOP	AT=ECAT://node#[3,5]/Output Bit 8 bits/Output Bit 05	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Specs_Detection_Port3	G=VAR_GLOBAL
+++D=BOOL	N=IOL_Specs_Detection_Port4	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port1	G=VAR_GLOBAL
+++D=STRING[64]	N=IOLink_Specs_Vendor_Port2	G=VAR_GLOBAL
+++D=BOOL	N=GX_IL_Present	G=VAR_GLOBAL
+++D=BOOL	N=OPC_Test	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_At_Exit_Front	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_At_Exit_Left	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_At_Exit_Right	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_At_Forward_Entry	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_At_Left_Entry	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_At_Right_Entry	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_At_Scale	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_At_Scale_Entry	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_At_Scale_Exit	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_Auto	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_Emergency_Stop	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_Factory_IO_Paused	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_Factory_IO_Running	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_Manual	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_Reset	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_Start	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DI_Stop	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=Node_Red_OPC_DI_Remote_Control	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tNode_Red_Command
+++D=BOOL	N=Node_Red_OPC_Emergency_Stop	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tNode_Red_Command
+++D=BOOL	N=Node_Red_OPC_Start	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tNode_Red_Command
+++D=BOOL	N=Node_Red_OPC_Auto	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tNode_Red_Command
+++D=BOOL	N=Node_Red_OPC_Manual	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tNode_Red_Command
+++D=BOOL	N=Node_Red_OPC_Stop	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tNode_Red_Command
+++D=BOOL	N=Node_Red_OPC_Reset	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tNode_Red_Command
+++D=BOOL	N=OPC_DI_Remote_Control	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=REAL	N=OPC_AI_Weight	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Emitter	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Entry_Conveyor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=INT	N=OPC_AQ_Forward_Counter	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Front_Conveyor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Left_Conveyor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=INT	N=OPC_AQ_Left_Counter	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Load_Scale	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Reset_Light	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Right_Conveyor	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=INT	N=OPC_AQ_Right_Counter	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Send_Forward	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Send_Left	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Send_Right	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Start_Light	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=OPC_DQ_Stop_Light	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=INT	N=OPC_AQ_Weight	NTP=PublicationOnly	G=VAR_GLOBAL	Com=$t$t$t$tOPC_Factory_IO
+++D=BOOL	N=HMI_OPC_DI_Start	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=HMI_OPC_DI_Emergency_Button	G=VAR_GLOBAL
+++D=BOOL	N=HMI_OPC_DI_Reset_Button	G=VAR_GLOBAL
+++D=BOOL	N=HMI_OPC_DI_Auto	G=VAR_GLOBAL
+++D=BOOL	N=HMI_OPC_DI_Stop	G=VAR_GLOBAL

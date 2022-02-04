@@ -1,0 +1,6 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>dtTime:=GetTime() ;&#xD;
+ToAryByte(In:=dtTime,  Order:= _LOW_HIGH , AryOut:=arrTemp[0]);&#xD;
+AryByteTo(In:=arrTemp[0], Size:=8, Order:= _LOW_HIGH, OutVal:=Time_ms);&#xD;
+&#xD;
+DT_to_ms:=Time_ms/1000000;&#xD;
+</Text></StructuredTextModel>

@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=WORD	N=cErrID	IV=16#2801	Const=1	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=RK\sCUTTING_CNFG	N=CuttingCnfg	Ord=1	G=VAR_IN_OUT
+++D=RK\PrivateParts\sCALC_COUNT	N=CntWk	Ord=2	G=VAR_IN_OUT
+++D=BOOL	N=Error	Ord=3	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=4	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=RK_AddOffsetFromMark	G=RETURN

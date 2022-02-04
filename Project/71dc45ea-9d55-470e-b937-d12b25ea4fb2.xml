@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TIME	N=tTaskInterval	G=VAR
+++D=UDINT	N=udiTaskInterval	G=VAR
+++D=TIME	N=tLastExecTime	G=VAR
+++D=TIME	N=tMaxExecTime	G=VAR
+++D=TIME	N=tMinExecTime	G=VAR
+++D=UDINT	N=udiExecCount	G=VAR
+++D=BOOL	N=bExceeded	G=VAR
+++D=UDINT	N=udiExceededCount	G=VAR
+++D=UDINT	N=udiMaxExecTime	G=VAR
+++D=UDINT	N=udiMinExecTime	G=VAR
+++D=UDINT	N=udiLastExecTime	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=BOOL	N=ENO	Ord=1	RO=1	G=VAR_OUTPUT
+++D=DemocaseData\TaskTimeData	N=stTaskdata	Ord=2	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=TaskInformation	G=RETURN

@@ -1,0 +1,1 @@
+﻿{"CLs":[{"__type":"F","In":[{"__type":"PF","Arg":"EN"}],"Ix":2,"Name":"TaskInformation","Out":[{"__type":"PF","Arg":"ENO"},{"__type":"PRM","Arg":"","Type":"BOOL","Var":""},{"__type":"PRM","Arg":"stTaskdata","Ix":1,"Type":"DemocaseData\\TaskTimeData","Var":"periodic16TaskData"}],"UD":true}],"LRI":3,"RRI":4,"VLs":[]}

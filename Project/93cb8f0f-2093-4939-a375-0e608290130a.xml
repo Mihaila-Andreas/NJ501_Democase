@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>OmronLib_PackML30_V1_0</Name>
+      <NameSpace></NameSpace>
+      <Version>1.0.0</Version>
+      <Revision>1</Revision>
+      <LibraryId>ee5f0ab1-9460-4a0c-be88-5d809b906eb6</LibraryId>
+      <Author>OMRON Corporation</Author>
+      <Company>(c) OMRON Corporation 2016. All Rights Reserved.</Company>
+      <DateCreated>2016-01-28T10:29:54.3907495+02:00</DateCreated>
+      <DateModified>2016-09-15T04:28:26.6003259+03:00</DateModified>
+      <Comment>This is the library that aim at building system confortable to PackML easily.
+ユーザがPackMLに準拠したシステムを容易に構築可能とすることを目的としたライブラリです。</Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>OmronLib\PackML30\AlarmStatus_Update</PublicName>
+        <PublicName>OmronLib\PackML30\AlarmSummation_Add</PublicName>
+        <PublicName>OmronLib\PackML30\PMLTransitionCmd_ResetAll</PublicName>
+        <PublicName>OmronLib\PackML30\PMLTransitionCmd_ResetAllCmdSetAllSC</PublicName>
+        <PublicName>OmronLib\PackML30\PMLTransitionCmd_Summarize</PublicName>
+        <PublicName>OmronLib\PackML30\PMLTransitionCmd_SummarizePackTagCtrlCmd</PublicName>
+        <PublicName>OmronLib\PackML30\PMLCtrlCmd_Reset</PublicName>
+        <PublicName>OmronLib\PackML30\PMLCtrlCmd_Start</PublicName>
+        <PublicName>OmronLib\PackML30\PMLCtrlCmd_Stop</PublicName>
+        <PublicName>OmronLib\PackML30\PMLCtrlCmd_Hold</PublicName>
+        <PublicName>OmronLib\PackML30\PMLCtrlCmd_Unhold</PublicName>
+        <PublicName>OmronLib\PackML30\PMLCtrlCmd_Suspend</PublicName>
+        <PublicName>OmronLib\PackML30\PMLCtrlCmd_Unsuspend</PublicName>
+        <PublicName>OmronLib\PackML30\PMLCtrlCmd_Abort</PublicName>
+        <PublicName>OmronLib\PackML30\PMLCtrlCmd_Clear</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsClearing</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsStopped</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsStarting</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsIdle</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsSuspended</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsExecute</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsStopping</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsAborting</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsAborted</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsHolding</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsHeld</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsUnholding</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsSuspending</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsUnsuspending</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsResetting</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsCompleting</PublicName>
+        <PublicName>OmronLib\PackML30\PMLState_IsComplete</PublicName>
+        <PublicName>OmronLib\PackML30\DT_TO_PackTagDINTarray</PublicName>
+        <PublicName>OmronLib\PackML30\Alarm</PublicName>
+        <PublicName>OmronLib\PackML30\PackMLModeStateTimer</PublicName>
+        <PublicName>OmronLib\PackML30\AlarmSummation_SortFilter</PublicName>
+        <PublicName>OmronLib\PackML30\PackMLModeStateMachine</PublicName>
+        <PublicName>OmronLib\PackML30\sEVENT_CFG</PublicName>
+        <PublicName>OmronLib\PackML30\sALARM</PublicName>
+        <PublicName>OmronLib\PackML30\sALARM_STATUS</PublicName>
+        <PublicName>OmronLib\PackML30\sALARM_SUMMATION</PublicName>
+        <PublicName>OmronLib\PackML30\sPACKML_TRANSITION_COMMAND</PublicName>
+        <PublicName>OmronLib\PackML30\sPACKML_STATES_FLAG</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames>
+        <InternalName>OmronLib\PackML30\SubParts\AlarmSummation_Clear</InternalName>
+        <InternalName>OmronLib\PackML30\SubParts\AlarmStatus_Reset</InternalName>
+        <InternalName>OmronLib\PackML30\SubParts\Alarm_Clear</InternalName>
+        <InternalName>OmronLib\PackML30\SubParts\GetFirstOutAlarmIndexes</InternalName>
+        <InternalName>OmronLib\PackML30\uSTATES</InternalName>
+      </InternalPartsNames>
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NJ301-1100</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>1</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.01</DisplayVersion>
+        <Packages>
+          <Package Name="Motion" Version="1.1" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>39dcb9ad-8bca-49a9-852a-fd5fbf9518a1</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\OMRON\Data\Lib\Packaging\OmronLib_PackML30_V1_0.slr</LibraryFilePath>
+      <LibraryFileRelativePath></LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>false</AsOldVer>
+      <SchemaVersion>3</SchemaVersion>
+      <Parameter1>true</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

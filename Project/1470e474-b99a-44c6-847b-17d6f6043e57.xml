@@ -1,0 +1,14 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF Enable THEN&#xD;
+	&#xD;
+	TimerOn(In:=Not TimerOn.q, PT:=DIVTIME(Period,2));&#xD;
+	&#xD;
+	IF TimerOn.q THEN&#xD;
+		q:=NOT q ;&#xD;
+	END_IF;&#xD;
+		&#xD;
+&#xD;
+ELSE&#xD;
+	q:=FALSE;&#xD;
+	TimerOn(In:=FALSE);&#xD;
+END_IF;&#xD;
+	</Text></StructuredTextModel>

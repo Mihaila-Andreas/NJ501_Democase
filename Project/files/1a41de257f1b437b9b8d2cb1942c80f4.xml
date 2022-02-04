@@ -1,0 +1,14 @@
+<CodeEditorModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.DeviceHmi.CodeEditor.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><CodingLanguageName>VBNET</CodingLanguageName><HiddenFooter>&#xD;
+End Class</HiddenFooter><HiddenHeader>Partial Public Class Selec2posElipse&#xD;
+</HiddenHeader><SerialData i:nil="true"/><SerialDeviceHmiId i:nil="true"/><SerialScaleData i:nil="true"/><Text>'IAG Code behind - Add local subroutines for the IAG.&#xD;
+&#xD;
+Sub moveSelector&#xD;
+	If command&#xD;
+		rotation = 0&#xD;
+		command = False&#xD;
+	Else&#xD;
+		rotation = 90&#xD;
+		command = True&#xD;
+	End If		&#xD;
+End Sub&#xD;
+</Text></CodeEditorModel>

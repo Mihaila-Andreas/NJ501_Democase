@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <ReferredLibrariesModel>
+      <ReferredLibraries>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>OmronLib_PackML30_V1_0</Name>
+              <NameSpace></NameSpace>
+              <Version>1.0.0</Version>
+              <Revision>1</Revision>
+              <LibraryId>ee5f0ab1-9460-4a0c-be88-5d809b906eb6</LibraryId>
+              <Author>OMRON Corporation</Author>
+              <Company>(c) OMRON Corporation 2016. All Rights Reserved.</Company>
+              <DateCreated>2016-01-28T10:29:54.3907495+02:00</DateCreated>
+              <DateModified>2016-09-15T04:28:26.6003259+03:00</DateModified>
+              <Comment>This is the library that aim at building system confortable to PackML easily.
+ユーザがPackMLに準拠したシステムを容易に構築可能とすることを目的としたライブラリです。</Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>OmronLib\PackML30\AlarmStatus_Update</PublicName>
+                <PublicName>OmronLib\PackML30\AlarmSummation_Add</PublicName>
+                <PublicName>OmronLib\PackML30\PMLTransitionCmd_ResetAll</PublicName>
+                <PublicName>OmronLib\PackML30\PMLTransitionCmd_ResetAllCmdSetAllSC</PublicName>
+                <PublicName>OmronLib\PackML30\PMLTransitionCmd_Summarize</PublicName>
+                <PublicName>OmronLib\PackML30\PMLTransitionCmd_SummarizePackTagCtrlCmd</PublicName>
+                <PublicName>OmronLib\PackML30\PMLCtrlCmd_Reset</PublicName>
+                <PublicName>OmronLib\PackML30\PMLCtrlCmd_Start</PublicName>
+                <PublicName>OmronLib\PackML30\PMLCtrlCmd_Stop</PublicName>
+                <PublicName>OmronLib\PackML30\PMLCtrlCmd_Hold</PublicName>
+                <PublicName>OmronLib\PackML30\PMLCtrlCmd_Unhold</PublicName>
+                <PublicName>OmronLib\PackML30\PMLCtrlCmd_Suspend</PublicName>
+                <PublicName>OmronLib\PackML30\PMLCtrlCmd_Unsuspend</PublicName>
+                <PublicName>OmronLib\PackML30\PMLCtrlCmd_Abort</PublicName>
+                <PublicName>OmronLib\PackML30\PMLCtrlCmd_Clear</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsClearing</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsStopped</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsStarting</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsIdle</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsSuspended</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsExecute</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsStopping</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsAborting</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsAborted</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsHolding</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsHeld</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsUnholding</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsSuspending</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsUnsuspending</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsResetting</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsCompleting</PublicName>
+                <PublicName>OmronLib\PackML30\PMLState_IsComplete</PublicName>
+                <PublicName>OmronLib\PackML30\DT_TO_PackTagDINTarray</PublicName>
+                <PublicName>OmronLib\PackML30\Alarm</PublicName>
+                <PublicName>OmronLib\PackML30\PackMLModeStateTimer</PublicName>
+                <PublicName>OmronLib\PackML30\AlarmSummation_SortFilter</PublicName>
+                <PublicName>OmronLib\PackML30\PackMLModeStateMachine</PublicName>
+                <PublicName>OmronLib\PackML30\sEVENT_CFG</PublicName>
+                <PublicName>OmronLib\PackML30\sALARM</PublicName>
+                <PublicName>OmronLib\PackML30\sALARM_STATUS</PublicName>
+                <PublicName>OmronLib\PackML30\sALARM_SUMMATION</PublicName>
+                <PublicName>OmronLib\PackML30\sPACKML_TRANSITION_COMMAND</PublicName>
+                <PublicName>OmronLib\PackML30\sPACKML_STATES_FLAG</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames>
+                <InternalName>OmronLib\PackML30\SubParts\AlarmSummation_Clear</InternalName>
+                <InternalName>OmronLib\PackML30\SubParts\AlarmStatus_Reset</InternalName>
+                <InternalName>OmronLib\PackML30\SubParts\Alarm_Clear</InternalName>
+                <InternalName>OmronLib\PackML30\SubParts\GetFirstOutAlarmIndexes</InternalName>
+                <InternalName>OmronLib\PackML30\uSTATES</InternalName>
+              </InternalPartsNames>
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NJ301-1100</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>1</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.01</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.1" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>39dcb9ad-8bca-49a9-852a-fd5fbf9518a1</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\OMRON\Data\Lib\Packaging\OmronLib_PackML30_V1_0.slr</LibraryFilePath>
+              <LibraryFileRelativePath></LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>true</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>OmronLib_EC_1S_V1_0</Name>
+              <NameSpace></NameSpace>
+              <Version>1.0.0</Version>
+              <Revision>1</Revision>
+              <LibraryId>45814ac1-070d-4cf8-ad82-cb6317f98513</LibraryId>
+              <Author>OMRON Corporation</Author>
+              <Company>(c) OMRON Corporation 2016. All Rights Reserved.</Company>
+              <DateCreated>2015-08-10T06:08:58.9769339+03:00</DateCreated>
+              <DateModified>2016-06-06T03:27:18.6819156+03:00</DateModified>
+              <Comment>This is EC 1S library.
+これはEtherCAT 1Sライブラリです。</Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>OmronLib\EC_1S\Backup_1S</PublicName>
+                <PublicName>OmronLib\EC_1S\Restore_1S</PublicName>
+                <PublicName>OmronLib\EC_1S\InitEncoder_1S</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames>
+                <InternalName>OmronLib\EC_1S\SubParts\ReadDevice</InternalName>
+                <InternalName>OmronLib\EC_1S\SubParts\ReadObjectList</InternalName>
+                <InternalName>OmronLib\EC_1S\Backup1S\CompareDevice</InternalName>
+                <InternalName>OmronLib\EC_1S\Backup1S\WriteBackup</InternalName>
+                <InternalName>OmronLib\EC_1S\Restore1S\RestoreParam</InternalName>
+                <InternalName>OmronLib\EC_1S\InitEncoder1S\PollingInit1S</InternalName>
+                <InternalName>OmronLib\EC_1S\SubParts\ObjectList</InternalName>
+                <InternalName>OmronLib\EC_1S\SubParts\SDOParameterTitle</InternalName>
+                <InternalName>OmronLib\EC_1S\SubParts\SDOParameter</InternalName>
+                <InternalName>OmronLib\EC_1S\SubParts\DeviceItem</InternalName>
+              </InternalPartsNames>
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NJ301-1100</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>1</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.01</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.1" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>ea6d855f-c7cb-4ffc-8349-f81723e48347</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\OMRON\Data\Lib\EC_1S\OmronLib_EC_1S_V1_0.slr</LibraryFilePath>
+              <LibraryFileRelativePath></LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>true</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>RotaryKnife</Name>
+              <NameSpace></NameSpace>
+              <Version>1.1.0</Version>
+              <Revision>1</Revision>
+              <LibraryId>6ab29c14-c9a0-4b6b-a2a2-9fce2f76c3a7</LibraryId>
+              <Author>OMRON Corporation</Author>
+              <Company>OMRON Corporation</Company>
+              <DateCreated>2012-11-12T07:45:26.8647231+02:00</DateCreated>
+              <DateModified>2013-02-11T08:56:08.6646924+02:00</DateModified>
+              <Comment></Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames />
+              <InternalPartsNames />
+              <BuildDevice>
+                <Category></Category>
+                <Family></Family>
+                <FullModel></FullModel>
+                <MajorVersion>0</MajorVersion>
+                <MinorVersion>0</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion></DisplayVersion>
+                <Packages />
+              </BuildDevice>
+              <DependencyId>b427d5f9-e84f-4792-8b0d-0a72e35b3e82</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\OMRON\Data\Lib\RK_SyncRotary_ver1_10.slr</LibraryFilePath>
+              <LibraryFileRelativePath></LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>2</SchemaVersion>
+              <Parameter1>false</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>FS_SyncLinear_0.0.22R12</Name>
+              <NameSpace></NameSpace>
+              <Version>0.0.22</Version>
+              <Revision>1</Revision>
+              <LibraryId>916f27ab-3439-4dca-ada2-2ac7d024280a</LibraryId>
+              <Author>SGG</Author>
+              <Company></Company>
+              <DateCreated>2013-09-16T11:41:12.7057197+03:00</DateCreated>
+              <DateModified>2016-03-17T18:35:36.2766291+02:00</DateModified>
+              <Comment>BETA </Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>FS\FS_SyncLinear</PublicName>
+                <PublicName>FS\sSLAVE_CNFG_FS</PublicName>
+                <PublicName>FS\sCUTTING_CNFG_FS</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames>
+                <InternalName>FS\PrivateParts\FS_FixStartPos</InternalName>
+                <InternalName>FS\PrivateParts\FS_taskTime</InternalName>
+                <InternalName>FS\PrivateParts\FS_Roots2nd</InternalName>
+                <InternalName>FS\PrivateParts\FS_Poly5Coefficients</InternalName>
+                <InternalName>FS\PrivateParts\FS_Poly5</InternalName>
+                <InternalName>FS\PrivateParts\FS_Linear</InternalName>
+                <InternalName>PulseGen</InternalName>
+                <InternalName>FS\PrivateParts\FS_RotaryToLinear</InternalName>
+                <InternalName>FS\PrivateParts\FS_Filter</InternalName>
+                <InternalName>FS\PrivateParts\FS_Profiler</InternalName>
+                <InternalName>FS\PrivateParts\FS_CalcStopTime</InternalName>
+                <InternalName>FS\PrivateParts\FS_LatchFIFO</InternalName>
+                <InternalName>FS_Derivative</InternalName>
+                <InternalName>FS\PrivateParts\FS_VAObserver</InternalName>
+                <InternalName>FS\PrivateParts\sXYVA_DATA</InternalName>
+                <InternalName>FS\PrivateParts\sPoly5Data</InternalName>
+              </InternalPartsNames>
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NJ501-1500</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>10</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.10</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.10" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>23e2d6d7-06b5-47e5-9b33-7ed2c6846a69</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\OMRON\Data\Lib\FS_SyncLinear_0.0.22R12.slr</LibraryFilePath>
+              <LibraryFileRelativePath></LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>false</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>MQTT 0.45_b14</Name>
+              <NameSpace></NameSpace>
+              <Version>0.0.45</Version>
+              <Revision>1</Revision>
+              <LibraryId>6b3f5a20-3954-43ef-a3e2-717b3997308e</LibraryId>
+              <Author>gomsan</Author>
+              <Company></Company>
+              <DateCreated>2019-02-20T19:14:45.9284109+02:00</DateCreated>
+              <DateModified>2019-04-08T18:08:05.5179543+03:00</DateModified>
+              <Comment></Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>MQTT\MQTTClient</PublicName>
+                <PublicName>MQTT\MQTTSubscribe</PublicName>
+                <PublicName>MQTT\MQTTPing</PublicName>
+                <PublicName>MQTT\MQTTPublish</PublicName>
+                <PublicName>MQTT\MQTTPublishArr</PublicName>
+                <PublicName>MQTT\MQTTSubscribeArr</PublicName>
+                <PublicName>MQTT\WillCnfg</PublicName>
+                <PublicName>MQTT\Login</PublicName>
+                <PublicName>MQTT\eControlPacket</PublicName>
+                <PublicName>MQTT\ClientRcv</PublicName>
+                <PublicName>MQTT\Status</PublicName>
+                <PublicName>MQTT\Settings</PublicName>
+                <PublicName>MQTT\ClientBuffer</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames>
+                <InternalName>MQTT\PktConnect_old</InternalName>
+                <InternalName>MQTT\mqGetPublishData_old</InternalName>
+                <InternalName>MQTT\mqGetPublishData_old2</InternalName>
+                <InternalName>MQTT\PktPublish</InternalName>
+                <InternalName>MQTT\PktPublishArr</InternalName>
+                <InternalName>MQTT\getOverallQoS</InternalName>
+                <InternalName>MQTT\PktPubComp</InternalName>
+                <InternalName>MQTT\PktPubRec</InternalName>
+                <InternalName>MQTT\PktPubRel</InternalName>
+                <InternalName>MQTT\PktPubAck</InternalName>
+                <InternalName>MQTT\getQoS_old</InternalName>
+                <InternalName>MQTT\PktUnsubscribe</InternalName>
+                <InternalName>MQTT\PktDisconnect</InternalName>
+                <InternalName>MQTT\PktPublishArr_old</InternalName>
+                <InternalName>MQTT\PktPingReq</InternalName>
+                <InternalName>MQTT\mqGetMessage</InternalName>
+                <InternalName>MQTT\PktSubscribe</InternalName>
+                <InternalName>MQTT\getPubPacketID</InternalName>
+                <InternalName>MQTT\RLDecode</InternalName>
+                <InternalName>MQTT\mqCode</InternalName>
+                <InternalName>MQTT\PktMultSubscribe</InternalName>
+                <InternalName>MQTT\PktPublish_old</InternalName>
+                <InternalName>MQTT\PubFlagEncode</InternalName>
+                <InternalName>MQTT\BOOL_TO_BYTE</InternalName>
+                <InternalName>MQTT\ConnectionFlagEncode</InternalName>
+                <InternalName>MQTT\RLEncode</InternalName>
+                <InternalName>MQTT\mqGetPointer</InternalName>
+                <InternalName>MQTT\mqGetPacketID</InternalName>
+                <InternalName>MQTT\getQoS</InternalName>
+                <InternalName>MQTT\mqGetPublishData</InternalName>
+                <InternalName>MQTT\mqTopicCmp</InternalName>
+                <InternalName>MQTT\mqRingToMem</InternalName>
+                <InternalName>MQTT\mqMemToRing</InternalName>
+                <InternalName>MQTT\PktConnect</InternalName>
+                <InternalName>MQTT\ReadMqttMessage_old</InternalName>
+                <InternalName>MQTT\MQTTSubscribe_old</InternalName>
+                <InternalName>MQTT\MQTTClient_old</InternalName>
+                <InternalName>MQTT\MQTTConnect_old</InternalName>
+                <InternalName>MQTT\ServerConnect</InternalName>
+                <InternalName>MQTT\MQTTSend</InternalName>
+                <InternalName>MQTT\MQTTConnect</InternalName>
+                <InternalName>MQTT\MQTTDisconnect</InternalName>
+                <InternalName>MQTT\RcvSocketStack</InternalName>
+                <InternalName>MQTT\MQTTrcv</InternalName>
+                <InternalName>MQTT\ReadMqttMessage</InternalName>
+                <InternalName>MQTT\flags</InternalName>
+                <InternalName>MQTT\pubFlags</InternalName>
+                <InternalName>MQTT\SubsTopics</InternalName>
+                <InternalName>MQTT\eSubscribeMode</InternalName>
+              </InternalPartsNames>
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NJ501-1300</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>18</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.18</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.18" />
+                  <Package Name="OPCUA" Version="1.18" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>20f92fc3-40ae-498d-9eb7-ad71ab667bd4</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\OMRON\Data\Lib\MQTT 0.45_b14.slr</LibraryFilePath>
+              <LibraryFileRelativePath></LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>false</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>JSONEncoding v0.56</Name>
+              <NameSpace></NameSpace>
+              <Version>0.0.56</Version>
+              <Revision>1</Revision>
+              <LibraryId>918d7b21-6d6c-4cc2-8a12-9c406c386cc2</LibraryId>
+              <Author>SGG</Author>
+              <Company>OMRON ATCE</Company>
+              <DateCreated>2016-09-19T15:42:18.866015+03:00</DateCreated>
+              <DateModified>2019-03-08T12:53:54.0526439+02:00</DateModified>
+              <Comment>Uses as output Byte Array</Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>JSON\JSON_REAL</PublicName>
+                <PublicName>JSON\JSON_LREAL</PublicName>
+                <PublicName>JSON\JSON_INT</PublicName>
+                <PublicName>JSON\JSON_DINT</PublicName>
+                <PublicName>JSON\JSON_UINT</PublicName>
+                <PublicName>JSON\JSON_ULINT</PublicName>
+                <PublicName>JSON\JSON_UDINT</PublicName>
+                <PublicName>JSON\JSON_STRING</PublicName>
+                <PublicName>JSON\JSON_BOOL</PublicName>
+                <PublicName>JSON\JSON_DATE</PublicName>
+                <PublicName>JSON\JSON_formatLREAL</PublicName>
+                <PublicName>JSON\JSON_formatREAL</PublicName>
+                <PublicName>JSON\JSONBuild</PublicName>
+                <PublicName>JSON\JSONObj</PublicName>
+                <PublicName>JSON\JSONCloseObj</PublicName>
+                <PublicName>JSON\JSONCloseList</PublicName>
+                <PublicName>JSON\JSONAdd</PublicName>
+                <PublicName>JSON\JSONList</PublicName>
+                <PublicName>JSON\JSONBuildArr</PublicName>
+                <PublicName>JSON\JSONBuffer</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames>
+                <InternalName>JSON\InsertVariable</InternalName>
+                <InternalName>JSON\FindReplace</InternalName>
+                <InternalName>JSON\JSONEncoder</InternalName>
+                <InternalName>JSON\JSONArr</InternalName>
+              </InternalPartsNames>
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NX1P2-1140DT1</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>18</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.18</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.18" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>8173faf6-9ba0-46aa-adad-c9097bc8c63f</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\OMRON\Data\Lib\JSON v0.56_BETA.slr</LibraryFilePath>
+              <LibraryFileRelativePath></LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>false</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>ServoDriveMonitor</Name>
+              <NameSpace></NameSpace>
+              <Version>0.0.2</Version>
+              <Revision>1</Revision>
+              <LibraryId>cfb0bc9f-590a-4255-937b-487da3e06ddf</LibraryId>
+              <Author>gomsan</Author>
+              <Company>OMRON ATCE</Company>
+              <DateCreated>2018-09-03T16:37:31.6149219+03:00</DateCreated>
+              <DateModified>2019-05-15T15:27:58.7146991+03:00</DateModified>
+              <Comment></Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>oneS\OneSMonitor</PublicName>
+                <PublicName>G5\G5Monitor</PublicName>
+                <PublicName>oneS\Maintenance\Drive</PublicName>
+                <PublicName>oneS\Maintenance\OneSData</PublicName>
+                <PublicName>oneS\Maintenance\Motor</PublicName>
+                <PublicName>oneS\Maintenance\Counters</PublicName>
+                <PublicName>G5\Maintenance\Drive</PublicName>
+                <PublicName>G5\Maintenance\G5Data</PublicName>
+                <PublicName>G5\Maintenance\Motor</PublicName>
+                <PublicName>G5\Maintenance\Counters</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames />
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NX1P2-1140DT1</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>14</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.14</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.14" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>bfc209e2-8932-4431-bfd5-d0e49860e17d</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\OMRON\Data\Lib\ServoDriveMonitor.slr</LibraryFilePath>
+              <LibraryFileRelativePath></LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>true</AsOldVer>
+              <SchemaVersion>1</SchemaVersion>
+              <Parameter1>false</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+      </ReferredLibraries>
+      <BuildOption>
+        <data>
+          <LibraryModel>
+            <Name>DemoCaseV3+ toV5</Name>
+            <NameSpace></NameSpace>
+            <Version>1.0.0</Version>
+            <Revision>1</Revision>
+            <LibraryId>00000000-0000-0000-0000-000000000000</LibraryId>
+            <Author>ATC Barcelona</Author>
+            <Company></Company>
+            <DateCreated>2013-01-04T11:48:22.9033693+02:00</DateCreated>
+            <DateModified>2013-01-04T11:48:22.9033693+02:00</DateModified>
+            <Comment>Program Demo Case SYSMAC V5, from V3+</Comment>
+            <Password></Password>
+            <AttachedFiles />
+            <AttachedFilesRelativePaths />
+            <PublicPartsNames />
+            <InternalPartsNames />
+            <BuildDevice>
+              <Category></Category>
+              <Family></Family>
+              <FullModel></FullModel>
+              <MajorVersion>0</MajorVersion>
+              <MinorVersion>0</MinorVersion>
+              <Revision>0</Revision>
+              <DisplayVersion></DisplayVersion>
+              <Packages />
+            </BuildDevice>
+            <DependencyId>00000000-0000-0000-0000-000000000000</DependencyId>
+            <IsSource>false</IsSource>
+            <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+            <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+            <LibraryFilePath></LibraryFilePath>
+            <LibraryFileRelativePath></LibraryFileRelativePath>
+            <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+            <AsOldVer>false</AsOldVer>
+            <SchemaVersion>2</SchemaVersion>
+            <Parameter1>false</Parameter1>
+          </LibraryModel>
+        </data>
+      </BuildOption>
+      <ExcludedParts />
+      <InternalParts />
+      <LibraryTrackingIdConversionTable>
+        <LibraryEntityTrackingId>00000000-0000-0000-0000-000000000000</LibraryEntityTrackingId>
+        <PartTrackingIds />
+      </LibraryTrackingIdConversionTable>
+      <AreLibrariesIncluded>true</AreLibrariesIncluded>
+      <IsLibraryIdsDifferenceNotified>false</IsLibraryIdsDifferenceNotified>
+    </ReferredLibrariesModel>
+  </data>
+</data>

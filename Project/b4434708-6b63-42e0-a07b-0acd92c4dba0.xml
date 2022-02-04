@@ -1,0 +1,38 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=R_TRIG	N=Inst_R_TRIG	G=VAR
+++D=MC_MoveAbsolute	N=Inst_MC_MoveAbsolute	G=VAR
+++D=MC_SyncMoveAbsolute	N=Inst_MC_SyncMoveAbsolute	G=VAR
+++D=MC_MoveVelocity	N=Inst_MC_MoveVelocity	G=VAR
+++D=MC_Stop	N=Inst_MC_Stop	G=VAR
+++D=RK\PrivateParts\RK_CtrlSlaveAxisState01	N=Inst_RK_CtrlSlaveAxisState01	G=VAR
+++D=RK\PrivateParts\RK_CtrlSlaveAxisState02	N=Inst_RK_CtrlSlaveAxisState02	G=VAR
+++D=RK\PrivateParts\RK_CtrlSlaveAxisState03	N=Inst_RK_CtrlSlaveAxisState03	G=VAR
+++D=RK\PrivateParts\RK_CtrlSlaveAxisState04	N=Inst_RK_CtrlSlaveAxisState04	G=VAR
+++D=BOOL	N=wR_TRIG_Enable	IV=False	G=VAR
+++D=UDINT	N=wRet	IV=0	G=VAR
+++D=RK\sSLAVE_CNFG	N=wSlaveCnfg	IV=(SyncPos := 0.0, EndPos := 0.0, WaitPos := 0.0, MaxVelocity := 0.0, Acceleration := 0.0, Deceleration := 0.0, BladeNum := 0, ProfileType := 0, CountCnfg := (ModuloMaxPos := 0.0, ModuloMinPos := 0.0), VelocityToWaitPos := 0.0, VelFactor := 0)	G=VAR
+++D=UINT	N=wSlaveAxisNo	IV=0	G=VAR
+++D=ARRAY[1..4,1..4] OF LREAL	N=wBladeOffset	IV=[16(0.0)]	G=VAR
+++D=RK\PrivateParts\sMNG_CTRL_SLAVE_AXIS	N=wMng	IV=(DecelerationAtStop := 0.0, InstPos := 0.0, BladePos := 0.0, InstWaitPos := 0.0, PreviousDistance := 0.0, Offset := 0.0, Distance := 0.0, MaxDistance := 0.0, ChgMaxDistance := False, McInst := [4((Execute := False, Output := (Done := False, Busy := False, Active := False, CommndAborted := False, Error := False, ErrorID := 16#0)))], SlaveState := 0, StateNo := 0, StateEntry := False, FirstCuttingBladeNo := 0, Enable := False, R_TRIG_Enable := False, CoupleOn := False, ErrStop := False, DuringExe := False, DetectErr := False, DetectAborted := False, ErrorID := 16#0, ErrorIDEx := 16#0)	G=VAR
+++D=ARRAY[0..8,0..3] OF BOOL	N=wOutBool	IV=[5(False), True, 2(False), True, 4(False), True, 3(False), True, 9(False), True, 2(False), True, False, True, 3(False)]	Const=1	G=VAR
+++D=UDINT	N=wOldState	G=VAR
+++D=UDINT	N=i	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=RK\sSLAVE_CNFG	N=SlaveCnfg	Ord=0	G=VAR_IN_OUT
+++D=BOOL	N=Enable	IV=False	Ord=1	G=VAR_INPUT
+++D=BOOL	N=CoupleOn	IV=False	Ord=2	G=VAR_INPUT
+++D=BOOL	N=ErrStop	IV=False	Ord=3	G=VAR_INPUT
+++D=BOOL	N=ChgMaxDistance	IV=False	Ord=4	G=VAR_INPUT
+++D=UINT	N=SlaveAxisNo	IV=0	Ord=5	G=VAR_INPUT
+++D=LREAL	N=Distance	IV=0.0	Ord=6	G=VAR_INPUT
+++D=LREAL	N=MaxDistance	IV=0.0	Ord=7	G=VAR_INPUT
+++D=BOOL	N=InWaitPos	Ord=8	G=VAR_OUTPUT
+++D=BOOL	N=Busy	Ord=9	G=VAR_OUTPUT
+++D=BOOL	N=CommandAborted	Ord=10	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=11	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=12	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=13	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..63] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL

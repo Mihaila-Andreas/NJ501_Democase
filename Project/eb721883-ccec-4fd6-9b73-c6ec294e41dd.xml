@@ -1,0 +1,28 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>&#xD;
+// Data 1S to JSON collector&#xD;
+&#xD;
+JSONObj('Drive',jsBuffer);&#xD;
+	JSON_DINT('DCbus',Data1S.Drive.DCbus,jsBuffer);&#xD;
+	JSON_DINT('InertiaRatio',Data1S.Drive.InertiaRatio, jsBuffer);&#xD;
+	JSON_DINT('LoadRatio',Data1S.Drive.LoadRatio,jsBuffer);&#xD;
+	JSON_DINT('Temperature',Data1S.Drive.Temperature,jsBuffer);&#xD;
+	JSON_formatREAL(VariableName:='Life',VariableValue:=100.0 - Data1S.Drive.CapacitorRatio,DecPlace:=1,MinLen:=3,Buffer:=jsBuffer);&#xD;
+	JSON_DINT(VariableName:='Regeneration',VariableValue:=Data1S.Drive.RegenerationRatio,Buffer:=jsBuffer);&#xD;
+	JSON_formatREAL(VariableName:='TimeInOperation', VariableValue:=Data1S.Drive.TimeInOperation,  DecPlace:=1,MinLen:=3,Buffer:=jsBuffer);&#xD;
+	JSON_STRING(VariableName:='AlarmCode', VariableValue:=DWORD_TO_STRING( Data1S.Drive.AlarmCode), Buffer:=jsBuffer);&#xD;
+JSONCloseObj(jsBuffer);&#xD;
+&#xD;
+JSONObj('Motor',jsBuffer);&#xD;
+	JSON_DINT('LoadRatio',Data1S.Motor.LoadRatio,jsBuffer);&#xD;
+	JSON_DINT('Temperature',Data1S.Motor.EncoderTemperature, jsBuffer);&#xD;
+	JSON_formatREAL(VariableName:='TimeInOperation', VariableValue:=Data1S.Motor.TimeInOperation,  DecPlace:=1,MinLen:=3,Buffer:=jsBuffer);&#xD;
+JSONCloseObj(jsBuffer);&#xD;
+&#xD;
+JSONObj('DiagnoseCounters',jsBuffer);&#xD;
+	JSON_DINT('BrakeOp',Data1S.DiagnoseCounters.BrakeInterlock ,jsBuffer);&#xD;
+	JSON_DINT('DynamicBrkOp',Data1S.DiagnoseCounters.DynamicBrake, jsBuffer);&#xD;
+	JSON_DINT('EncoderErrCnt',Data1S.DiagnoseCounters.EncoderErrors, jsBuffer);&#xD;
+	JSON_DINT('ECATErrCnt',Data1S.DiagnoseCounters.EtherCATErrors, jsBuffer);&#xD;
+	JSON_DINT('InRushPrRelay',Data1S.DiagnoseCounters.InrushProtectionRelay, jsBuffer);&#xD;
+JSONCloseObj(jsBuffer);&#xD;
+</Text></StructuredTextModel>

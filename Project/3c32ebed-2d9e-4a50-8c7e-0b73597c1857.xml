@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="ID" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="18" OffsetType="NJ" Id="d7bfad02-ab6a-4118-b6f3-fd432012fe6c">
+      <DataType Name="DemoCaseNumber" BaseType="String" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="ce08d79c-221f-4ad9-abe8-9365c1b08d8a" />
+      <DataType Name="uniqueID" BaseType="String" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="eb05f1c8-79d5-48ee-8b73-3db4b0c9a32c" />
+    </DataType>
+    <DataType Name="Owner" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="17" OffsetType="NJ" Id="5a43f9f6-5988-4971-9ca0-f9de465d133a">
+      <DataType Name="OwnerName" BaseType="String" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="129cd3e5-1fe5-4159-b6ee-aa3b10ff574d" />
+      <DataType Name="Country" BaseType="String" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="6a3cd7cc-bbc1-48bb-80e6-56c0e687e99c" />
+      <DataType Name="email" BaseType="String" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="652dcdb7-ea4c-4552-a48a-5dc20a2ba484" />
+    </DataType>
+    <DataType Name="Deployment" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="16" OffsetType="NJ" Id="f2c0dc23-d0f3-4577-8c54-cc3b702c7240">
+      <DataType Name="Status" BaseType="String" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="dc60f263-d90f-4336-8296-3b44dd394e5a" />
+      <DataType Name="DatabaseCreated" BaseType="Boolean" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="a0889953-dacb-450e-aa62-dda4e90ef071" />
+      <DataType Name="DashboardCreated" BaseType="Boolean" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="1596db77-81ad-4d32-9429-0cb0faf589e7" />
+      <DataType Name="URLsentBymail" BaseType="Boolean" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="2a30fad7-bbb8-4598-9eaa-70bd1e875837" />
+      <DataType Name="DashboardURL" BaseType="String" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="5ec67c56-73b7-4134-a287-4b56cc7bf064" />
+    </DataType>
+    <DataType Name="TaskTimeData" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="15" OffsetType="NJ" Id="023b1a51-1856-4a26-b463-060c8b94109f">
+      <DataType Name="Last" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="47b209bf-888a-4cd9-9f12-1cc0fdcc0855" />
+      <DataType Name="Maximum" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="0f12e88d-1d87-4f85-a00c-ff67d913cb5a" />
+      <DataType Name="Minimum" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="dcabdc44-2f46-418d-b32f-c93d56bcc49f" />
+      <DataType Name="Average" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="7ce30dd8-03d3-4b20-ba22-0a3797a5c545" />
+      <DataType Name="TaskInterval" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="19c98c22-cfdd-4dbd-946f-6041718e28f7" />
+      <DataType Name="ExecCount" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="66fc1f39-ac56-4db8-805b-788158dbb01b" />
+      <DataType Name="Exceeded" BaseType="Boolean" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="8a50166f-cf58-4620-b87f-923dff2f9234" />
+      <DataType Name="TimesExceeded" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="da71a788-4881-449f-98f9-7cb6f7cef014" />
+    </DataType>
+  </DataType>
+</data>

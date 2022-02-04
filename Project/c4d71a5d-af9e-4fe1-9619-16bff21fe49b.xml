@@ -1,0 +1,2 @@
+﻿{"CLs":[{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"StateNumber","Ix":1,"Type":"DINT","Var":"myMachine.Status.StateCurrent"}],"Ix":2,"Name":"\\\\OmronLib\\PackML30\\PMLState_IsExecute","Out":[{"__type":"PF","Arg":""}],"UD":true},{"__type":"ST","Var":"EM0_Execute","X":1}],"CMT":"CODE FOR EXECUTE STATE","LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"EM0_Execute"},{"__type":"ST","Ix":1,"Var":"EM_DummyExecute","X":1}],"CMT":"No action during Execute Belt","LRI":2,"RRI":3,"VLs":[]}

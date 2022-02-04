@@ -1,0 +1,2 @@
+﻿{"CLs":[{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"StateNumber","Ix":1,"Type":"DINT","Var":"myMachine.Status.StateCurrent"}],"Ix":2,"Name":"\\\\OmronLib\\PackML30\\PMLState_IsComplete","Out":[{"__type":"PF","Arg":""}],"UD":true},{"__type":"ST","Var":"EM0_Complete","X":1}],"CMT":"CODE FOR COMPLETE STATE","LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"EM0_Complete"},{"__type":"ST","Ix":1,"Var":"Dummy_Complete","X":1}],"CMT":"No action","LRI":2,"RRI":3,"VLs":[]}

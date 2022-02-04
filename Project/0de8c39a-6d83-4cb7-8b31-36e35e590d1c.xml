@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>RotaryKnife</Name>
+      <NameSpace></NameSpace>
+      <Version>1.1.0</Version>
+      <Revision>1</Revision>
+      <LibraryId>6ab29c14-c9a0-4b6b-a2a2-9fce2f76c3a7</LibraryId>
+      <Author>OMRON Corporation</Author>
+      <Company>OMRON Corporation</Company>
+      <DateCreated>2012-11-12T07:45:26.8647231+02:00</DateCreated>
+      <DateModified>2013-02-11T08:56:08.6646924+02:00</DateModified>
+      <Comment></Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames />
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category></Category>
+        <Family></Family>
+        <FullModel></FullModel>
+        <MajorVersion>0</MajorVersion>
+        <MinorVersion>0</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion></DisplayVersion>
+        <Packages />
+      </BuildDevice>
+      <DependencyId>b427d5f9-e84f-4792-8b0d-0a72e35b3e82</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\OMRON\Data\Lib\RK_SyncRotary_ver1_10.slr</LibraryFilePath>
+      <LibraryFileRelativePath></LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>false</AsOldVer>
+      <SchemaVersion>2</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

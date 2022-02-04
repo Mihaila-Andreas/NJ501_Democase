@@ -1,0 +1,67 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=lrMasterStartPos	G=VAR
+++D=LREAL	N=lrMasterEndPos	G=VAR
+++D=BOOL	N=bErr_FixStartPos	G=VAR
+++D=FS\PrivateParts\sXYVA_DATA	N=stProfileData	G=VAR
+++D=BOOL	N=bEnablePoly5	G=VAR
+++D=BOOL	N=bFirstTrigger	G=VAR
+++D=LREAL	N=lrSlavePosition	G=VAR
+++D=BOOL	N=bEnableLinear	G=VAR
+++D=FS\PrivateParts\FS_Poly5	N=fb_Poly5	G=VAR
+++D=FS\PrivateParts\FS_Linear	N=fb_Linear	G=VAR
+++D=FS\PrivateParts\FS_RotaryToLinear	N=fb_RotaryToLinear	G=VAR
+++D=LREAL	N=lrMasterPos	G=VAR
+++D=BOOL	N=bStartUp	G=VAR
+++D=BOOL	N=bPreset	G=VAR
+++D=LREAL	N=lrEndCycle	G=VAR
+++D=LREAL	N=lrFlyBack	G=VAR
+++D=LREAL	N=lrSync	G=VAR
+++D=LREAL	N=lrMaster_0	G=VAR
+++D=LREAL	N=lrMaster_1	G=VAR
+++D=LREAL	N=lrSlvEndPos	G=VAR
+++D=R_TRIG	N=fb_xAbort	G=VAR
+++D=BOOL	N=bAborted	G=VAR
+++D=BOOL	N=bResetCounter	G=VAR
+++D=LREAL	N=lrMasterOffset	G=VAR
+++D=BOOL	N=bCorrection	G=VAR
+++D=LREAL	N=lrOffset	IV=0.0	G=VAR
+++D=LREAL	N=lrShiftStart	G=VAR
+++D=LREAL	N=lrShiftEnd	G=VAR
+++D=LREAL	N=lrlastShift	G=VAR
+++D=LREAL	N=lrSlaveVel	G=VAR
+++D=LREAL	N=lrSlaveAcc	G=VAR
+++D=ARRAY[0..5] OF LREAL	N=lrCoefficients	G=VAR
+++D=ARRAY[1..5] OF LREAL	N=lrMfactor	G=VAR
+++D=LREAL	N=lrMaxAcc	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT	Com=Connect to coupleOn
+++D=BOOL	N=AbortCut	Ord=13	G=VAR_INPUT
+++D=LREAL	N=MasterStartPos	Ord=4	G=VAR_INPUT	Com=Master.Act.Pos or RecordedPosition
+++D=LREAL	N=StartDistance	Ord=5	G=VAR_INPUT	Com=Connect MasterSyncDistance or DistanceToSensor
+++D=_sAXIS_REF	N=Master	Ord=0	Const=1	G=VAR_IN_OUT
+++D=LREAL	N=MasterModulo	Ord=1	G=VAR_INPUT
+++D=LREAL	N=SlavePos	Ord=6	G=VAR_IN_OUT
+++D=LREAL	N=SlvWaitpos	Ord=7	G=VAR_INPUT
+++D=LREAL	N=SlvSyncpos	Ord=8	G=VAR_INPUT
+++D=LREAL	N=SlvEndPos	Ord=9	G=VAR_INPUT
+++D=LREAL	N=LengthToCut	Ord=10	G=VAR_INPUT
+++D=LREAL	N=VelocityFactor	IV=1.0	Ord=11	G=VAR_INPUT
+++D=LREAL	N=Shift	Ord=12	G=VAR_INPUT
+++D=LREAL	N=Compensation	IV=2.0	Ord=13	G=VAR_INPUT
+++D=BOOL	N=Enabled	Ord=14	G=VAR_OUTPUT
+++D=BOOL	N=Busy	Ord=15	G=VAR_OUTPUT
+++D=LREAL	N=MasterConverted	Ord=16	G=VAR_OUTPUT
+++D=LREAL	N=MasterStartPosFix	Ord=17	G=VAR_OUTPUT
+++D=BOOL	N=Idle	Ord=18	G=VAR_OUTPUT
+++D=BOOL	N=CatchUp	Ord=19	G=VAR_OUTPUT
+++D=BOOL	N=Sync	Ord=20	G=VAR_OUTPUT
+++D=BOOL	N=Flyback	Ord=21	G=VAR_OUTPUT
+++D=BOOL	N=Overrun	Ord=22	G=VAR_OUTPUT
+++D=UDINT	N=OverrunCount	Ord=23	G=VAR_OUTPUT
+++D=FS\PrivateParts\sPoly5Data	N=Poly5Data	Ord=24	G=VAR_IN_OUT
+++D=BOOL	N=Error	Ord=25	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=26	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=27	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

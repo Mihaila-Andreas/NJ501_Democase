@@ -1,0 +1,111 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=EM0_Clearing	G=VAR
+++D=MC_Reset	N=BeltReset	G=VAR
+++D=BOOL	N=EM0_Stopped	G=VAR
+++D=BOOL	N=EM0_Starting	G=VAR
+++D=TON	N=DelayStarting_SC	G=VAR
+++D=BOOL	N=EM0_Idle	G=VAR
+++D=BOOL	N=EM0_Dummy_Idle	G=VAR
+++D=BOOL	N=EM0_Suspended	G=VAR
+++D=MC_MoveRelative	N=BeltMoveTic	G=VAR
+++D=MC_MoveRelative	N=BeltMoveTac	G=VAR
+++D=BOOL	N=EM0_Execute	G=VAR
+++D=LREAL	N=myaccel1	IV=8000	G=VAR
+++D=LREAL	N=mydecel1	IV=8000	G=VAR
+++D=BOOL	N=EM0_Stopping	G=VAR
+++D=MC_Stop	N=BeltStop	G=VAR
+++D=BOOL	N=EM0_Aborting	G=VAR
+++D=BOOL	N=EM0_Aborted	G=VAR
+++D=BOOL	N=EM_DummyStopped	G=VAR
+++D=BOOL	N=EM_DummyAborted	G=VAR
+++D=BOOL	N=EM0_Holding	G=VAR
+++D=MC_MoveAbsolute	N=EM0_HoldingMovezero	G=VAR
+++D=BOOL	N=EM0_Held	G=VAR
+++D=BOOL	N=EM0_Dummy_Held	G=VAR
+++D=LREAL	N=BeltOriginalPosition	G=VAR
+++D=BOOL	N=EM0_Unholding	G=VAR
+++D=MC_MoveAbsolute	N=EM0_UnholdingMove	G=VAR
+++D=BOOL	N=EM0_Suspending	G=VAR
+++D=MC_MoveAbsolute	N=EM0_SuspendingMovezero	G=VAR
+++D=BOOL	N=EM0_Unsuspending	G=VAR
+++D=MC_MoveAbsolute	N=EM0_UnsuspendingMove	G=VAR
+++D=BOOL	N=EM0_Resetting	G=VAR
+++D=BOOL	N=EM0_PowerCommand	G=VAR
+++D=BOOL	N=EM0_Completing	G=VAR
+++D=MC_MoveRelative	N=Movecompleting	G=VAR
+++D=BOOL	N=EM0_Complete	G=VAR
+++D=BOOL	N=Dummy_Complete	G=VAR
+++D=MC_Power	N=EM0_Power	G=VAR
+++D=TON	N=delayStopping	G=VAR
+++D=OmronLib\PackML30\Alarm	N=EM0_Alarm1	G=VAR
+++D=OmronLib\PackML30\Alarm	N=EM0_Alarm2	G=VAR
+++D=OmronLib\PackML30\Alarm	N=EM0_Alarm0	G=VAR
+++D=TON	N=DelayClearing	G=VAR
+++D=TON	N=DelayStopping2	G=VAR
+++D=TON	N=DelayAborting	G=VAR
+++D=TON	N=DelayHolding	G=VAR
+++D=TON	N=DelayUnholding	G=VAR
+++D=TON	N=DelaySuspending	G=VAR
+++D=TON	N=Delayunsuspending	G=VAR
+++D=TON	N=DelayResetting	G=VAR
+++D=TON	N=Delaycompleting	G=VAR
+++D=BOOL	N=EM_DummySuspended	G=VAR
+++D=TON	N=EM0_Clearing_Timeout	G=VAR
+++D=OmronLib\PackML30\Alarm	N=EM0_Alarm3	G=VAR
+++D=OmronLib\PackML30\Alarm	N=EM0_Alarm4	G=VAR
+++D=BOOL	N=EM_DummyExecute	G=VAR
+++D=ResetECError	N=Belt_EC_Error	G=VAR
+++D=MC_Home	N=Homing_Belt	G=VAR
+++D=MC_ChangeAxisUse	N=Use_Belt	G=VAR
+++D=EC_CoESDOWrite	N=instance01_AutotunningOff	G=VAR
+++D=EC_CoESDOWrite	N=instance02_ChangeInertia	G=VAR
+++D=EC_CoESDOWrite	N=instance04_ChangeFilter	G=VAR
+++D=_sSDO_ACCESS	N=autoTunning	IV=(Index := 15232, Subindex := 1, IsCompleteAccess := False)	G=VAR
+++D=DINT	N=myautot_disabled	IV=0	G=VAR
+++D=UINT	N=mywritesize	IV=4	G=VAR
+++D=_sSDO_ACCESS	N=changeInertia	IV=(Index := 12289, Subindex := 1, IsCompleteAccess := False)	G=VAR
+++D=DINT	N=myinertiazero	IV=0	G=VAR
+++D=_sSDO_ACCESS	N=changefilter	IV=(Index := 12305, Subindex := 2, IsCompleteAccess := False)	G=VAR
+++D=DINT	N=mylongfilter	IV=1000	G=VAR
+++D=EC_CoESDOWrite	N=instance03_AutotunningON	G=VAR
+++D=EC_CoESDOWrite	N=instance05_ChangeFilter	G=VAR
+++D=DINT	N=myautot_enabled	IV=1	G=VAR
+++D=DINT	N=myshortfilter	IV=1	G=VAR
+++D=OmronLib\PackML30\Alarm	N=EM0_Alarm5	G=VAR
+++D=MC_MoveRelative	N=StartingMoveBelt	G=VAR
+++D=MC_MoveRelative	N=HoldingMoveBelt	G=VAR
+++D=MC_MoveRelative	N=BeltMoveTicHeld	G=VAR
+++D=MC_MoveRelative	N=BeltMoveTacHeld	G=VAR
+++D=MC_MoveRelative	N=EM0_UnholdingBelt	G=VAR
+++D=MC_MoveRelative	N=EM0_SuspendingBelt	G=VAR
+++D=MC_MoveRelative	N=EM0_UnsuspendingBelt	G=VAR
+++D=MC_Home	N=EM0_Home	G=VAR
+++D=BOOL	N=Test_1	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=sPACKMLV30_UNIT	N=myMachine	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=EM0ReqTransition	G=VAR_EXTERNAL
+++D=BOOL	N=Q1	G=VAR_EXTERNAL
+++D=DINT	N=LotNumOfProducts	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sALARM_STATUS	N=EM0_AlarmStatus	G=VAR_EXTERNAL
+++D=ARRAY[0..9] OF OmronLib\PackML30\sEVENT_CFG	N=EM0_EventList	G=VAR_EXTERNAL
+++D=INT	N=EM0_ProductsDone	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Belt	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[1..17] OF time	N=TransitionDelay	G=VAR_EXTERNAL
+++D=BOOL	N=ClearAlarmList	G=VAR_EXTERNAL
+++D=BOOL	N=ClearFirstAlarm	G=VAR_EXTERNAL
+++D=ARRAY[0..2,0..9] OF BOOL	N=AlarmActivation	G=VAR_EXTERNAL
+++D=BOOL	N=Axis_Enable_Used	G=VAR_EXTERNAL
+++D=ARRAY[0..9,0..4] OF DINT	N=BatchTable	G=VAR_EXTERNAL
+++D=DINT	N=BatchNumber	G=VAR_EXTERNAL
+++D=TIME	N=DwellTime	G=VAR_EXTERNAL
+++D=ARRAY[0..5,0..5] OF DINT	N=ProductDefinition	G=VAR_EXTERNAL
+++D=LREAL	N=BeltDistance	G=VAR_EXTERNAL
+++D=LREAL	N=DiskDistance	G=VAR_EXTERNAL
+++D=LREAL	N=DwellReal	G=VAR_EXTERNAL
+++D=INT	N=IOLSensorLevel	G=VAR_EXTERNAL
+++D=sHopper	N=Hopper	G=VAR_EXTERNAL
+++D=BOOL	N=SetWrongTuning	G=VAR_EXTERNAL
+++D=BOOL	N=_EC_LinkStatus	Const=1	G=VAR_EXTERNAL
+++D=WORD	N=_EC_ErrSta	Const=1	G=VAR_EXTERNAL

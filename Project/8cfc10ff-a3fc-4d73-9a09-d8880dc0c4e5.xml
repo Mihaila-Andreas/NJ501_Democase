@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <ReferredLibrariesModel>
+      <ReferredLibraries>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>SDOBatch_v1.03</Name>
+              <NameSpace></NameSpace>
+              <Version>1.0.3</Version>
+              <Revision>1</Revision>
+              <LibraryId>d5123391-2ae6-4501-a800-d2d2c18b1251</LibraryId>
+              <Author></Author>
+              <Company></Company>
+              <DateCreated>2014-09-22T12:39:06.1919305+03:00</DateCreated>
+              <DateModified>2018-03-20T13:56:18.5073849+02:00</DateModified>
+              <Comment></Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>SDOUtils\WriteSDOArray</PublicName>
+                <PublicName>SDOUtils\ReadSDOArray</PublicName>
+                <PublicName>SDOUtils\SDOData</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames />
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NJ501-1500</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>9</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.09</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.9" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>07c9fd9d-3fee-44fd-a5ed-488c74e83b99</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\OMRON\Data\Lib\SDOBatch_v1.03.slr</LibraryFilePath>
+              <LibraryFileRelativePath></LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>true</AsOldVer>
+              <SchemaVersion>1</SchemaVersion>
+              <Parameter1>false</Parameter1>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+      </ReferredLibraries>
+      <BuildOption>
+        <data>
+          <LibraryModel>
+            <Name>ServoDriveMonitor</Name>
+            <NameSpace></NameSpace>
+            <Version>0.0.2</Version>
+            <Revision>1</Revision>
+            <LibraryId>cfb0bc9f-590a-4255-937b-487da3e06ddf</LibraryId>
+            <Author>gomsan</Author>
+            <Company>OMRON ATCE</Company>
+            <DateCreated>2018-09-03T16:37:31.6149219+03:00</DateCreated>
+            <DateModified>2019-05-15T15:27:58.7146991+03:00</DateModified>
+            <Comment></Comment>
+            <Password></Password>
+            <AttachedFiles />
+            <AttachedFilesRelativePaths />
+            <PublicPartsNames>
+              <PublicName>oneS\OneSMonitor</PublicName>
+              <PublicName>G5\G5Monitor</PublicName>
+              <PublicName>oneS\Maintenance\Drive</PublicName>
+              <PublicName>oneS\Maintenance\OneSData</PublicName>
+              <PublicName>oneS\Maintenance\Motor</PublicName>
+              <PublicName>oneS\Maintenance\Counters</PublicName>
+              <PublicName>G5\Maintenance\Drive</PublicName>
+              <PublicName>G5\Maintenance\G5Data</PublicName>
+              <PublicName>G5\Maintenance\Motor</PublicName>
+              <PublicName>G5\Maintenance\Counters</PublicName>
+            </PublicPartsNames>
+            <InternalPartsNames />
+            <BuildDevice>
+              <Category>Controller</Category>
+              <Family>Nex</Family>
+              <FullModel>NX1P2-1140DT1</FullModel>
+              <MajorVersion>1</MajorVersion>
+              <MinorVersion>14</MinorVersion>
+              <Revision>0</Revision>
+              <DisplayVersion>1.14</DisplayVersion>
+              <Packages>
+                <Package Name="Motion" Version="1.14" />
+              </Packages>
+            </BuildDevice>
+            <DependencyId>bfc209e2-8932-4431-bfd5-d0e49860e17d</DependencyId>
+            <IsSource>true</IsSource>
+            <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+            <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+            <LibraryFilePath></LibraryFilePath>
+            <LibraryFileRelativePath></LibraryFileRelativePath>
+            <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+            <AsOldVer>true</AsOldVer>
+            <SchemaVersion>1</SchemaVersion>
+            <Parameter1>false</Parameter1>
+          </LibraryModel>
+        </data>
+      </BuildOption>
+      <ExcludedParts>
+        <ExcludedPart>f0fdb6f5-1747-40c6-958e-37c508958919</ExcludedPart>
+        <ExcludedPart>d896171b-5acb-43c9-92c1-8060a60d6700</ExcludedPart>
+      </ExcludedParts>
+      <InternalParts />
+      <LibraryTrackingIdConversionTable>
+        <LibraryEntityTrackingId>6a93ea24-bdbf-4b00-92d5-5346c112ea47</LibraryEntityTrackingId>
+        <PartTrackingIds>
+          <ConversionItem Id="0b312ca4-cae3-4c19-8c45-a2f90922808c" NewId="868cc7d3-cddf-45f2-9666-bbfb6c6bbe00" />
+          <ConversionItem Id="d9638bbd-72ff-4ef2-b5f2-850793b99ccf" NewId="611cfd35-819b-4c20-98dc-f2cf68d4e3b5" />
+          <ConversionItem Id="f0fdb6f5-1747-40c6-958e-37c508958919" NewId="e76b2bab-9322-4fa9-a5b5-06334745980f" />
+          <ConversionItem Id="b267039f-9199-4fc6-8cb8-93310e07db22" NewId="dd825aea-58cd-4f15-b398-f66dff499b23" />
+          <ConversionItem Id="f860f727-d47d-4e50-85cb-886f9435b0b8" NewId="4c94ef02-ad9b-4475-b44a-42fd27d5161a" />
+          <ConversionItem Id="48ba577f-a073-4c76-b281-79b039b2856b" NewId="4f773834-4aeb-4de5-bc7b-63037deda6f4" />
+          <ConversionItem Id="d896171b-5acb-43c9-92c1-8060a60d6700" NewId="f8f07cbf-de0a-47b1-95d2-6fdec701b05c" />
+          <ConversionItem Id="195c1b15-26ac-4c40-858b-13335c120e0e" NewId="83c00c95-5842-40ef-b3cd-a7189275d7f6" />
+          <ConversionItem Id="ae9b520b-da08-4ea1-aa9b-fa7da393229a" NewId="65b1b48e-ed69-416d-8e1c-276d41bb79b4" />
+          <ConversionItem Id="74608802-9340-42af-b2f1-5c6002657635" NewId="9f4d6645-8ea2-471e-bb9a-ea53ee478a8f" />
+          <ConversionItem Id="a85248ef-8cc0-46ed-8f64-72c87a9a2ad2" NewId="7de16d7f-7075-41fc-8560-a778cd471315" />
+          <ConversionItem Id="b7d6d154-5487-4886-885e-1bd4add82a42" NewId="fa7dd7bb-df92-4987-b8b4-2e5b5f6c41e6" />
+          <ConversionItem Id="5f4bee61-498c-43e4-b194-193d408e699e" NewId="3be27205-9324-4e51-b05f-e68957e0649f" />
+          <ConversionItem Id="6d891235-0e2b-46f9-b539-da7b5cddaaa8" NewId="e2846115-5b05-4b12-a120-f2087100c1be" />
+          <ConversionItem Id="a248f778-26ff-43c9-8a77-2fe2bc95db38" NewId="306852e9-6b70-43da-85ef-ca8e354606bf" />
+          <ConversionItem Id="960e05f0-be27-4972-bfde-dba7887c7832" NewId="6fbd1be8-c769-4ec2-aa8f-d17c656b3470" />
+          <ConversionItem Id="a0880944-b046-41fe-9488-bcef1b1577e2" NewId="a792331d-5021-4b9e-94a2-197791e4e05f" />
+          <ConversionItem Id="bca71b54-deed-4165-bc80-91859c0a8015" NewId="fa48bf56-a231-4619-b707-7f80dc66b0c3" />
+          <ConversionItem Id="ff2de8f0-7b02-46c3-9939-216752ce3640" NewId="f87740ff-ae16-4086-a77e-c9fcdf29dd0e" />
+          <ConversionItem Id="ded70894-cd20-4908-9dfb-aada7ce15db5" NewId="c053f82c-1c9c-47a1-85f5-2895225c5dd7" />
+          <ConversionItem Id="f04695f4-f3df-46b4-b86b-a511e15546d2" NewId="25ce14e5-e127-4832-866a-175f9cafb335" />
+          <ConversionItem Id="5a02e24f-0007-4e3e-9d83-d6e57ecf5fc7" NewId="7fea0a62-7a79-452f-80e6-b7b5d2de06f4" />
+          <ConversionItem Id="c7e14f81-5aaf-46d7-b906-774e48bfdd5c" NewId="a40e7ada-660a-4aae-90bd-352187a6a5d0" />
+          <ConversionItem Id="25a530fb-ee0d-4c91-99f9-567e14d218e7" NewId="c3da3ecf-c8c0-4ed4-bb2f-be29f602f969" />
+          <ConversionItem Id="8dcae9a6-2f8c-4363-bda0-42f9aef7b7a8" NewId="4e066a7c-ff22-464b-8029-e215c85d2b21" />
+          <ConversionItem Id="4d56801b-d305-44d4-959e-374512a120af" NewId="e217e3a3-8073-4501-bd0c-f392edb527e6" />
+          <ConversionItem Id="e3ea2b86-272e-42b0-b1d5-b80da1f49cc8" NewId="3ebe1392-f28f-4f6a-ae85-ecfab3a1fb30" />
+          <ConversionItem Id="b0a26b24-6bda-48b7-89da-84b9c7af8da7" NewId="15e941cc-5a65-4e89-bcc5-58fb7e13291a" />
+          <ConversionItem Id="e396da74-f30f-4b58-9bd8-13701c3d08e7" NewId="34d9eaf3-a129-45ef-ae3a-25143d45bd44" />
+          <ConversionItem Id="61ffbbea-7224-4875-b6a7-cb2eabd4d3d3" NewId="bff0116a-9bf6-4ed6-a3a1-db2b9a9c14ed" />
+          <ConversionItem Id="f3cd2f24-e358-413e-86ac-b44021c8177c" NewId="e6613f62-e000-4e9f-ac47-0e083d203619" />
+          <ConversionItem Id="7541263d-03e9-444c-8abf-a5e2e4ba7be7" NewId="3b33e727-fe1f-42bd-be39-ca01b757a52c" />
+          <ConversionItem Id="bb83c1ab-fb13-42f5-8b49-40e571a8488a" NewId="f8972648-8bbe-4321-8052-62c4158980ae" />
+          <ConversionItem Id="0f0053e6-ac47-43b9-bbed-e38749f148b9" NewId="1b4d4be1-5374-4901-bdad-a114742c49c3" />
+          <ConversionItem Id="a7a4802a-0dc8-4430-a37a-7b2379dd9fa8" NewId="15ee87f3-1200-4512-98b9-80665b63a291" />
+          <ConversionItem Id="ced6d297-7957-40d5-96aa-085b280bc2c9" NewId="0180ffef-10dd-4ae2-8266-a92421bdecd1" />
+          <ConversionItem Id="3f6d73dd-6f87-45bc-8578-86a0a2bba584" NewId="f2c5911d-027f-40bd-8c8c-81ecde377c73" />
+          <ConversionItem Id="eed3bbb1-692f-406d-8fa7-0db9fe4d4bfe" NewId="cd610810-8ca1-4768-a246-2991e834eed6" />
+        </PartTrackingIds>
+      </LibraryTrackingIdConversionTable>
+      <AreLibrariesIncluded>true</AreLibrariesIncluded>
+      <IsLibraryIdsDifferenceNotified>false</IsLibraryIdsDifferenceNotified>
+    </ReferredLibrariesModel>
+  </data>
+</data>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>SDOBatch_v1.03</Name>
+      <NameSpace></NameSpace>
+      <Version>1.0.3</Version>
+      <Revision>1</Revision>
+      <LibraryId>d5123391-2ae6-4501-a800-d2d2c18b1251</LibraryId>
+      <Author></Author>
+      <Company></Company>
+      <DateCreated>2014-09-22T12:39:06.1919305+03:00</DateCreated>
+      <DateModified>2018-03-20T13:56:18.5073849+02:00</DateModified>
+      <Comment></Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>SDOUtils\WriteSDOArray</PublicName>
+        <PublicName>SDOUtils\ReadSDOArray</PublicName>
+        <PublicName>SDOUtils\SDOData</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NJ501-1500</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>9</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.09</DisplayVersion>
+        <Packages>
+          <Package Name="Motion" Version="1.9" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>07c9fd9d-3fee-44fd-a5ed-488c74e83b99</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\OMRON\Data\Lib\SDOBatch_v1.03.slr</LibraryFilePath>
+      <LibraryFileRelativePath></LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>true</AsOldVer>
+      <SchemaVersion>1</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

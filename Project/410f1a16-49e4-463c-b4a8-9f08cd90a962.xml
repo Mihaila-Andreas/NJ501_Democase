@@ -1,0 +1,17 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UDINT	N=wBladeNum	IV=0	G=VAR
+++D=LREAL	N=wModuloMaxPos	IV=0.0	G=VAR
+++D=LREAL	N=wOffset	IV=0.0	G=VAR
+++D=LREAL	N=wDistance	IV=0.0	G=VAR
+++D=BOOL	N=wRet	IV=False	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=RK\sSLAVE_CNFG	N=SlaveCnfg	Ord=1	G=VAR_IN_OUT
+++D=RK\PrivateParts\sMNG_CTRL_SLAVE_AXIS	N=Mng	Ord=2	G=VAR_IN_OUT
+++D=ARRAY[1..4,1..4] OF LREAL	N=BladeOffset	Ord=3	G=VAR_IN_OUT
+++D=LREAL	N=InstPos	Ord=4	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=BOOL	N=RK_CalcInstPos	G=RETURN

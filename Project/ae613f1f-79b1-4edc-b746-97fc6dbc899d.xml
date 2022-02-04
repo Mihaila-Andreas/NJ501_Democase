@@ -1,0 +1,14 @@
+<CodeEditorModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.DeviceHmi.CodeEditor.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><CodingLanguageName>VBNET</CodingLanguageName><HiddenFooter>&#xD;
+End Module</HiddenFooter><HiddenHeader>Public Module Gear&#xD;
+</HiddenHeader><SerialData i:nil="true"/><SerialDeviceHmiId i:nil="true"/><SerialScaleData i:nil="true"/><Text>'Add global subroutines&#xD;
+&#xD;
+	&#xD;
+Sub GearMasterControl&#xD;
+	If _HMI_CurrentPage="Gears" Then&#xD;
+				&#xD;
+		If Not(NJ_CPU_InGear) Then&#xD;
+			NJ_CPU_MasterManualCTRL = gear_manual_auto&#xD;
+		End If	&#xD;
+		&#xD;
+	End If&#xD;
+End Sub</Text></CodeEditorModel>

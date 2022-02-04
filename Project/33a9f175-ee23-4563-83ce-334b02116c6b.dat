@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="1262166" Revision="16777216" IONodeID="665462b5-33ea-4184-b800-b7cfb7d1d63a" DeviceName="N11" SerialNo="0" IsEnabled="1">
+  <Parameter Index="20497" SubIndex="1" Value="0" />
+  <IOPort IOPortID="e2835661-ced3-4a04-a0c1-3a9b21ec0c35" Index="28673" SubIndex="1">
+    <SubIOPort IOPortID="c53f3ea6-ff4a-4778-8164-5a8d9883aa9a" />
+    <SubIOPort IOPortID="dd15517c-9ea7-4a73-9cf9-db83e8955b26" />
+    <SubIOPort IOPortID="f6d63441-0305-4463-a912-b7eef91de342" />
+    <SubIOPort IOPortID="2252c73f-055b-4902-84b6-54f224ea0625" />
+    <SubIOPort IOPortID="a588c1ac-6b34-4d6d-8302-b18c3ac7fbc1" />
+    <SubIOPort IOPortID="555adfb6-77cb-4c09-9b35-a5b12fe77059" />
+    <SubIOPort IOPortID="7c4bfe65-d8d5-49d9-9977-15d0edd987ad" />
+    <SubIOPort IOPortID="0c894c5f-6d8a-46ef-9aac-45be9a8ba692" />
+  </IOPort>
+  <IOAllocation Index="5632">
+    <IOEntry>
+      <IOPortReference IOPortID="e2835661-ced3-4a04-a0c1-3a9b21ec0c35" />
+    </IOEntry>
+    <IOEntry BitLength="8" />
+  </IOAllocation>
+</Module>

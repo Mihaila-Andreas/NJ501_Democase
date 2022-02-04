@@ -1,0 +1,2 @@
+﻿{"CLs":[{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"StateNumber","Ix":1,"Type":"DINT","Var":"myMachine.Status.StateCurrent"}],"Ix":2,"Name":"\\\\OmronLib\\PackML30\\PMLState_IsAborted","Out":[{"__type":"PF","Arg":""}],"UD":true},{"__type":"ST","Var":"EM1_Aborted","X":1}],"CMT":"CODE FOR ABORTED STATE","LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"EM1_Aborted"},{"__type":"ST","Ix":1,"Var":"EM_DummyAborted","X":1}],"CMT":"No action during Aborted","LRI":2,"RRI":3,"VLs":[]}

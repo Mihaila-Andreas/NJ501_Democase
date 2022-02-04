@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest manifestSchemaVersion="1" modelSchemaVersion="1">
+  <Application applicationName="sysmac" applicationVersion="Infinity" />
+  <Solution solutionName="Training_Case_Andreas" id="b5bfad22-bfa0-4fed-9bb3-735b86ac4883" trackingId="17f3f918-b878-43f7-883a-3dfe99bc1d10" solutionSchemaVersion="2">
+    <ApplicationFeatures>
+      <ApplicationFeature name="HMI" />
+      <ApplicationFeature name="NA5-7W001☐Version:1.15" />
+      <ApplicationFeature name="NA5-9W001☐Version:1.11" />
+      <ApplicationFeature name="V102Project" />
+      <ApplicationFeature name="SetUnit NJ501-1500 Ver. 1.18" />
+      <ApplicationFeature name="NexLibraryInternalUsed" />
+      <ApplicationFeature name="Safety" />
+      <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
+    </ApplicationFeatures>
+  </Solution>
+</Manifest>

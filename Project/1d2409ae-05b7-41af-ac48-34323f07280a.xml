@@ -1,0 +1,2 @@
+﻿{"CLs":[{"__type":"F","In":[{"__type":"PF","Arg":"EN"}],"Ix":2,"Name":"TaskInformation","Out":[{"__type":"PF","Arg":"ENO"},{"__type":"PRM","Arg":"","Type":"BOOL","Var":""},{"__type":"PRM","Arg":"stTaskdata","Ix":1,"Type":"DemocaseData\\TaskTimeData","Var":"primaryTaskData"}],"UD":true}],"LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"IST","EID":"34ac27aa-2db2-4335-9111-546a2535ef42","H":130,"TXT":"bQ1:=Q1;\u000d\u000abQ2:=Q2;\u000d\u000abQ3:=Q3;\u000d\u000abQ4:=Q4;","W":400}],"LRI":1,"RRI":2,"VLs":[]}

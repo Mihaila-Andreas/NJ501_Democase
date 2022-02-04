@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <LibraryModel>
+      <Name>ServoDriveMonitor</Name>
+      <NameSpace></NameSpace>
+      <Version>0.0.2</Version>
+      <Revision>1</Revision>
+      <LibraryId>cfb0bc9f-590a-4255-937b-487da3e06ddf</LibraryId>
+      <Author>gomsan</Author>
+      <Company>OMRON ATCE</Company>
+      <DateCreated>2018-09-03T16:37:31.6149219+03:00</DateCreated>
+      <DateModified>2019-05-15T15:27:58.7146991+03:00</DateModified>
+      <Comment></Comment>
+      <Password></Password>
+      <AttachedFiles />
+      <AttachedFilesRelativePaths />
+      <PublicPartsNames>
+        <PublicName>oneS\OneSMonitor</PublicName>
+        <PublicName>G5\G5Monitor</PublicName>
+        <PublicName>oneS\Maintenance\Drive</PublicName>
+        <PublicName>oneS\Maintenance\OneSData</PublicName>
+        <PublicName>oneS\Maintenance\Motor</PublicName>
+        <PublicName>oneS\Maintenance\Counters</PublicName>
+        <PublicName>G5\Maintenance\Drive</PublicName>
+        <PublicName>G5\Maintenance\G5Data</PublicName>
+        <PublicName>G5\Maintenance\Motor</PublicName>
+        <PublicName>G5\Maintenance\Counters</PublicName>
+      </PublicPartsNames>
+      <InternalPartsNames />
+      <BuildDevice>
+        <Category>Controller</Category>
+        <Family>Nex</Family>
+        <FullModel>NX1P2-1140DT1</FullModel>
+        <MajorVersion>1</MajorVersion>
+        <MinorVersion>14</MinorVersion>
+        <Revision>0</Revision>
+        <DisplayVersion>1.14</DisplayVersion>
+        <Packages>
+          <Package Name="Motion" Version="1.14" />
+        </Packages>
+      </BuildDevice>
+      <DependencyId>bfc209e2-8932-4431-bfd5-d0e49860e17d</DependencyId>
+      <IsSource>true</IsSource>
+      <IsDisableSourceDisplay>false</IsDisableSourceDisplay>
+      <IsIncludeReferredLibraries>true</IsIncludeReferredLibraries>
+      <LibraryFilePath>C:\OMRON\Data\Lib\ServoDriveMonitor.slr</LibraryFilePath>
+      <LibraryFileRelativePath></LibraryFileRelativePath>
+      <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+      <AsOldVer>true</AsOldVer>
+      <SchemaVersion>1</SchemaVersion>
+      <Parameter1>false</Parameter1>
+    </LibraryModel>
+  </data>
+</data>

@@ -1,0 +1,11 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=index	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..49] OF string[130]	N=myAlarmHistoryStringArray	G=VAR_EXTERNAL
+++D=ARRAY[0..100] OF OmronLib\PackML30\sALARM	N=myAlarmHistoryArray	G=VAR_EXTERNAL
+++D=INT	N=UNNumberOfAlarms	G=VAR_EXTERNAL
+++D=ARRAY[0..49] OF string[130]	N=myAllAlarmStringArray	G=VAR_EXTERNAL
+++D=ARRAY[0..100] OF OmronLib\PackML30\sALARM	N=UNAllAlarmsArray	G=VAR_EXTERNAL
+++D=STRING[128]	N=LastEventString	G=VAR_EXTERNAL

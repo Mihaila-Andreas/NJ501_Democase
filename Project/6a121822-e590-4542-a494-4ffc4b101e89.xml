@@ -1,0 +1,2 @@
+﻿{"CLs":[{"__type":"F","In":[{"__type":"PF","Arg":"EN"},{"__type":"PRM","Arg":"StateNumber","Ix":1,"Type":"DINT","Var":"myMachine.Status.StateCurrent"}],"Ix":2,"Name":"\\\\OmronLib\\PackML30\\PMLState_IsIdle","Out":[{"__type":"PF","Arg":""}],"UD":true},{"__type":"ST","Var":"EM0_Idle","X":1}],"CMT":"CODE FOR IDLE STATE","LRI":3,"RRI":4,"VLs":[]}
+{"CLs":[{"__type":"LD","Var":"EM0_Idle"},{"__type":"ST","Ix":1,"Var":"EM0_Dummy_Idle","X":1}],"CMT":"Idle is Wait state","LRI":2,"RRI":3,"VLs":[]}

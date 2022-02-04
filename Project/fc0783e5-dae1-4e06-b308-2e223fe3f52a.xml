@@ -1,0 +1,38 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=OldEnable	G=VAR
+++D=BOOL	N=OldBusy	G=VAR
+++D=BOOL	N=OneShot	G=VAR
+++D=LREAL	N=TmpPhase	G=VAR
+++D=LREAL	N=TmpLength	G=VAR
+++D=LREAL	N=TmpVelocity	G=VAR
+++D=BOOL	N=TmpErr	G=VAR
+++D=BOOL	N=TmpBusy	G=VAR
+++D=BOOL	N=TmpEmpty	G=VAR
+++D=ARRAY[0..1] OF BOOL	N=TmpChg	G=VAR
+++D=WORD	N=TmpErrID	G=VAR
+++D=DWORD	N=TmpErrEx	G=VAR
+++D=LREAL	N=CurrentPos	G=VAR
+++D=WORD	N=cErrID	IV=16#2801	Const=1	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=TriggerVariable	Ord=0	G=VAR_IN_OUT
+++D=RK\sMASTER_CNFG	N=MasterCnfg	Ord=1	G=VAR_IN_OUT
+++D=RK\sSLAVE_CNFG	N=SlaveCnfg	Ord=2	G=VAR_IN_OUT
+++D=RK\sCUTTING_CNFG	N=CuttingCnfg	Ord=3	G=VAR_IN_OUT
+++D=RK\PrivateParts\sCALC_COUNT	N=CntWk	Ord=4	G=VAR_IN_OUT
+++D=BOOL	N=Enable	Ord=5	G=VAR_INPUT
+++D=UINT	N=AxisNo	Ord=6	G=VAR_INPUT
+++D=BOOL	N=Skip	Ord=7	G=VAR_INPUT
+++D=BOOL	N=Busy	Ord=8	G=VAR_OUTPUT
+++D=BOOL	N=BufferEmpty	Ord=9	G=VAR_OUTPUT
+++D=BOOL	N=ChgCutLength	Ord=10	G=VAR_OUTPUT
+++D=BOOL	N=ReverseFlg	Ord=11	G=VAR_OUTPUT
+++D=LREAL	N=CalcCutLength	Ord=12	G=VAR_OUTPUT
+++D=LREAL	N=Phase	Ord=13	G=VAR_OUTPUT
+++D=LREAL	N=Velocity	Ord=14	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=15	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=16	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=17	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..63] OF _sAXIS_REF	N=_MC_AX	Const=1	G=VAR_EXTERNAL

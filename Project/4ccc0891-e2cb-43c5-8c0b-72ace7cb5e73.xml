@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="sCUTTING_CNFG" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="20" OffsetType="NJ" Id="f1138787-be4e-4aa0-9f65-94f9e83c856d">
+      <DataType Name="Mode" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="86376a51-483b-48c0-b208-37c85830f4eb" />
+      <DataType Name="CutLength" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="a7f16387-b6d6-49e2-ab99-c738549b7fbe" />
+      <DataType Name="Tolerance" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="a3e9bf24-44be-4201-a450-6f660f8a6efb" />
+      <DataType Name="MasterSyncPos" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="0b91e050-dd47-48b2-8d41-fed2559b8cb6" />
+      <DataType Name="DistanceToSensor" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="d31553b0-ea28-4c1f-a88d-825b2ba639d8" />
+      <DataType Name="OffsetFromMark" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="3866cbfd-47c5-468b-a519-0e1976988849" />
+      <DataType Name="SkipCountLimit" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="89f6f429-499d-4846-82ee-b2a029bf4ce4" />
+    </DataType>
+    <DataType Name="sSLAVE_CNFG" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="19" OffsetType="NJ" Id="632d6e5b-3707-46fc-9563-fa49351000ba">
+      <DataType Name="SyncPos" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="54b57b19-da7d-4cba-a6fb-e8a1509dd676" />
+      <DataType Name="EndPos" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="8817cd10-94a1-446c-9d4f-cb5f7ba2325e" />
+      <DataType Name="WaitPos" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="9141bfdc-4c07-4d9e-b771-72eb9e2fa157" />
+      <DataType Name="MaxVelocity" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="fec93bab-505e-48c5-a8a7-6b1b859b2f6c" />
+      <DataType Name="Acceleration" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="9429d714-75e5-4e29-9062-c9d95659850d" />
+      <DataType Name="Deceleration" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="544caa12-4e47-474e-a87b-293fe8802945" />
+      <DataType Name="BladeNum" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="859825e3-3474-4a4b-8469-4495764d3f35" />
+      <DataType Name="ProfileType" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="3b5d6c94-e67d-4a0e-b82d-e70059e354a3" />
+      <DataType Name="CountCnfg" BaseType="new_Controller_0\RK\sCOUNT_CNFG" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="e5703e76-558a-4041-979f-8cb7d4344280" />
+      <DataType Name="VelocityToWaitPos" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="f90c552c-53d1-4c07-98e4-3f3214235acf" />
+      <DataType Name="VelFactor" BaseType="UInteger" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="936a5466-3aab-4491-aa32-0d24ad0e4c29" />
+    </DataType>
+    <DataType Name="sCOUNT_CNFG" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="10" OffsetType="NJ" Id="44d22d3f-580f-41cc-9c73-b43e3580c356">
+      <DataType Name="ModuloMaxPos" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="1f1eead2-bcba-4c98-806c-08bc51daf4a3" />
+      <DataType Name="ModuloMinPos" BaseType="Double" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="13f211aa-8462-4c47-bc61-53b2f72b49fa" />
+    </DataType>
+  </DataType>
+</data>

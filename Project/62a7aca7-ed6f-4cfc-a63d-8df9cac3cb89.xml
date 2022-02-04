@@ -1,0 +1,113 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=OmronLib\PackML30\PackMLModeStateMachine	N=UMPackMLStateMachine	G=VAR
+++D=ARRAY[1..31] OF OmronLib\PackML30\sPACKML_STATES_FLAG	N=UMDisableStates	G=VAR
+++D=ARRAY[1..31] OF OmronLib\PackML30\sPACKML_STATES_FLAG	N=UMModeSwitchStates	G=VAR
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=UMCmdStateTransition	G=VAR
+++D=DINT	N=UMCmdModeSwitch	G=VAR
+++D=BOOL	N=EM0_Disabled	G=VAR
+++D=BOOL	N=EM1_Disabled	G=VAR
+++D=BOOL	N=DummyIn	G=VAR
+++D=BOOL	N=DummyOut	G=VAR
+++D=DINT(1..9)	N=LocalCmdStateTransition	G=VAR
+++D=BOOL	N=Initialised	G=VAR
+++D=OmronLib\PackML30\PackMLModeStateTimer	N=PackMLModeStateTimer	G=VAR
+++D=ARRAY[1..31] OF DINT	N=TimeCurrentMode	G=VAR
+++D=ARRAY[1..31] OF DINT	N=TimeCumulativeMode	G=VAR
+++D=ARRAY[1..31,1..17] OF DINT	N=TimeCumulativeState	G=VAR
+++D=ARRAY[1..31,1..17] OF DINT	N=TimeCurrentState	G=VAR
+++D=BOOL	N=EM0Summation	G=VAR
+++D=BOOL	N=EM1Summation	G=VAR
+++D=BOOL	N=EM2Summation	G=VAR
+++D=OmronLib\PackML30\AlarmSummation_SortFilter	N=UNAllAlarms	G=VAR
+++D=OmronLib\PackML30\AlarmSummation_SortFilter	N=UNActiveAlarms	G=VAR
+++D=OmronLib\PackML30\AlarmSummation_SortFilter	N=UNCriticalAlarms	G=VAR
+++D=ARRAY[0..100] OF OmronLib\PackML30\sALARM	N=UNCriticalAlarmsArray	G=VAR
+++D=INT	N=UNNumberOfCriticalAlarms	G=VAR
+++D=ARRAY[1..31] OF OmronLib\PackML30\sPACKML_STATES_FLAG	N=UMDisableStatesActual	G=VAR
+++D=DINT	N=Index	G=VAR
+++D=ARRAY[0..16] OF LINT	N=Tmp_PresentModeStateTimeLINT	G=VAR
+++D=INT	N=PerIndex	G=VAR
+++D=DINT	N=Sum_PresentModeStateTime	G=VAR
+++D=LINT	N=Tmp_PreModeTime	G=VAR
+++D=LINT	N=Tmp_PreModePreStateTime	G=VAR
+++D=BOOL	N=IsNotClearing	G=VAR
+++D=LREAL	N=OperatingTime	G=VAR
+++D=LREAL	N=IdealCycleTime	G=VAR
+++D=ARRAY[0..6] OF DINT	N=Temp_PMLTime	G=VAR
+++D=DINT	N=Tmp_AccProductCount	G=VAR
+++D=DINT	N=tmp_AccDefProductCount	G=VAR
+++D=DATE_AND_TIME	N=DateLastHistoryAlarm	G=VAR
+++D=DINT	N=AlarmToUpdate	G=VAR
+++D=DINT	N=CheckIndex	G=VAR
+++D=TON	N=TimerComplete	G=VAR
+++D=TON	N=TimerIdle	G=VAR
+++D=BOOL	N=ExTimer	G=VAR
+++D=STRING[20]	N=HMI_Screen_OldName	G=VAR
+++D=TON	N=TimerResetAllTimes	G=VAR
+++D=AlarmHistoryFilter	N=myAlarmHistoryFilter	G=VAR
+++D=DATE_AND_TIME	N=myHistoryLastTime	G=VAR
+++D=INT	N=MyHistoryExtent	G=VAR
+++D=BOOL	N=Dummy_BlockI1	G=VAR
+++D=OmronLib\PackML30\AlarmSummation_SortFilter	N=UNCriticalErrors	G=VAR
+++D=INT	N=UNNumberOfErrors	G=VAR
+++D=ARRAY[0..100] OF OmronLib\PackML30\sALARM	N=UNErrorArray	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=M_StartStop	G=VAR_EXTERNAL
+++D=BOOL	N=SI3_RESET	G=VAR_EXTERNAL
+++D=BOOL	N=SI2_STOP	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=EM0ReqTransition	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=EM1ReqTransition	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sALARM_STATUS	N=EM0_AlarmStatus	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sALARM_SUMMATION	N=UN_AlarmSummation	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sALARM_STATUS	N=EM1_AlarmStatus	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sALARM_STATUS	N=EM2_AlarmStatus	G=VAR_EXTERNAL
+++D=BOOL	N=Q1	G=VAR_EXTERNAL
+++D=BOOL	N=I1	G=VAR_EXTERNAL
+++D=BOOL	N=I2	G=VAR_EXTERNAL
+++D=BOOL	N=I3	G=VAR_EXTERNAL
+++D=BOOL	N=I4	G=VAR_EXTERNAL
+++D=DINT	N=LotNumOfProducts	G=VAR_EXTERNAL
+++D=Array[0..12] of bool	N=HMI_DisableState	G=VAR_EXTERNAL
+++D=BOOL	N=ResetAllTimes	G=VAR_EXTERNAL
+++D=TIME	N=PresentModeTime	G=VAR_EXTERNAL
+++D=TIME	N=PreModePreStateTime	G=VAR_EXTERNAL
+++D=INT	N=EM0_ProductsDone	G=VAR_EXTERNAL
+++D=INT	N=EM1_ProductsDone	G=VAR_EXTERNAL
+++D=BOOL	N=SI1_RUN	G=VAR_EXTERNAL
+++D=sPACKMLV30_UNIT	N=myMachine	G=VAR_EXTERNAL
+++D=ARRAY[0..9] OF OmronLib\PackML30\sEVENT_CFG	N=EM0_EventList	G=VAR_EXTERNAL
+++D=ARRAY[0..9] OF OmronLib\PackML30\sEVENT_CFG	N=EM1_EventList	G=VAR_EXTERNAL
+++D=ARRAY[0..9] OF OmronLib\PackML30\sEVENT_CFG	N=EM2_EventList	G=VAR_EXTERNAL
+++D=ARRAY[1..17] OF time	N=TransitionDelay	G=VAR_EXTERNAL
+++D=OmronLib\PackML30\sPACKML_TRANSITION_COMMAND	N=LocalReqTransition	G=VAR_EXTERNAL
+++D=BOOL	N=ClearAlarmList	G=VAR_EXTERNAL
+++D=BOOL	N=ClearFirstAlarm	G=VAR_EXTERNAL
+++D=sOEELosses	N=myMachineLosses	G=VAR_EXTERNAL
+++D=REAL	N=MaxSpeed	G=VAR_EXTERNAL
+++D=sOEE	N=myMachineOEE	G=VAR_EXTERNAL
+++D=BOOL	N=EM3_PackML	G=VAR_EXTERNAL
+++D=BOOL	N=PackML_AlarmSignal	G=VAR_EXTERNAL
+++D=BOOL	N=NJ_HMI_STOP	G=VAR_EXTERNAL
+++D=DINT	N=BatchNumber	G=VAR_EXTERNAL
+++D=LREAL	N=DwellReal	G=VAR_EXTERNAL
+++D=TIME	N=DwellTime	G=VAR_EXTERNAL
+++D=LREAL	N=DiskDistance	G=VAR_EXTERNAL
+++D=LREAL	N=BeltDistance	G=VAR_EXTERNAL
+++D=ARRAY[0..9,0..4] OF DINT	N=BatchTable	G=VAR_EXTERNAL
+++D=ARRAY[0..5,0..5] OF DINT	N=ProductDefinition	G=VAR_EXTERNAL
+++D=STRING[20]	N=HMI_Screen_Name	G=VAR_EXTERNAL
+++D=BOOL	N=CyclicOperation	G=VAR_EXTERNAL
+++D=DINT	N=BatchNumberHMI	G=VAR_EXTERNAL
+++D=ARRAY[0..100] OF OmronLib\PackML30\sALARM	N=myAlarmHistoryArray	G=VAR_EXTERNAL
+++D=DINT	N=MaxNumberProducts	G=VAR_EXTERNAL
+++D=BOOL	N=myAlarmHistoryFilter_Done	G=VAR_EXTERNAL
+++D=BOOL	N=UNActiveAlarms_Done	G=VAR_EXTERNAL
+++D=ARRAY[0..100] OF OmronLib\PackML30\sALARM	N=UNActiveAlarmsArray	G=VAR_EXTERNAL
+++D=INT	N=UNNumberOfActiveAlarms	G=VAR_EXTERNAL
+++D=BOOL	N=UNAllAlarms_Done	G=VAR_EXTERNAL
+++D=LREAL	N=ActualMachineSpeed	G=VAR_EXTERNAL
+++D=ARRAY[0..100] OF OmronLib\PackML30\sALARM	N=UNAllAlarmsArray	G=VAR_EXTERNAL
+++D=INT	N=UNNumberOfAlarms	G=VAR_EXTERNAL
+++D=STRING[128]	N=LastEventString	G=VAR_EXTERNAL

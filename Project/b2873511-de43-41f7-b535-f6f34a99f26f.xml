@@ -1,0 +1,10 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UDINT	N=ExecCount	G=VAR
+++D=UDINT	N=ExceededCount	G=VAR
+++D=TIME	N=MaxExecTime	G=VAR
+++D=TIME	N=MinExecTime	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=DemocaseData\TaskTimeData	N=primaryTaskData	G=VAR_EXTERNAL
+++D=DemocaseData\TaskTimeData	N=periodic16TaskData	G=VAR_EXTERNAL

@@ -1,0 +1,35 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Machine_Ready_State	G=VAR
+++D=BOOL	N=Machine_Run_State	G=VAR
+++D=BOOL	N=Machine_Stop_State	G=VAR
+++D=BOOL	N=Machine_Emergency_State	G=VAR
+++D=BOOL	N=Machine_Error_State	G=VAR
+++D=BOOL	N=Machine_Manual_State	G=VAR
+++D=BOOL	N=Machine_Auto_State	G=VAR
+++D=BOOL	N=Shutdown_OPC_UA_Server	G=VAR
+++D=BOOL	N=Shutdown_OPC_UA_Server_Done	G=VAR
+++D=BOOL	N=Shutdown_in_Progress	G=VAR
+++D=BOOL	N=Shutdown_Error	G=VAR
+++D=WORD	N=Shutdown_Error_ID	G=VAR
+++D=WORD	N=Shutdown_Status_Error_ID	G=VAR
+++D=OPCUA_Shutdown	N=OPC_UA_Shutdown_Instance	G=VAR
+++D=BOOL	N=NTP_Connection_Ok	G=VAR
+++D=DATE_AND_TIME	N=Exact_Time_Romania	G=VAR
+++D=BOOL	N=Test_NTP_Status	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=OPC_DI_Start	G=VAR_EXTERNAL
+++D=BOOL	N=OPC_DQ_Start_Light	G=VAR_EXTERNAL
+++D=BOOL	N=Node_Red_OPC_Start	G=VAR_EXTERNAL
+++D=BOOL	N=OPC_DI_Emergency_Stop	G=VAR_EXTERNAL
+++D=BOOL	N=OPC_DI_Stop	G=VAR_EXTERNAL
+++D=BOOL	N=OPC_DQ_Reset_Light	G=VAR_EXTERNAL
+++D=BOOL	N=OPC_DQ_Stop_Light	G=VAR_EXTERNAL
+++D=BOOL	N=Node_Red_OPC_Emergency_Stop	G=VAR_EXTERNAL
+++D=BOOL	N=OPC_DI_Manual	G=VAR_EXTERNAL
+++D=BOOL	N=OPC_DI_Auto	G=VAR_EXTERNAL
+++D=REAL	N=OPC_AI_Weight	G=VAR_EXTERNAL
+++D=BOOL	N=Node_Red_OPC_Stop	G=VAR_EXTERNAL
+++D=BOOL	N=OPC_DI_Reset	G=VAR_EXTERNAL
+++D=BOOL	N=Node_Red_OPC_Reset	G=VAR_EXTERNAL
